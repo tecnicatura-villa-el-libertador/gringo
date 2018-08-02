@@ -96,6 +96,7 @@ class TipoMovimiento(models.Model):
     aumenta = models.BooleanField(default=True)
 
     def __str__(self):
+        'Muestra el nombre del objeto'
         return self.tipo
 
 
@@ -113,7 +114,7 @@ class Movimiento(TimeStampedModel):
 
     def __str__(self):
         return self.nombre
-        
+
 
     def save(self, *args, **kwargs):
         if not self.tipo.aumenta:
