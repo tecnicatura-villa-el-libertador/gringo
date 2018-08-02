@@ -65,7 +65,6 @@ class Actividad(TimeStampedModel):
 class CategoriaProducto(models.Model):
     nombre = models.CharField(max_length=50, help_text='Ej: Semilla, fertilizante, herbicida, etc')
 
-
     def __str__(self):
         return self.nombre
 
@@ -89,13 +88,24 @@ class Producto(TimeStampedModel):
     precio_dolar = models.DecimalField(max_digits=12, decimal_places=3)
 
     def __str__(self):
-        return self.nombre
+        return f'{self.nombre} x {self.unidad_medida}'
 
-class Transaccion(TimeStampedModel):
+
+class TipoMovimiento(models.Model):
+    tipo = models.CharField(max_length=50, help_text='Ej: compra, venta')
+    aumenta = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.tipo
+
+
+class Movimiento(TimeStampedModel):
 
     producto = models.ForeignKey('Producto', on_delete=models.CASCADE)
+    tipo = models.ForeignKey('TipoMovimiento', on_delete=models.CASCADE)
     cantidad = models.DecimalField(max_digits=6, decimal_places=3)
     descripcion = models.TextField(null=True, blank=True)
+    fecha = models.DateTimeField()
     es_inicial = models.BooleanField(default=False, help_text='Calcular stock a partir de esta cantidad')
     actividad = models.ForeignKey('Actividad', on_delete=models.CASCADE)
     precio_peso = models.DecimalField(max_digits=12, decimal_places=3)
@@ -104,6 +114,10 @@ class Transaccion(TimeStampedModel):
     def __str__(self):
         return self.nombre
         
-    class Meta:
-        verbose_name = 'Transacción'
-        verbose_name_plural = "Transacciones"
+
+    def save(self, *args, **kwargs):
+        if not self.tipo.aumenta:
+            self.cantidad = - abs(self.cantidad)
+        else:
+            self.cantidad = abs(self.cantidad)
+        super().save(*args, **kwargs)
