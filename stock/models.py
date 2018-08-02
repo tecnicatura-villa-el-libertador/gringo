@@ -88,6 +88,8 @@ class Producto(TimeStampedModel):
     precio_peso = models.DecimalField(max_digits=12, decimal_places=3)
     precio_dolar = models.DecimalField(max_digits=12, decimal_places=3)
 
+    def __str__(self):
+        return self.nombre
 
 class Transaccion(TimeStampedModel):
 
@@ -99,7 +101,9 @@ class Transaccion(TimeStampedModel):
     precio_peso = models.DecimalField(max_digits=12, decimal_places=3)
     precio_dolar = models.DecimalField(max_digits=12, decimal_places=3)
 
-
+    def __str__(self):
+        return self.nombre
+        
     class Meta:
         verbose_name = 'Transacción'
         verbose_name_plural = "Transacciones"
