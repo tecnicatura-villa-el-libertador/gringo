@@ -2,19 +2,19 @@ from django.contrib import admin
 from stock.models import (
     Cultivo, Campaña, TipoActividad, Actividad,
     CategoriaProducto, Producto, UnidadMedida,
-    Transaccion, Lote
+    Movimiento, Lote, TipoMovimiento
 )
 
 
 class CampañaAdmin(admin.ModelAdmin):
 
-    list_display = ('nombre', 'cultivo', 'usuario')
+    list_display = ('nombre', 'usuario', 'cultivo')
     list_filter = ('cultivo',)
 
 
 
-class TransaccionInline(admin.StackedInline):
-    model = Transaccion
+class MovimientoInline(admin.StackedInline):
+    model = Movimiento
 
 
 
@@ -24,7 +24,7 @@ class ActividadAdmin(admin.ModelAdmin):
     list_filter = ('tipo', 'fecha_inicio')
 
     inlines = [
-        TransaccionInline,
+        MovimientoInline,
     ]
 
 
@@ -37,6 +37,31 @@ admin.site.register(Actividad, ActividadAdmin)
 for m in (
         Cultivo, TipoActividad,
         CategoriaProducto, Producto, UnidadMedida,
-        Transaccion, Lote):
+        Lote, TipoMovimiento):
     admin.site.register(m)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
