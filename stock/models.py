@@ -114,7 +114,7 @@ class Movimiento(TimeStampedModel):
     def __str__(self):
         return self.nombre
         
-
+        
     def save(self, *args, **kwargs):
         if not self.tipo.aumenta:
             self.cantidad = - abs(self.cantidad)
