@@ -96,8 +96,8 @@ class TipoMovimiento(models.Model):
     aumenta = models.BooleanField(default=True)
 
     def __str__(self):
+        'Muestra el nombre del objeto'
         return self.tipo
-
 
 
 class Movimiento(TimeStampedModel):
@@ -111,6 +111,10 @@ class Movimiento(TimeStampedModel):
     actividad = models.ForeignKey('Actividad', on_delete=models.CASCADE)
     precio_peso = models.DecimalField(max_digits=12, decimal_places=3)
     precio_dolar = models.DecimalField(max_digits=12, decimal_places=3)
+
+    def __str__(self):
+        return self.nombre
+
 
     def save(self, *args, **kwargs):
         if not self.tipo.aumenta:

@@ -1,3 +1,5 @@
+.directory
+
 *.sqlite3
 
 *.py[cod]
