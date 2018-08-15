@@ -1,0 +1,1929 @@
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+
+Microsoft Windows [Versión 10.0.16299.492]
+(c) 2017 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\usuario\Google Drive\Tecnicatura\REDES\Practicos 2018>d:
+
+D:\>git clone https://github.com/django/django.git
+Cloning into 'django'...
+remote: Counting objects: 419062, done.
+remote: Compressing objects: 100% (146/146), done.
+error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+fatal: The remote end hung up unexpectedly
+fatal: early EOF
+fatal: index-pack failed
+
+D:\>git clone https://github.com/django/django.git
+Cloning into 'django'...
+remote: Counting objects: 419062, done.
+remote: Compressing objects: 100% (146/146), done.
+remote: Total 419062 (delta 73), reused 54 (delta 26), pack-reused 418890
+Receiving objects: 100% (419062/419062), 175.32 MiB | 234.00 KiB/s, done.
+Resolving deltas: 100% (304650/304650), done.
+Checking out files: 100% (5980/5980), done.
+
+D:\>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 1E77-B220
+
+ Directorio de D:\
+
+28/06/2018  09:35 p. m.    <DIR>          caj
+28/06/2018  08:42 p. m.    <DIR>          cajero
+01/08/2018  08:18 p. m.    <DIR>          django
+01/08/2018  12:38 p. m.    <DIR>          Dropbox
+04/07/2018  07:28 p. m.    <DIR>          gringo
+26/07/2018  11:01 a. m.    <DIR>          InfoCoop
+07/04/2018  05:34 p. m.     1.759.887.360 kubuntu-17.10.1-desktop-amd64.iso
+22/05/2000  12:00 a. m.           647.872 mscomct2.ocx
+28/07/1998  11:01 p. m.         1.062.704 MSCOMCTL.OCX
+04/05/2018  02:47 p. m.    <DIR>          Musica
+12/06/2018  08:35 p. m.    <DIR>          PeerInfo
+19/06/2018  09:23 p. m.    <DIR>          Python27
+10/05/2018  08:39 p. m.    <DIR>          Python36
+10/02/2005  10:03 p. m.           212.240 RICHTX32.OCX
+13/05/2018  08:19 p. m.     1.921.843.200 ubuntu-18.04-desktop-amd64.iso
+17/07/2018  08:58 p. m.    <DIR>          Utiles
+04/05/2018  02:47 p. m.    <DIR>          vfp
+15/05/2018  10:07 a. m.    <DIR>          Vfp8
+04/05/2018  02:47 p. m.    <DIR>          VFP9
+14/05/2018  06:33 p. m.    <DIR>          Windows10Upgrade
+               5 archivos  3.683.653.376 bytes
+              15 dirs  745.546.108.928 bytes libres
+
+D:\>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 1E77-B220
+
+ Directorio de D:\
+
+28/06/2018  09:35 p. m.    <DIR>          caj
+28/06/2018  08:42 p. m.    <DIR>          cajero
+01/08/2018  08:18 p. m.    <DIR>          django
+01/08/2018  12:38 p. m.    <DIR>          Dropbox
+04/07/2018  07:28 p. m.    <DIR>          gringo
+26/07/2018  11:01 a. m.    <DIR>          InfoCoop
+07/04/2018  05:34 p. m.     1.759.887.360 kubuntu-17.10.1-desktop-amd64.iso
+22/05/2000  12:00 a. m.           647.872 mscomct2.ocx
+28/07/1998  11:01 p. m.         1.062.704 MSCOMCTL.OCX
+04/05/2018  02:47 p. m.    <DIR>          Musica
+12/06/2018  08:35 p. m.    <DIR>          PeerInfo
+19/06/2018  09:23 p. m.    <DIR>          Python27
+10/05/2018  08:39 p. m.    <DIR>          Python36
+10/02/2005  10:03 p. m.           212.240 RICHTX32.OCX
+13/05/2018  08:19 p. m.     1.921.843.200 ubuntu-18.04-desktop-amd64.iso
+17/07/2018  08:58 p. m.    <DIR>          Utiles
+04/05/2018  02:47 p. m.    <DIR>          vfp
+15/05/2018  10:07 a. m.    <DIR>          Vfp8
+04/05/2018  02:47 p. m.    <DIR>          VFP9
+14/05/2018  06:33 p. m.    <DIR>          Windows10Upgrade
+               5 archivos  3.683.653.376 bytes
+              15 dirs  745.546.108.928 bytes libres
+
+D:\>cd django
+
+D:\django>git checkout 2.1
+Note: checking out '2.1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at e7ad40fcf4 [2.1.x] Bumped version for 2.1 release.
+
+D:\django>pip install .
+"pip" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\django>easy_install
+"easy_install" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\django>cd ..
+
+D:\>cd Python36
+
+D:\Python36>ls
+"ls" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\Python36>pwd
+"pwd" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\Python36>python
+Python 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+^C
+D:\Python36>python3
+"python3" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\Python36>pip3
+"pip3" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\Python36>cd "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts"
+
+D:\Python36>cd "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts"
+
+D:\Python36>cd C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts
+
+D:\Python36>c:
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>pip3
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>pip3
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 60C3-8342
+
+ Directorio de C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts
+
+01/08/2018  08:27 p. m.    <DIR>          .
+01/08/2018  08:27 p. m.    <DIR>          ..
+04/05/2018  12:43 p. m.            89.496 easy_install-3.6.exe
+04/05/2018  12:43 p. m.            89.496 easy_install.exe
+01/08/2018  08:27 p. m.            93.063 pip.exe
+01/08/2018  08:27 p. m.            93.063 pip3.6.exe
+01/08/2018  08:27 p. m.            93.063 pip3.exe
+01/08/2018  08:27 p. m.            93.060 wheel.exe
+               6 archivos        551.241 bytes
+               2 dirs  165.491.318.784 bytes libres
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts> pip3
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>pip3 --help
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>cd
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>cd
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>cd
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>cd ..
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>cd ..
+
+C:\Users\usuario\AppData\Local\Programs\Python>pip3
+"pip3" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\usuario\AppData\Local\Programs\Python>cd Python36-32
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>ls
+"ls" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>ls
+"ls" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 60C3-8342
+
+ Directorio de C:\Users\usuario\AppData\Local\Programs\Python\Python36-32
+
+04/05/2018  12:43 p. m.    <DIR>          .
+04/05/2018  12:43 p. m.    <DIR>          ..
+04/05/2018  12:42 p. m.    <DIR>          DLLs
+04/05/2018  12:42 p. m.    <DIR>          Doc
+04/05/2018  12:41 p. m.    <DIR>          include
+04/05/2018  12:42 p. m.    <DIR>          Lib
+04/05/2018  12:42 p. m.    <DIR>          libs
+28/03/2018  04:14 p. m.            30.340 LICENSE.txt
+28/03/2018  04:14 p. m.           392.371 NEWS.txt
+28/03/2018  04:11 p. m.            97.944 python.exe
+28/03/2018  04:08 p. m.            58.520 python3.dll
+28/03/2018  04:08 p. m.         3.303.064 python36.dll
+28/03/2018  04:11 p. m.            96.408 pythonw.exe
+01/08/2018  08:27 p. m.    <DIR>          Scripts
+04/05/2018  12:42 p. m.    <DIR>          tcl
+04/05/2018  12:42 p. m.    <DIR>          Tools
+09/06/2016  10:46 p. m.            83.784 vcruntime140.dll
+               7 archivos      4.062.431 bytes
+              10 dirs  165.491.249.152 bytes libres
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>python.exe
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+KeyboardInterrupt
+>>>
+KeyboardInterrupt
+>>> ^D
+  File "<stdin>", line 1
+    
+    ^
+SyntaxError: invalid syntax
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>> ^Z
+
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>cd Scripts
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>ñs
+"ñs" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 60C3-8342
+
+ Directorio de C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts
+
+01/08/2018  08:27 p. m.    <DIR>          .
+01/08/2018  08:27 p. m.    <DIR>          ..
+04/05/2018  12:43 p. m.            89.496 easy_install-3.6.exe
+04/05/2018  12:43 p. m.            89.496 easy_install.exe
+01/08/2018  08:27 p. m.            93.063 pip.exe
+01/08/2018  08:27 p. m.            93.063 pip3.6.exe
+01/08/2018  08:27 p. m.            93.063 pip3.exe
+01/08/2018  08:27 p. m.            93.060 wheel.exe
+               6 archivos        551.241 bytes
+               2 dirs  165.491.314.688 bytes libres
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>pip3.6.exe
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>cd ..
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>python -m pip
+
+Usage:
+  C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe -m pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --isolated                  Run pip in an isolated mode, ignoring environment variables and user configuration.
+  -v, --verbose               Give more output. Option is additive, and can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and can be used up to 3 times (corresponding to
+                              WARNING, ERROR, and CRITICAL logging levels).
+  --log <path>                Path to a verbose appending log.
+  --proxy <proxy>             Specify a proxy in the form [user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection should attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup,
+                              (a)bort).
+  --trusted-host <hostname>   Mark this host as trusted, even though it does not have valid or any HTTPS.
+  --cert <path>               Path to alternate CA bundle.
+  --client-cert <path>        Path to SSL client certificate, a single file containing the private key and the
+                              certificate in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine whether a new version of pip is available for
+                              download. Implied with --no-index.
+  --no-color                  Suppress colored output
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>python -m pip install django
+Collecting django
+  Downloading https://files.pythonhosted.org/packages/51/1a/e0ac7886c7123a03814178d7517dc822af0fe51a72e1a6bff26153103322/Django-2.1-py3-none-any.whl (7.3MB)
+    100% |████████████████████████████████| 7.3MB 54kB/s
+Collecting pytz (from django)
+  Downloading https://files.pythonhosted.org/packages/30/4e/27c34b62430286c6d59177a0842ed90dc789ce5d1ed740887653b898779a/pytz-2018.5-py2.py3-none-any.whl (510kB)
+    100% |████████████████████████████████| 512kB 284kB/s
+Installing collected packages: pytz, django
+  The script django-admin.exe is installed in 'C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed django-2.1 pytz-2018.5
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>python -m pip install django-model-utils
+Collecting django-model-utils
+  Downloading https://files.pythonhosted.org/packages/d1/92/8a6b15368bb407f0a2e716bf603e73c843af782b98e68f23c19697742f8a/django_model_utils-3.1.2-py2.py3-none-any.whl
+Requirement already satisfied: Django>=1.8 in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from django-model-utils) (2.1)
+Requirement already satisfied: pytz in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from Django>=1.8->django-model-utils) (2018.5)
+Installing collected packages: django-model-utils
+Successfully installed django-model-utils-3.1.2
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>cd
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>cd ..
+
+C:\Users\usuario\AppData\Local\Programs\Python>cd ..
+
+C:\Users\usuario\AppData\Local\Programs>cd ..
+
+C:\Users\usuario\AppData\Local>cd ..
+
+C:\Users\usuario\AppData>cd d.
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\usuario\AppData>cd d:
+D:\Python36
+
+C:\Users\usuario\AppData>d:
+
+D:\Python36>cd..
+
+D:\>cd gringo
+
+D:\gringo>ls
+"ls" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\gringo>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 1E77-B220
+
+ Directorio de D:\gringo
+
+04/07/2018  07:28 p. m.    <DIR>          .
+04/07/2018  07:28 p. m.    <DIR>          ..
+04/07/2018  07:28 p. m.               464 .gitignore
+04/07/2018  07:28 p. m.    <DIR>          fixtures
+04/07/2018  07:28 p. m.    <DIR>          gringo
+04/07/2018  07:28 p. m.               553 manage.py
+04/07/2018  07:28 p. m.    <DIR>          stock
+               2 archivos          1.017 bytes
+               5 dirs  745.544.179.712 bytes libres
+
+D:\gringo>c:
+
+C:\Users\usuario\AppData>
+C:\Users\usuario\AppData>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe: can't open file 'manage.py': [Errno 2] No such file or directory
+
+C:\Users\usuario\AppData>d:
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying sessions.0001_initial... OK
+  Applying stock.0001_initial... OK
+  Applying stock.0002_auto_20180614_0004... OK
+  Applying stock.0003_auto_20180627_2237... OK
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py createsuperuser
+Nombre de usuario (leave blank to use 'usuario'): rene
+Dirección de email:
+Password:
+Password (again):
+Error: Your passwords didn't match.
+Password:
+Password (again):
+Superuser created successfully.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 01, 2018 - 20:46:29
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[01/Aug/2018 20:46:49] "GET / HTTP/1.1" 200 16379
+[01/Aug/2018 20:46:50] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[01/Aug/2018 20:46:50] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[01/Aug/2018 20:46:51] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[01/Aug/2018 20:46:51] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+Not Found: /favicon.ico
+[01/Aug/2018 20:46:51] "GET /favicon.ico HTTP/1.1" 404 1972
+[01/Aug/2018 20:46:58] "GET /admin HTTP/1.1" 301 0
+[01/Aug/2018 20:46:58] "GET /admin/ HTTP/1.1" 302 0
+[01/Aug/2018 20:46:58] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1863
+[01/Aug/2018 20:46:58] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[01/Aug/2018 20:46:58] "GET /static/admin/css/base.css HTTP/1.1" 200 16225
+[01/Aug/2018 20:46:58] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17976
+[01/Aug/2018 20:47:21] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[01/Aug/2018 20:47:21] "GET /admin/ HTTP/1.1" 200 7468
+[01/Aug/2018 20:47:21] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[01/Aug/2018 20:47:21] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[01/Aug/2018 20:47:22] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[01/Aug/2018 20:47:41] "GET /admin/stock/producto/ HTTP/1.1" 200 3231
+[01/Aug/2018 20:47:41] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[01/Aug/2018 20:47:41] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 20:47:41] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[01/Aug/2018 20:47:41] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[01/Aug/2018 20:47:41] "GET /static/admin/js/core.js HTTP/1.1" 200 7134
+[01/Aug/2018 20:47:41] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+[01/Aug/2018 20:47:41] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[01/Aug/2018 20:47:42] "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+[01/Aug/2018 20:47:42] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+[01/Aug/2018 20:47:42] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:47:42] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[01/Aug/2018 20:47:42] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:47:42] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:47:42] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:47:42] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[01/Aug/2018 20:47:47] "GET /admin/ HTTP/1.1" 200 7468
+[01/Aug/2018 20:47:49] "GET /admin/stock/cultivo/ HTTP/1.1" 200 3224
+[01/Aug/2018 20:47:50] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 20:47:50] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 20:47:50] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:47:52] "GET /admin/ HTTP/1.1" 200 7468
+[01/Aug/2018 20:47:58] "GET /admin/stock/cultivo/ HTTP/1.1" 200 3224
+[01/Aug/2018 20:47:58] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:00] "GET /admin/stock/cultivo/add/ HTTP/1.1" 200 4040
+[01/Aug/2018 20:48:01] "GET /static/admin/css/forms.css HTTP/1.1" 200 8505
+[01/Aug/2018 20:48:01] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[01/Aug/2018 20:48:01] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[01/Aug/2018 20:48:01] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:01] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[01/Aug/2018 20:48:11] "POST /admin/stock/cultivo/add/ HTTP/1.1" 302 0
+[01/Aug/2018 20:48:12] "GET /admin/stock/cultivo/1/change/ HTTP/1.1" 200 4473
+[01/Aug/2018 20:48:12] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:12] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[01/Aug/2018 20:48:17] "POST /admin/stock/cultivo/1/change/ HTTP/1.1" 302 0
+[01/Aug/2018 20:48:17] "GET /admin/stock/cultivo/add/ HTTP/1.1" 200 4250
+[01/Aug/2018 20:48:17] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:22] "POST /admin/stock/cultivo/add/ HTTP/1.1" 302 0
+[01/Aug/2018 20:48:23] "GET /admin/stock/cultivo/add/ HTTP/1.1" 200 4250
+[01/Aug/2018 20:48:23] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:29] "POST /admin/stock/cultivo/add/ HTTP/1.1" 302 0
+[01/Aug/2018 20:48:30] "GET /admin/stock/cultivo/3/change/ HTTP/1.1" 200 4476
+[01/Aug/2018 20:48:30] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:33] "POST /admin/stock/cultivo/3/change/ HTTP/1.1" 302 0
+[01/Aug/2018 20:48:33] "GET /admin/stock/cultivo/ HTTP/1.1" 200 5032
+[01/Aug/2018 20:48:33] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:37] "GET /admin/stock/cultivo/1/change/ HTTP/1.1" 200 4257
+[01/Aug/2018 20:48:38] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:38] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:48:38] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:48:43] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 20:48:43] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[01/Aug/2018 20:48:43] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:48:43] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:48:47] "GET /admin/stock/producto/ HTTP/1.1" 200 3231
+[01/Aug/2018 20:48:47] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 20:48:48] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 20:48:48] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 20:48:48] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:48] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:48:50] "GET /admin/stock/producto/add/ HTTP/1.1" 200 8001
+[01/Aug/2018 20:48:50] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:48:50] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[01/Aug/2018 20:49:11] "GET /admin/stock/categoriaproducto/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3221
+[01/Aug/2018 20:49:12] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 20:49:12] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 20:49:12] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:12] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:12] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:49:23] "POST /admin/stock/categoriaproducto/add/?_to_field=id&_popup=1 HTTP/1.1" 200 376
+[01/Aug/2018 20:49:24] "GET /static/admin/js/popup_response.js HTTP/1.1" 200 569
+[01/Aug/2018 20:49:28] "GET /admin/stock/unidadmedida/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3181
+[01/Aug/2018 20:49:28] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:49:40] "POST /admin/stock/unidadmedida/add/?_to_field=id&_popup=1 HTTP/1.1" 200 374
+[01/Aug/2018 20:49:55] "POST /admin/stock/producto/add/ HTTP/1.1" 302 0
+[01/Aug/2018 20:49:55] "GET /admin/stock/producto/ HTTP/1.1" 200 4635
+[01/Aug/2018 20:49:56] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:49:56] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:49:56] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:49:57] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:50:08] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 20:50:08] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[01/Aug/2018 20:50:09] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:50:09] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:50:20] "GET /admin/stock/actividad/ HTTP/1.1" 200 3981
+[01/Aug/2018 20:50:21] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:50:25] "GET /admin/stock/actividad/add/ HTTP/1.1" 200 26399
+[01/Aug/2018 20:50:25] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 20:50:26] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 20:50:26] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20281
+[01/Aug/2018 20:50:26] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[01/Aug/2018 20:50:26] "GET /static/admin/js/inlines.js HTTP/1.1" 200 13813
+[01/Aug/2018 20:50:26] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:50:26] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 20:50:26] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:50:26] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:50:26] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+Internal Server Error: /admin/stock/campaña/add/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: stock_lote.hectareas
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\response.py", line
+106, in render
+    self.content = self.rendered_content
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\response.py", line
+83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\html.py", line 397, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\boundfield.py", line 93, in as_widget
+    renderer=self.form.renderer,
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 229, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\widgets.py", line 293, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 229, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 668, in get_context
+    context = super().get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 629, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 577, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\models.py", line 1139, in __iter__
+    for obj in queryset:
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 332, in _iterator
+    yield from self._iterable_class(self, chunked_fetch=use_chunked_fetch, chunk_size=chunk_size)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\sql\compiler.py",
+line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: stock_lote.hectareas
+[01/Aug/2018 20:50:39] "GET /admin/stock/campa%C3%B1a/add/?_to_field=id&_popup=1 HTTP/1.1" 500 580078
+[01/Aug/2018 20:51:12] "GET /admin/stock/actividad/ HTTP/1.1" 200 3981
+[01/Aug/2018 20:51:12] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 20:51:12] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 20:51:12] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 20:51:12] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 20:51:12] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:51:12] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:51:13] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:51:16] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 20:51:16] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+Internal Server Error: /admin/stock/campaña/add/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: stock_lote.hectareas
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\response.py", line
+106, in render
+    self.content = self.rendered_content
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\response.py", line
+83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\html.py", line 397, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\boundfield.py", line 93, in as_widget
+    renderer=self.form.renderer,
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 229, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\widgets.py", line 293, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 229, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 668, in get_context
+    context = super().get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 629, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 577, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\models.py", line 1139, in __iter__
+    for obj in queryset:
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 332, in _iterator
+    yield from self._iterable_class(self, chunked_fetch=use_chunked_fetch, chunk_size=chunk_size)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\sql\compiler.py",
+line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: stock_lote.hectareas
+[01/Aug/2018 20:51:20] "GET /admin/stock/campa%C3%B1a/add/ HTTP/1.1" 500 580656
+[01/Aug/2018 20:51:23] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 20:51:27] "GET /admin/stock/categoriaproducto/ HTTP/1.1" 200 4530
+[01/Aug/2018 20:51:27] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:51:39] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 20:51:47] "GET /admin/stock/campa%C3%B1a/ HTTP/1.1" 200 3753
+[01/Aug/2018 20:51:47] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+Internal Server Error: /admin/stock/campaña/add/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: stock_lote.hectareas
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\response.py", line
+106, in render
+    self.content = self.rendered_content
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\response.py", line
+83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\html.py", line 397, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\boundfield.py", line 93, in as_widget
+    renderer=self.form.renderer,
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 229, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\widgets.py", line 293, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 229, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 668, in get_context
+    context = super().get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 629, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 577, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\models.py", line 1139, in __iter__
+    for obj in queryset:
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 332, in _iterator
+    yield from self._iterable_class(self, chunked_fetch=use_chunked_fetch, chunk_size=chunk_size)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\sql\compiler.py",
+line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: stock_lote.hectareas
+[01/Aug/2018 20:51:49] "GET /admin/stock/campa%C3%B1a/add/ HTTP/1.1" 500 580720
+[01/Aug/2018 20:52:10] "GET /admin/stock/campa%C3%B1a/ HTTP/1.1" 200 3753
+[01/Aug/2018 20:52:40] "GET /admin/stock/campa%C3%B1a/?cultivo__id__exact=1 HTTP/1.1" 200 3796
+[01/Aug/2018 20:52:40] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 20:52:41] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 20:52:41] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:52:41] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 20:52:41] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+Migrations for 'stock':
+  stock\migrations\0004_auto_20180801_2055.py
+    - Add field hectareas to lote
+    - Alter field nombre on campaña
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): stock.
+Run 'python manage.py migrate' to apply them.
+August 01, 2018 - 20:55:39
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[01/Aug/2018 20:56:30] "GET / HTTP/1.1" 200 16379
+[01/Aug/2018 20:56:30] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 20:56:30] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:56:30] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:56:30] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:56:52] "GET /admin/ HTTP/1.1" 200 9824
+[01/Aug/2018 20:56:52] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[01/Aug/2018 20:56:52] "GET /static/admin/css/base.css HTTP/1.1" 200 16225
+[01/Aug/2018 20:56:52] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17976
+[01/Aug/2018 20:56:52] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:56:52] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:56:58] "GET /admin/stock/actividad/ HTTP/1.1" 200 3981
+[01/Aug/2018 20:56:58] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 20:56:58] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:56:58] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 20:56:58] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 20:56:58] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[01/Aug/2018 20:56:58] "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+[01/Aug/2018 20:56:58] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+[01/Aug/2018 20:56:59] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[01/Aug/2018 20:56:59] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[01/Aug/2018 20:56:59] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:56:59] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:57:01] "GET /admin/stock/actividad/add/ HTTP/1.1" 200 26399
+[01/Aug/2018 20:57:02] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 20:57:02] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[01/Aug/2018 20:57:02] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[01/Aug/2018 20:57:02] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:57:02] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[01/Aug/2018 20:57:02] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 20:57:02] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 20:57:02] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:57:02] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:57:02] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:57:09] "GET /admin/stock/actividad/ HTTP/1.1" 200 3981
+[01/Aug/2018 20:57:10] "GET /admin/ HTTP/1.1" 200 9824
+Internal Server Error: /admin/stock/campaña/add/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: stock_lote.hectareas
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 156, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 154, in _get_response
+    response = response.render()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\response.py", line
+106, in render
+    self.content = self.rendered_content
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\response.py", line
+83, in rendered_content
+    content = template.render(context, self._request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\loader_tags.py", line 188, in render
+    return template.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\defaulttags.py", line 309, in render
+    return nodelist.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 993, in render
+    return render_value_in_context(output, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\template\base.py", line 972, in render_value_in_context
+    value = str(value)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\html.py", line 397, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\boundfield.py", line 33, in __str__
+    return self.as_widget()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\boundfield.py", line 93, in as_widget
+    renderer=self.form.renderer,
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 229, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\widgets.py", line 293, in get_context
+    'rendered_widget': self.widget.render(name, value, attrs),
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 229, in render
+    context = self.get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 668, in get_context
+    context = super().get_context(name, value, attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 629, in get_context
+    context['widget']['optgroups'] = self.optgroups(name, context['widget']['value'], attrs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\widgets.py", line 577, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\forms\models.py", line 1139, in __iter__
+    for obj in queryset:
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 332, in _iterator
+    yield from self._iterable_class(self, chunked_fetch=use_chunked_fetch, chunk_size=chunk_size)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\sql\compiler.py",
+line 1061, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: stock_lote.hectareas
+[01/Aug/2018 20:57:14] "GET /admin/stock/campa%C3%B1a/add/ HTTP/1.1" 500 580650
+[01/Aug/2018 20:57:22] "GET /admin/ HTTP/1.1" 200 9824
+[01/Aug/2018 20:57:25] "GET /admin/stock/lote/add/ HTTP/1.1" 200 5845
+[01/Aug/2018 20:57:25] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+Internal Server Error: /admin/stock/lote/add/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: table stock_lote has no column named hectareas
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\views\decorators\cache.py",
+line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1575, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1094, in save_model
+    obj.save()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\manager.py", line
+82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\sql\compiler.py",
+line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line
+85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: table stock_lote has no column named hectareas
+[01/Aug/2018 20:58:02] "POST /admin/stock/lote/add/ HTTP/1.1" 500 185216
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  Applying stock.0004_auto_20180801_2055... OK
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 01, 2018 - 20:58:56
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[01/Aug/2018 20:59:06] "GET /admin/ HTTP/1.1" 200 9824
+[01/Aug/2018 20:59:07] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 20:59:07] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 20:59:07] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[01/Aug/2018 20:59:07] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 20:59:07] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:59:07] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:59:07] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:59:07] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 20:59:07] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:59:10] "GET /admin/stock/lote/add/ HTTP/1.1" 200 5845
+[01/Aug/2018 20:59:11] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:11] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:59:11] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 20:59:31] "POST /admin/stock/lote/add/ HTTP/1.1" 302 0
+[01/Aug/2018 20:59:31] "GET /admin/stock/lote/ HTTP/1.1" 200 4561
+[01/Aug/2018 20:59:31] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 20:59:31] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:59:31] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:59:31] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:59:36] "GET /admin/stock/lote/add/ HTTP/1.1" 200 5845
+[01/Aug/2018 20:59:37] "GET /admin/ HTTP/1.1" 200 10103
+[01/Aug/2018 20:59:43] "GET /admin/stock/campa%C3%B1a/add/ HTTP/1.1" 200 8165
+[01/Aug/2018 20:59:43] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 20:59:43] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 20:59:49] "GET /admin/auth/user/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4827
+[01/Aug/2018 20:59:49] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:00:46] "POST /admin/stock/campa%C3%B1a/add/ HTTP/1.1" 302 0
+[01/Aug/2018 21:00:46] "GET /admin/stock/campa%C3%B1a/ HTTP/1.1" 200 5565
+[01/Aug/2018 21:00:46] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:00:55] "GET /admin/stock/campa%C3%B1a/1/change/ HTTP/1.1" 200 8390
+[01/Aug/2018 21:00:55] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:01:05] "POST /admin/stock/campa%C3%B1a/1/change/ HTTP/1.1" 302 0
+[01/Aug/2018 21:01:05] "GET /admin/stock/campa%C3%B1a/ HTTP/1.1" 200 5579
+[01/Aug/2018 21:01:05] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:01:15] "GET /admin/stock/campa%C3%B1a/1/change/ HTTP/1.1" 200 8406
+[01/Aug/2018 21:01:16] "GET /admin/stock/campa%C3%B1a/ HTTP/1.1" 200 5389
+[01/Aug/2018 21:01:18] "GET /admin/stock/campa%C3%B1a/add/ HTTP/1.1" 200 8165
+[01/Aug/2018 21:01:19] "GET /admin/ HTTP/1.1" 200 10409
+[01/Aug/2018 21:01:22] "GET /admin/stock/actividad/add/ HTTP/1.1" 200 26442
+[01/Aug/2018 21:01:22] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 21:01:22] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:22] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:01:22] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 21:01:22] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 21:01:22] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 21:01:22] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 21:01:22] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:22] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:22] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:01:23] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:01:24] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:01:33] "GET /admin/stock/tipoactividad/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3096
+[01/Aug/2018 21:01:33] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:01:43] "POST /admin/stock/tipoactividad/add/?_to_field=id&_popup=1 HTTP/1.1" 200 375
+[01/Aug/2018 21:01:43] "GET /static/admin/js/popup_response.js HTTP/1.1" 304 0
+[01/Aug/2018 21:02:24] "POST /admin/stock/actividad/add/ HTTP/1.1" 302 0
+[01/Aug/2018 21:02:24] "GET /admin/stock/actividad/ HTTP/1.1" 200 6344
+[01/Aug/2018 21:02:24] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 21:02:25] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:02:25] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:02:25] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:02:43] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:02:44] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[01/Aug/2018 21:02:52] "GET /admin/stock/producto/ HTTP/1.1" 200 4444
+[01/Aug/2018 21:02:52] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:02:59] "GET /admin/stock/producto/add/ HTTP/1.1" 200 8077
+[01/Aug/2018 21:03:00] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:03:00] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:03:17] "GET /admin/stock/categoriaproducto/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3221
+[01/Aug/2018 21:03:17] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:03:22] "POST /admin/stock/categoriaproducto/add/?_to_field=id&_popup=1 HTTP/1.1" 200 376
+[01/Aug/2018 21:03:27] "GET /admin/stock/unidadmedida/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3181
+[01/Aug/2018 21:03:27] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:03:31] "POST /admin/stock/unidadmedida/add/?_to_field=id&_popup=1 HTTP/1.1" 200 373
+[01/Aug/2018 21:03:41] "POST /admin/stock/producto/add/ HTTP/1.1" 302 0
+[01/Aug/2018 21:03:41] "GET /admin/stock/producto/ HTTP/1.1" 200 4869
+[01/Aug/2018 21:03:41] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 21:03:41] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 21:03:41] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 21:03:41] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:41] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:41] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:41] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:03:42] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:42] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:42] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:42] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:42] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:42] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:03:42] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:03:42] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:03:48] "GET /admin/stock/producto/1/change/ HTTP/1.1" 200 8418
+[01/Aug/2018 21:03:48] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 21:03:48] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:03:48] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 21:03:48] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:48] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:03:48] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:03:49] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:03:57] "GET /admin/stock/producto/ HTTP/1.1" 200 4678
+[01/Aug/2018 21:03:57] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:04:00] "GET /admin/stock/producto/2/change/ HTTP/1.1" 200 8427
+[01/Aug/2018 21:04:00] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:04:14] "GET /admin/stock/producto/ HTTP/1.1" 200 4678
+[01/Aug/2018 21:04:14] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:04:29] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:04:35] "GET /admin/stock/tipoactividad/ HTTP/1.1" 200 4512
+[01/Aug/2018 21:04:35] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:04:40] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:04:56] "GET /admin/stock/transaccion/ HTTP/1.1" 200 3257
+[01/Aug/2018 21:04:56] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 21:04:56] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:04:56] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:04:59] "GET /admin/stock/transaccion/add/ HTTP/1.1" 200 8496
+[01/Aug/2018 21:04:59] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:05:06] "GET /admin/stock/producto/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7167
+[01/Aug/2018 21:05:06] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:05:27] "GET /admin/stock/categoriaproducto/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3221
+[01/Aug/2018 21:05:27] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:05:37] "POST /admin/stock/categoriaproducto/add/?_to_field=id&_popup=1 HTTP/1.1" 200 385
+[01/Aug/2018 21:05:37] "GET /static/admin/js/popup_response.js HTTP/1.1" 304 0
+[01/Aug/2018 21:05:42] "GET /admin/stock/unidadmedida/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3181
+[01/Aug/2018 21:05:42] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:05:45] "POST /admin/stock/unidadmedida/add/?_to_field=id&_popup=1 HTTP/1.1" 200 373
+[01/Aug/2018 21:05:49] "POST /admin/stock/producto/add/?_to_field=id&_popup=1 HTTP/1.1" 200 7501
+[01/Aug/2018 21:05:49] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:05:49] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:06:00] "POST /admin/stock/producto/add/?_to_field=id&_popup=1 HTTP/1.1" 200 387
+[01/Aug/2018 21:06:09] "GET /admin/stock/transaccion/ HTTP/1.1" 200 3257
+[01/Aug/2018 21:06:09] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:06:10] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:06:10] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 21:06:10] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[01/Aug/2018 21:06:10] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 21:06:10] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 01, 2018 - 21:07:43
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[01/Aug/2018 21:07:47] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:07:47] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:07:48] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:07:48] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:07:48] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:07:48] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:07:48] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:07:51] "GET /admin/stock/producto/ HTTP/1.1" 200 4886
+[01/Aug/2018 21:07:51] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 21:07:51] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 21:07:51] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:07:51] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 21:07:51] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 21:07:51] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 21:07:51] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 21:07:52] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 21:07:52] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 21:07:52] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:07:52] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:07:53] "GET /admin/stock/producto/ HTTP/1.1" 200 4886
+[01/Aug/2018 21:07:53] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:08:11] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:08:13] "GET /admin/stock/tipoactividad/ HTTP/1.1" 200 4512
+[01/Aug/2018 21:08:13] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:08:17] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:08:20] "GET /admin/stock/transaccion/ HTTP/1.1" 200 3257
+[01/Aug/2018 21:08:20] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:08:23] "GET /admin/stock/transaccion/add/ HTTP/1.1" 200 8521
+[01/Aug/2018 21:08:23] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 21:08:23] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:08:23] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 21:08:23] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 21:08:23] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:10:09] "POST /admin/stock/transaccion/add/ HTTP/1.1" 200 8764
+[01/Aug/2018 21:10:09] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 21:10:09] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 21:10:09] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 21:10:09] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+Internal Server Error: /admin/stock/transaccion/add/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\views\decorators\cache.py",
+line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 811, in log_addition
+    object_repr=str(object),
+  File "D:\gringo\stock\models.py", line 105, in __str__
+    return self.nombre
+AttributeError: 'Transaccion' object has no attribute 'nombre'
+[01/Aug/2018 21:10:29] "POST /admin/stock/transaccion/add/ HTTP/1.1" 500 113150
+[01/Aug/2018 21:11:03] "GET /admin/stock/transaccion/add/ HTTP/1.1" 200 8521
+[01/Aug/2018 21:11:03] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 21:11:03] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:11:03] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 21:11:03] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:11:03] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 21:11:03] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 21:11:03] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 21:11:03] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 21:11:03] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 21:11:03] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:11:04] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:11:04] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:11:04] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:11:04] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:13:37] "GET /admin/stock/transaccion/ HTTP/1.1" 200 3257
+[01/Aug/2018 21:13:37] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 21:13:38] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 21:13:38] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 21:13:38] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 21:13:38] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:13:38] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:13:40] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:13:40] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[01/Aug/2018 21:13:50] "GET /admin/stock/actividad/ HTTP/1.1" 200 6124
+[01/Aug/2018 21:13:50] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:13:53] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 27150
+[01/Aug/2018 21:13:53] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 21:13:53] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[01/Aug/2018 21:13:53] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[01/Aug/2018 21:13:53] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[01/Aug/2018 21:13:53] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:13:54] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 21:13:54] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 21:13:54] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:13:54] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:13:54] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:16:27] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:16:28] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:16:28] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:16:28] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:16:28] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:16:28] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:16:31] "GET /admin/stock/unidadmedida/ HTTP/1.1" 200 4925
+[01/Aug/2018 21:16:31] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:16:31] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:16:31] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 21:16:31] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 21:16:31] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 21:16:31] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 21:16:31] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 21:16:31] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 21:16:31] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 21:16:39] "GET /admin/stock/unidadmedida/add/ HTTP/1.1" 200 4180
+[01/Aug/2018 21:16:39] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:16:44] "POST /admin/stock/unidadmedida/add/ HTTP/1.1" 302 0
+[01/Aug/2018 21:16:44] "GET /admin/stock/unidadmedida/ HTTP/1.1" 200 5330
+[01/Aug/2018 21:16:44] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:16:44] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:18:33] "GET /admin/stock/ HTTP/1.1" 200 6162
+[01/Aug/2018 21:18:33] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 21:18:33] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[01/Aug/2018 21:18:33] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 21:18:33] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 21:27:08] "GET /admin/stock/actividad/ HTTP/1.1" 200 6124
+[01/Aug/2018 21:27:08] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 21:27:08] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 21:27:08] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 21:27:08] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 21:27:08] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:08] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:27:08] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:27:09] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 27150
+[01/Aug/2018 21:27:12] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:27:12] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:27:12] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:27:13] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:27:57] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 302 0
+[01/Aug/2018 21:27:57] "GET /admin/stock/actividad/ HTTP/1.1" 200 6290
+[01/Aug/2018 21:27:57] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:27:57] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:28:56] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 27094
+[01/Aug/2018 21:28:56] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:36:04] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 200 27370
+[01/Aug/2018 21:36:04] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:36:05] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/inlines.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:05] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:06] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:36:06] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:36:06] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[01/Aug/2018 21:36:06] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:06] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[01/Aug/2018 21:36:06] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:36:06] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:36:06] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:36:06] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+Internal Server Error: /admin/stock/actividad/1/change/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\views\decorators\cache.py",
+line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1650, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1577, in _changeform_view
+    change_message = self.construct_change_message(request, form, formsets, add)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1056, in construct_change_message
+    return construct_change_message(form, formsets, add)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\utils.py", line 517, in construct_change_message
+    'object': str(added_object),
+  File "D:\gringo\stock\models.py", line 105, in __str__
+    return self.nombre
+AttributeError: 'Transaccion' object has no attribute 'nombre'
+[01/Aug/2018 21:36:25] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 500 123333
+[01/Aug/2018 21:38:51] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 27094
+[01/Aug/2018 21:38:51] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:39:48] "GET /admin/stock/actividad/1/history/ HTTP/1.1" 200 2529
+[01/Aug/2018 21:39:58] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 27094
+[01/Aug/2018 21:39:59] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:40:19] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 302 0
+[01/Aug/2018 21:40:19] "GET /admin/stock/actividad/ HTTP/1.1" 200 6286
+[01/Aug/2018 21:40:19] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[01/Aug/2018 21:40:19] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[01/Aug/2018 21:40:19] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:40:20] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[01/Aug/2018 21:40:36] "GET /admin/stock/actividad/?fecha_inicio__gte=2018-07-26&fecha_inicio__lt=2018-08-03 HTTP/1.1" 200 6710
+[01/Aug/2018 21:40:36] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 003
+CommandError: Cannot find a migration matching '003' from app 'stock'.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  Rendering model states... DONE
+  Unapplying stock.0004_auto_20180801_2055... OK
+
+D:\gringo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   stock/models.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        stock/migrations/0004_auto_20180801_2055.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\gringo> cd stock
+
+D:\gringo\stock>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 1E77-B220
+
+ Directorio de D:\gringo\stock
+
+01/08/2018  08:45 p. m.    <DIR>          .
+01/08/2018  08:45 p. m.    <DIR>          ..
+04/07/2018  07:28 p. m.               877 admin.py
+04/07/2018  07:28 p. m.                90 apps.py
+01/08/2018  08:55 p. m.    <DIR>          migrations
+01/08/2018  09:07 p. m.             3.611 models.py
+04/07/2018  07:28 p. m.                63 tests.py
+04/07/2018  07:28 p. m.                66 views.py
+04/07/2018  07:28 p. m.                 0 __init__.py
+01/08/2018  09:07 p. m.    <DIR>          __pycache__
+               6 archivos          4.707 bytes
+               4 dirs  745.543.913.472 bytes libres
+
+D:\gringo\stock>cd migrations
+
+D:\gringo\stock\migrations>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 1E77-B220
+
+ Directorio de D:\gringo\stock\migrations
+
+01/08/2018  08:55 p. m.    <DIR>          .
+01/08/2018  08:55 p. m.    <DIR>          ..
+04/07/2018  07:28 p. m.             6.039 0001_initial.py
+04/07/2018  07:28 p. m.             1.499 0002_auto_20180614_0004.py
+04/07/2018  07:28 p. m.             1.274 0003_auto_20180627_2237.py
+01/08/2018  08:55 p. m.               648 0004_auto_20180801_2055.py
+04/07/2018  07:28 p. m.                 0 __init__.py
+01/08/2018  08:55 p. m.    <DIR>          __pycache__
+               5 archivos          9.460 bytes
+               3 dirs  745.543.913.472 bytes libres
+
+D:\gringo\stock\migrations>rm 0004_auto_20180801_2055.py
+"rm" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\gringo\stock\migrations>del 0004_auto_20180801_2055.py
+
+D:\gringo\stock\migrations>cd..
+
+D:\gringo\stock>cd..
+
+D:\gringo>git pull
+fatal: unable to access 'https://github.com/tecnicatura-villa-el-libertador/gringo.git/': Could not resolve host: github.com
+
+D:\gringo>git pull
+remote: Counting objects: 10, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 10 (delta 6), reused 9 (delta 5), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+From https://github.com/tecnicatura-villa-el-libertador/gringo
+   1518d5b..fead505  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+        stock/models.py
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 1518d5b..fead505
+
+D:\gringo>git add .
+
+D:\gringo>git commit
+Aborting commit due to empty commit message.
+
+D:\gringo>git commit -m 'ff'
+[master 3c4143c] 'ff'
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+D:\gringo>git push
+To https://github.com/tecnicatura-villa-el-libertador/gringo.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/tecnicatura-villa-el-libertador/gringo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\gringo>git pull
+Auto-merging stock/models.py
+CONFLICT (content): Merge conflict in stock/models.py
+Automatic merge failed; fix conflicts and then commit the result.
+
+D:\gringo>git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 3 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+        new file:   requirement.txt
+        modified:   stock/admin.py
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   stock/models.py
+
+
+D:\gringo>git add .
+
+D:\gringo>git commit -am 'fix de merge'
+fatal: Paths with -a does not make sense.
+
+D:\gringo>git commit -m 'fix de merge'
+fatal: cannot do a partial commit during a merge.
+
+D:\gringo>git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 3 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        new file:   requirement.txt
+        modified:   stock/admin.py
+        modified:   stock/models.py
+
+
+D:\gringo>git commit
+[master b219d55] Merge branch 'master' of https://github.com/tecnicatura-villa-el-libertador/gringo
+
+D:\gringo>git push
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 787 bytes | 34.00 KiB/s, done.
+Total 8 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 5 local objects.
+To https://github.com/tecnicatura-villa-el-libertador/gringo.git
+   fead505..b219d55  master -> master
+
+D:\gringo>git pull
+Already up to date.
+
+D:\gringo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+D:\gringo>
