@@ -113,7 +113,7 @@ class Movimiento(TimeStampedModel):
     precio_dolar = models.DecimalField(max_digits=12, decimal_places=3)
 
     def __str__(self):
-        return self.nombre
+        return f'{self.tipo}: {self.producto} ({self.cantidad} {self.producto.unidad_medida})'
 
 
     def save(self, *args, **kwargs):

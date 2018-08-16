@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<table>
+	
+{% for producto, stock in tabla.items %}
+<tr>
+	<td>{{producto}}</td>
+	<td>{{stock}}</td>
+</tr>	
+{% endfor %}
+
+</table>
+
+</body>
+</html>
