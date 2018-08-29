@@ -117,6 +117,13 @@ class Movimiento(TimeStampedModel):
 
 
     def save(self, *args, **kwargs):
+        """Sobrecarga del metodo que se encarga de guardar el estado 
+        actual de la instancia Movimiento (a nivel python) a la 
+        base de datos. 
+
+        Antes de efectivamente guardar, calculamos si el valor cantidad debe
+        ser positivo o negativo en funcion del tipo de movimiento
+        """
         if not self.tipo.aumenta:
             self.cantidad = - abs(self.cantidad)
         else:
