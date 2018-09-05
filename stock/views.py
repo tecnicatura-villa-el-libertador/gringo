@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.db.models import Sum
-from .models import Movimiento, Producto
+from .models import Movimiento, Producto, Campaña
 
 
 # Create your views here.
@@ -10,7 +10,7 @@ def stock(request):
 		# buscamos el movimiento inicial mas nuevo, o el primero que exista
 		inicial = p.movimiento_set.filter(
 			es_inicial=True
-		).order_by('-fecha').first() or p.movimiento_set.order_by('-fecha').first()
+		).order_by('-fecha').first() or p.movimiento_set.order_by('fecha').first()
 		
 		if not inicial:
 			# si no hay movimientos, el stock para este producto es 0
@@ -18,13 +18,22 @@ def stock(request):
 			continue
 
 		# filtramos todos los movimientos asociados al producto posteriores al inicial
-		nuevos = p.movimiento_set.filter(fecha__gt=inicial.fecha)
-		import ipdb
-		ipdb.set_trace()
-		# sumamos cantidad inicial mas la sumatoria de cantidades de los nuevos movimientos
-		cantidad_nuevos = nuevos.aggregate(total=Sum('cantidad'))['total']
-		if not cantidad_nuevos:
-			cantidad_nuevos = 0
-		total = inicial.cantidad + cantidad_nuevos
+		contables = p.movimiento_set.filter(fecha__gte=inicial.fecha)
+		# sumamos  cantidades a partir del movimiento incial
+		total = contables.aggregate(total=Sum('cantidad'))['total']
 		tabla[p] = total
 	return render(request, 'stock/stock.html', {'tabla': tabla})
+
+def campaña(request):
+	tabla = {}
+	for cmp in Campaña.objects.all():
+		# Datos de la campaña...
+		# calcular cantidad*precio_peso, cantidad*precio_dolar
+		total = Movimiento.objects.filter(
+				actividad__campaña=cmp
+			).aggregate(total_pesos=Sum('precio_peso'), 
+						total_dolares=Sum('precio_dolar'))
+
+
+		tabla[cmp] = total
+	return render(request, 'stock/campaña.html', {'tabla': tabla})

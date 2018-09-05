@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<table>
+	
+{% for campaña, totales in tabla.items %}
+<tr>
+	<td>{{campaña}}</td>
+	<td>$ {{totales.total_pesos}}</td>
+	<td>u$s {{totales.total_dolares}}</td>
+</tr>	
+{% endfor %}
+
+</table>
+
+</body>
+</html>
