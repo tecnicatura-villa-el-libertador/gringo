@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.db.models import Sum
-from .models import Movimiento, Producto, Campaña
+from .models import Movimiento, Producto, Campaña, CategoriaProducto
 
 
 # Create your views here.
@@ -37,3 +37,14 @@ def campaña(request):
 
 		tabla[cmp] = total
 	return render(request, 'stock/campaña.html', {'tabla': tabla})
+
+
+def mov_gral (request):
+	query   = Movimiento.objects.all().filter()	
+	querytp = CategoriaProducto.objects.all()
+
+	return render(request, 'stock/mov_gral.html', {'tabla': query ,'tipoprd': querytp}   )
+
+
+
+

@@ -20,5 +20,6 @@ from stock import views
 urlpatterns = [
 	path('stock/', views.stock),
 	path('campaña/', views.campaña),
+	path('mov_gral/', views.mov_gral),	
     path('admin/', admin.site.urls),
 ]
