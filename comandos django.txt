@@ -1,0 +1,1573 @@
+﻿
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+
+D:\>git clone https://github.com/django/django.git
+D:\>cd django
+D:\django>git checkout 2.1
+D:\django>pip install .
+D:\django>easy_install
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts> pip3
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>pip3 --help
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>python -m pip install django
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>python -m pip install django-model-utils
+
+
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py createsuperuser
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  Rendering model states... DONE
+  Unapplying stock.0004_auto_20180801_2055... OK
+
+
+D:\gringo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   stock/models.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        stock/migrations/0004_auto_20180801_2055.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+D:\gringo\stock\migrations>del 0004_auto_20180801_2055.py
+
+D:\gringo>git pull
+remote: Counting objects: 10, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 10 (delta 6), reused 9 (delta 5), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+From https://github.com/tecnicatura-villa-el-libertador/gringo
+   1518d5b..fead505  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+        stock/models.py
+
+D:\gringo>git commit -m 'fix de merge'
+fatal: cannot do a partial commit during a merge.
+
+-Parados en la branch correcta:
+git checkout -b  "nombre rama"   <<  creo la rama
+git checkout "nombre rama"   <<  me muevo a la rama esa
+git pull
+git rebase master  <<mueve el puntero al head de la rama,  resolver conflictos si los hubiere.
+git push -f
+git checkout master
+git merge "nombre rama" 
+git push
+
+
+
+Microsoft Windows [Versión 10.0.16299.492]
+(c) 2017 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\usuario\Google Drive\Tecnicatura\REDES\Practicos 2018>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 60C3-8342
+
+ Directorio de C:\Users\usuario\Google Drive\Tecnicatura\REDES\Practicos 2018
+
+07/08/2018  05:17 p. m.    <DIR>          .
+07/08/2018  05:17 p. m.    <DIR>          ..
+19/06/2018  09:41 p. m.             1.335 1client.py
+21/06/2018  07:32 p. m.             1.414 1server.py
+07/08/2018  05:48 p. m.               480 2clientechat.py
+07/08/2018  04:30 p. m.             1.497 2clientechatv3.py
+07/08/2018  04:35 p. m.               607 2clientechatv4.py
+07/08/2018  05:14 p. m.               385 2clientechatv5.py
+07/08/2018  04:41 p. m.            80.560 2clientechatvHTML.py
+07/08/2018  04:10 p. m.             1.515 2clientev1.py
+07/08/2018  05:48 p. m.               600 2serverchat.py
+07/08/2018  04:43 p. m.            48.361 2serverchatHTML.py
+07/08/2018  04:31 p. m.             2.777 2serverchatv3.py
+07/08/2018  04:41 p. m.             1.140 2serverchatv4.py
+07/08/2018  05:13 p. m.               787 2serverchatv5.py
+07/08/2018  04:13 p. m.             2.869 2serverv1.py
+05/07/2018  09:42 p. m.             1.434 FtpCliente.py
+07/08/2018  03:11 p. m.             2.004 FtpServer.py
+07/08/2018  04:46 p. m.               615 hilos.py
+19/04/2018  07:05 a. m.               467 param.py
+19/06/2018  09:05 p. m.               446 Practico 4 hilos.py
+24/03/2017  12:17 a. m.            47.614 Practico2.pdf
+16/05/2018  07:15 a. m.            41.663 Practico3.pdf
+29/06/2017  07:03 a. m.            64.003 Practico4.pdf
+              22 archivos        302.573 bytes
+               2 dirs  168.199.151.616 bytes libres
+
+C:\Users\usuario\Google Drive\Tecnicatura\REDES\Practicos 2018>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe: can't open file 'manage.py': [Errno 2] No such file or directory
+
+C:\Users\usuario\Google Drive\Tecnicatura\REDES\Practicos 2018>cd..
+
+C:\Users\usuario\Google Drive\Tecnicatura\REDES>cd..
+
+C:\Users\usuario\Google Drive\Tecnicatura>cd..
+
+C:\Users\usuario\Google Drive>cd.
+
+C:\Users\usuario\Google Drive>
+C:\Users\usuario\Google Drive>c:
+
+C:\Users\usuario\Google Drive>d:
+
+D:\>cd gringo
+
+D:\gringo>dir
+ El volumen de la unidad D es Nuevo vol
+ El número de serie del volumen es: 1E77-B220
+
+ Directorio de D:\gringo
+
+15/08/2018  06:41 p. m.    <DIR>          .
+15/08/2018  06:41 p. m.    <DIR>          ..
+04/07/2018  07:28 p. m.               464 .gitignore
+09/08/2018  09:42 p. m.             2.953 comandos django.txt
+01/08/2018  09:45 p. m.           212.992 db.sqlite3
+04/07/2018  07:28 p. m.    <DIR>          fixtures
+01/08/2018  08:45 p. m.    <DIR>          gringo
+04/07/2018  07:28 p. m.               553 manage.py
+01/08/2018  09:52 p. m.                42 requirement.txt
+01/08/2018  09:52 p. m.    <DIR>          stock
+               5 archivos        217.004 bytes
+               5 dirs  745.522.614.272 bytes libres
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  No migrations to apply.
+  Your models have changes that are not yet reflected in a migration, and so won't be applied.
+  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.
+
+D:\gringo>git checkout dev
+error: pathspec 'dev' did not match any file(s) known to git.
+
+D:\gringo>git push
+To https://github.com/tecnicatura-villa-el-libertador/gringo.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/tecnicatura-villa-el-libertador/gringo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\gringo>git pull
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 9 (delta 6), reused 9 (delta 6), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/tecnicatura-villa-el-libertador/gringo
+   2637a18..a2f2634  master     -> origin/master
+Updating 2637a18..a2f2634
+Fast-forward
+ .gitignore      | 2 ++
+ stock/models.py | 5 +++--
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+D:\gringo>git checkout dev
+error: pathspec 'dev' did not match any file(s) known to git.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  No migrations to apply.
+  Your models have changes that are not yet reflected in a migration, and so won't be applied.
+  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+Migrations for 'stock':
+  stock\migrations\0004_auto_20180815_1848.py
+    - Create model Movimiento
+    - Create model TipoMovimiento
+    - Remove field actividad from transaccion
+    - Remove field producto from transaccion
+    - Add field hectareas to lote
+    - Alter field nombre on campaña
+    - Delete model Transaccion
+    - Add field tipo to movimiento
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): stock.
+Run 'python manage.py migrate' to apply them.
+August 15, 2018 - 18:49:32
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Aug/2018 18:50:20] "GET / HTTP/1.1" 200 16379
+[15/Aug/2018 18:50:20] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[15/Aug/2018 18:50:21] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[15/Aug/2018 18:50:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[15/Aug/2018 18:50:21] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+Not Found: /favicon.ico
+[15/Aug/2018 18:50:21] "GET /favicon.ico HTTP/1.1" 404 1972
+
+D:\gringo>
+D:\gringo>
+D:\gringo>
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): stock.
+Run 'python manage.py migrate' to apply them.
+August 15, 2018 - 18:51:32
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Aug/2018 18:58:13] "GET / HTTP/1.1" 200 16379
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate 0003
+CommandError: App '0003' does not have migrations.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  No migrations to apply.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  No migrations to apply.
+
+D:\gringo>python
+Python 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+^C
+D:\gringo>
+D:\gringo>python 3
+python: can't open file '3': [Errno 2] No such file or directory
+
+D:\gringo>python3
+"python3" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\gringo>python36
+"python36" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\gringo>python365
+"python365" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\gringo>python3.6
+"python3.6" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  No migrations to apply.
+
+D:\gringo>git pull
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 9 (delta 5), reused 9 (delta 5), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/tecnicatura-villa-el-libertador/gringo
+   a2f2634..a3814f0  master     -> origin/master
+Updating a2f2634..a3814f0
+Fast-forward
+ stock/migrations/0004_auto_20180704_2246.py | 23 +++++++++++
+ stock/migrations/0005_auto_20180704_2327.py | 59 +++++++++++++++++++++++++++++
+ 2 files changed, 82 insertions(+)
+ create mode 100644 stock/migrations/0004_auto_20180704_2246.py
+ create mode 100644 stock/migrations/0005_auto_20180704_2327.py
+
+D:\gringo>git pull
+Already up to date.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+CommandError: Conflicting migrations detected; multiple leaf nodes in the migration graph: (0004_auto_20180815_1848, 0005_auto_20180704_2327 in stock).
+To fix them run 'python manage.py makemigrations --merge'
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrations --merge
+Unknown command: 'migrations'. Did you mean showmigrations?
+Type 'manage.py help' for usage.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations --merge
+Merging stock
+  Branch 0004_auto_20180815_1848
+    - Create model Movimiento
+    - Create model TipoMovimiento
+    - Remove field actividad from transaccion
+    - Remove field producto from transaccion
+    - Add field hectareas to lote
+    - Alter field nombre on campaña
+    - Delete model Transaccion
+    - Add field tipo to movimiento
+  Branch 0005_auto_20180704_2327
+    - Add field hectareas to lote
+    - Alter field nombre on campaña
+    - Create model Movimiento
+    - Create model TipoMovimiento
+    - Remove field actividad from transaccion
+    - Remove field producto from transaccion
+    - Delete model Transaccion
+    - Add field tipo to movimiento
+
+Merging will only work if the operations printed above do not conflict
+with each other (working on different fields or models)
+Do you want to merge these migration branches? [y/N] y
+
+Created new merge migration D:\gringo\stock\migrations\0006_merge_20180815_1929.py
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 316, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 353, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\commands\makemigrations.py", line 143, in handle
+    loader.project_state(),
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\loader.py", line 319, in project_state
+    return self.graph.make_state(nodes=nodes, at_end=at_end, real_apps=list(self.unmigrated_apps))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\graph.py", line 378, in make_state
+    project_state = self.nodes[node].mutate_state(project_state, preserve=False)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\migration.py", line 87, in mutate_state
+    operation.state_forwards(self.app_label, new_state)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\operations\fields.py", line 137, in state_forwards
+    for name, instance in state.models[app_label, self.model_name_lower].fields:
+KeyError: ('stock', 'transaccion')
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 316, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 353, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\commands\makemigrations.py", line 143, in handle
+    loader.project_state(),
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\loader.py", line 319, in project_state
+    return self.graph.make_state(nodes=nodes, at_end=at_end, real_apps=list(self.unmigrated_apps))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\graph.py", line 378, in make_state
+    project_state = self.nodes[node].mutate_state(project_state, preserve=False)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\migration.py", line 87, in mutate_state
+    operation.state_forwards(self.app_label, new_state)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\operations\fields.py", line 137, in state_forwards
+    for name, instance in state.models[app_label, self.model_name_lower].fields:
+KeyError: ('stock', 'transaccion')
+
+D:\gringo>
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 316, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 353, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\commands\makemigrations.py", line 143, in handle
+    loader.project_state(),
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\loader.py", line 319, in project_state
+    return self.graph.make_state(nodes=nodes, at_end=at_end, real_apps=list(self.unmigrated_apps))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\graph.py", line 378, in make_state
+    project_state = self.nodes[node].mutate_state(project_state, preserve=False)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\migration.py", line 87, in mutate_state
+    operation.state_forwards(self.app_label, new_state)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\operations\fields.py", line 137, in state_forwards
+    for name, instance in state.models[app_label, self.model_name_lower].fields:
+KeyError: ('stock', 'transaccion')
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  Applying stock.0004_auto_20180704_2246... OK
+  Applying stock.0005_auto_20180704_2327... OK
+  Applying stock.0004_auto_20180815_1848...Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 83, in _execute
+    return self.cursor.execute(sql)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 294, in execute
+    return Database.Cursor.execute(self, query)
+sqlite3.OperationalError: table "stock_movimiento" already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 316, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 353, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\commands\migrate.py", line 203, in handle
+    fake_initial=fake_initial,
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\executor.py", line 117, in migrate
+    state = self._migrate_all_forwards(state, plan, full_plan, fake=fake, fake_initial=fake_initial)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\executor.py", line 147, in _migrate_all_forwards
+    state = self.apply_migration(state, migration, fake=fake, fake_initial=fake_initial)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\executor.py", line 244, in apply_migration
+    state = migration.apply(state, schema_editor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\migration.py", line 124, in apply
+    operation.database_forwards(self.app_label, schema_editor, old_state, project_state)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\operations\models.py", line 91, in database_forwards
+    schema_editor.create_model(model)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\base\schema.py", line 312, in create_model
+    self.execute(sql, params or None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\base\schema.py", line 133, in execute
+    cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 83, in _execute
+    return self.cursor.execute(sql)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 294, in execute
+    return Database.Cursor.execute(self, query)
+django.db.utils.OperationalError: table "stock_movimiento" already exists
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 316, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 353, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\commands\makemigrations.py", line 143, in handle
+    loader.project_state(),
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\loader.py", line 319, in project_state
+    return self.graph.make_state(nodes=nodes, at_end=at_end, real_apps=list(self.unmigrated_apps))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\graph.py", line 378, in make_state
+    project_state = self.nodes[node].mutate_state(project_state, preserve=False)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\migration.py", line 87, in mutate_state
+    operation.state_forwards(self.app_label, new_state)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\operations\fields.py", line 137, in state_forwards
+    for name, instance in state.models[app_label, self.model_name_lower].fields:
+KeyError: ('stock', 'transaccion')
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate --list
+usage: manage.py migrate [-h] [--noinput] [--database DATABASE] [--fake]
+                         [--fake-initial] [--run-syncdb] [--version]
+                         [-v {0,1,2,3}] [--settings SETTINGS]
+                         [--pythonpath PYTHONPATH] [--traceback] [--no-color]
+                         [app_label] [migration_name]
+manage.py migrate: error: unrecognized arguments: --list
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  Applying stock.0004_auto_20180815_1848...Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 83, in _execute
+    return self.cursor.execute(sql)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 294, in execute
+    return Database.Cursor.execute(self, query)
+sqlite3.OperationalError: table "stock_movimiento" already exists
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 316, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 353, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\commands\migrate.py", line 203, in handle
+    fake_initial=fake_initial,
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\executor.py", line 117, in migrate
+    state = self._migrate_all_forwards(state, plan, full_plan, fake=fake, fake_initial=fake_initial)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\executor.py", line 147, in _migrate_all_forwards
+    state = self.apply_migration(state, migration, fake=fake, fake_initial=fake_initial)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\executor.py", line 244, in apply_migration
+    state = migration.apply(state, schema_editor)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\migration.py", line 124, in apply
+    operation.database_forwards(self.app_label, schema_editor, old_state, project_state)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\operations\models.py", line 91, in database_forwards
+    schema_editor.create_model(model)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\base\schema.py", line 312, in create_model
+    self.execute(sql, params or None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\base\schema.py", line 133, in execute
+    cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 83, in _execute
+    return self.cursor.execute(sql)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 294, in execute
+    return Database.Cursor.execute(self, query)
+django.db.utils.OperationalError: table "stock_movimiento" already exists
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): stock.
+Run 'python manage.py migrate' to apply them.
+August 15, 2018 - 20:16:14
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Aug/2018 20:16:46] "GET /admin HTTP/1.1" 301 0
+[15/Aug/2018 20:16:46] "GET /admin/ HTTP/1.1" 302 0
+[15/Aug/2018 20:16:46] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1863
+[15/Aug/2018 20:16:47] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[15/Aug/2018 20:16:47] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17976
+[15/Aug/2018 20:16:47] "GET /static/admin/css/base.css HTTP/1.1" 200 16225
+[15/Aug/2018 20:16:49] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2103
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py createsuperuser
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): stock.
+Run 'python manage.py migrate' to apply them.
+Nombre de usuario (leave blank to use 'usuario'): r
+Dirección de email:
+Password:
+Password (again):
+La contraseña tiene un valor demasiado común.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): stock.
+Run 'python manage.py migrate' to apply them.
+August 15, 2018 - 20:17:37
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Aug/2018 20:17:46] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[15/Aug/2018 20:17:47] "GET /admin/ HTTP/1.1" 200 7480
+[15/Aug/2018 20:17:47] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[15/Aug/2018 20:17:47] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[15/Aug/2018 20:17:47] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[15/Aug/2018 20:17:58] "GET /admin/stock/actividad/ HTTP/1.1" 200 6091
+[15/Aug/2018 20:17:58] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[15/Aug/2018 20:17:58] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[15/Aug/2018 20:17:58] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:17:58] "GET /static/admin/js/core.js HTTP/1.1" 200 7134
+[15/Aug/2018 20:17:58] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[15/Aug/2018 20:17:58] "GET /static/admin/js/actions.js HTTP/1.1" 200 6538
+[15/Aug/2018 20:17:58] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8972
+[15/Aug/2018 20:17:58] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271751
+[15/Aug/2018 20:17:58] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[15/Aug/2018 20:17:58] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[15/Aug/2018 20:17:58] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[15/Aug/2018 20:18:01] "GET /admin/ HTTP/1.1" 200 7480
+[15/Aug/2018 20:18:02] "GET /admin/stock/campa%C3%B1a/ HTTP/1.1" 200 5386
+[15/Aug/2018 20:18:02] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:18:04] "GET /admin/ HTTP/1.1" 200 7480
+[15/Aug/2018 20:18:05] "GET /admin/stock/categoriaproducto/ HTTP/1.1" 200 4999
+[15/Aug/2018 20:18:05] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:18:08] "GET /admin/ HTTP/1.1" 200 7480
+[15/Aug/2018 20:18:12] "GET /admin/stock/producto/ HTTP/1.1" 200 4908
+[15/Aug/2018 20:18:12] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:18:16] "GET /admin/ HTTP/1.1" 200 7480
+[15/Aug/2018 20:18:17] "GET /admin/stock/tipomovimiento/ HTTP/1.1" 200 3275
+[15/Aug/2018 20:18:17] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:18:21] "GET /admin/ HTTP/1.1" 200 7480
+
+D:\gringo>subl .
+"subl" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+D:\gringo>
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py showmigrations
+admin
+ [X] 0001_initial
+ [X] 0002_logentry_remove_auto_add
+ [X] 0003_logentry_add_action_flag_choices
+auth
+ [X] 0001_initial
+ [X] 0002_alter_permission_name_max_length
+ [X] 0003_alter_user_email_max_length
+ [X] 0004_alter_user_username_opts
+ [X] 0005_alter_user_last_login_null
+ [X] 0006_require_contenttypes_0002
+ [X] 0007_alter_validators_add_error_messages
+ [X] 0008_alter_user_username_max_length
+ [X] 0009_alter_user_last_name_max_length
+contenttypes
+ [X] 0001_initial
+ [X] 0002_remove_content_type_name
+sessions
+ [X] 0001_initial
+stock
+ [X] 0001_initial
+ [X] 0002_auto_20180614_0004
+ [X] 0003_auto_20180627_2237
+ [X] 0004_auto_20180704_2246
+ [X] 0005_auto_20180704_2327
+ [ ] 0004_auto_20180815_1848
+ [ ] 0006_merge_20180815_1929
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py dumpdata auth.User stock.Cultivo stock.Lote stock.Campaña stock.TipoActivida stock.Actividad stock.CategoriaProducto stock.UnidadMedida stock.Producto stock.TipoMovimiento stock.Movimiento > data.json
+CommandError: Unknown model: stock.TipoActivida
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py dumpdata auth.User stock.Cultivo stock.Lote stock.Campaña stock.TipoActividad stock.Actividad stock.CategoriaProducto stock.UnidadMedida stock.Producto stock.TipoMovimiento stock.Movimiento > data.json
+CommandError: Unable to serialize database: no such column: stock_movimiento.fecha
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py dumpdata auth.User stock.Cultivo stock.Lote stock.Campaña stock.TipoActividad stock.Actividad stock.CategoriaProducto stock.UnidadMedida stock.Producto stock.TipoMovimiento stock.Movimiento > data.json
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  Rendering model states... DONE
+  Unapplying stock.0005_auto_20180704_2327... OK
+  Unapplying stock.0004_auto_20180704_2246... OK
+
+D:\gringo>git reset --hard origin/master
+HEAD is now at a3814f0 Merge branch 'master' of github.com:tecnicatura-villa-el-libertador/gringo
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py showmigrations
+admin
+ [X] 0001_initial
+ [X] 0002_logentry_remove_auto_add
+ [X] 0003_logentry_add_action_flag_choices
+auth
+ [X] 0001_initial
+ [X] 0002_alter_permission_name_max_length
+ [X] 0003_alter_user_email_max_length
+ [X] 0004_alter_user_username_opts
+ [X] 0005_alter_user_last_login_null
+ [X] 0006_require_contenttypes_0002
+ [X] 0007_alter_validators_add_error_messages
+ [X] 0008_alter_user_username_max_length
+ [X] 0009_alter_user_last_name_max_length
+contenttypes
+ [X] 0001_initial
+ [X] 0002_remove_content_type_name
+sessions
+ [X] 0001_initial
+stock
+ [X] 0001_initial
+ [X] 0002_auto_20180614_0004
+ [X] 0003_auto_20180627_2237
+ [ ] 0004_auto_20180704_2246
+ [ ] 0005_auto_20180704_2327
+ [ ] 0004_auto_20180815_1848
+ [ ] 0006_merge_20180815_1929
+
+D:\gringo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        comandos django.txt
+        data.json
+        stock/migrations/0004_auto_20180815_1848.py
+        stock/migrations/0006_merge_20180815_1929.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\gringo>copy "comandos django.txt" ..
+        1 archivo(s) copiado(s).
+
+D:\gringo>git clean -f
+Removing comandos django.txt
+Removing data.json
+Removing stock/migrations/0004_auto_20180815_1848.py
+Removing stock/migrations/0006_merge_20180815_1929.py
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  Applying stock.0004_auto_20180704_2246... OK
+  Applying stock.0005_auto_20180704_2327... OK
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 20:30:43
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py shell
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> ^Z
+
+now exiting InteractiveConsole...
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe -m pip install ipython
+Collecting ipython
+  Downloading https://files.pythonhosted.org/packages/f7/62/2fef7db3a7b75e8099c3d9db2630ae5ba0b9eefefd91f7497862393d90e8/ipython-6.5.0-py3-none-any.whl (748kB)
+    100% |████████████████████████████████| 757kB 163kB/s
+Collecting jedi>=0.10 (from ipython)
+  Downloading https://files.pythonhosted.org/packages/3d/68/8bbf0ef969095a13ba0d4c77c1945bd86e9811960d052510551d29a2f23b/jedi-0.12.1-py2.py3-none-any.whl (174kB)
+    100% |████████████████████████████████| 184kB 568kB/s
+Collecting pickleshare (from ipython)
+  Downloading https://files.pythonhosted.org/packages/9f/17/daa142fc9be6b76f26f24eeeb9a138940671490b91cb5587393f297c8317/pickleshare-0.7.4-py2.py3-none-any.whl
+Collecting pygments (from ipython)
+  Downloading https://files.pythonhosted.org/packages/02/ee/b6e02dc6529e82b75bb06823ff7d005b141037cb1416b10c6f00fc419dca/Pygments-2.2.0-py2.py3-none-any.whl (841kB)
+    100% |████████████████████████████████| 849kB 698kB/s
+Collecting decorator (from ipython)
+  Downloading https://files.pythonhosted.org/packages/bc/bb/a24838832ba35baf52f32ab1a49b906b5f82fb7c76b2f6a7e35e140bac30/decorator-4.3.0-py2.py3-none-any.whl
+Collecting traitlets>=4.2 (from ipython)
+  Downloading https://files.pythonhosted.org/packages/93/d6/abcb22de61d78e2fc3959c964628a5771e47e7cc60d53e9342e21ed6cc9a/traitlets-4.3.2-py2.py3-none-any.whl (74kB)
+    100% |████████████████████████████████| 81kB 620kB/s
+Requirement already satisfied: setuptools>=18.5 in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython) (39.0.1)
+Collecting colorama; sys_platform == "win32" (from ipython)
+  Downloading https://files.pythonhosted.org/packages/db/c8/7dcf9dbcb22429512708fe3a547f8b6101c0d02137acbd892505aee57adf/colorama-0.3.9-py2.py3-none-any.whl
+Collecting prompt-toolkit<2.0.0,>=1.0.15 (from ipython)
+  Downloading https://files.pythonhosted.org/packages/04/d1/c6616dd03701e7e2073f06d5c3b41b012256e42b72561f16a7bd86dd7b43/prompt_toolkit-1.0.15-py3-none-any.whl (247kB)
+    100% |████████████████████████████████| 256kB 296kB/s
+Collecting simplegeneric>0.8 (from ipython)
+  Downloading https://files.pythonhosted.org/packages/3d/57/4d9c9e3ae9a255cd4e1106bb57e24056d3d0709fc01b2e3e345898e49d5b/simplegeneric-0.8.1.zip
+Collecting backcall (from ipython)
+  Downloading https://files.pythonhosted.org/packages/84/71/c8ca4f5bb1e08401b916c68003acf0a0655df935d74d93bf3f3364b310e0/backcall-0.1.0.tar.gz
+Collecting parso>=0.3.0 (from jedi>=0.10->ipython)
+  Downloading https://files.pythonhosted.org/packages/09/51/9c48a46334be50c13d25a3afe55fa05c445699304c5ad32619de953a2305/parso-0.3.1-py2.py3-none-any.whl (88kB)
+    100% |████████████████████████████████| 92kB 538kB/s
+Collecting ipython-genutils (from traitlets>=4.2->ipython)
+  Downloading https://files.pythonhosted.org/packages/fa/bc/9bd3b5c2b4774d5f33b2d544f1460be9df7df2fe42f352135381c347c69a/ipython_genutils-0.2.0-py2.py3-none-any.whl
+Collecting six (from traitlets>=4.2->ipython)
+  Downloading https://files.pythonhosted.org/packages/67/4b/141a581104b1f6397bfa78ac9d43d8ad29a7ca43ea90a2d863fe3056e86a/six-1.11.0-py2.py3-none-any.whl
+Collecting wcwidth (from prompt-toolkit<2.0.0,>=1.0.15->ipython)
+  Downloading https://files.pythonhosted.org/packages/7e/9f/526a6947247599b084ee5232e4f9190a38f398d7300d866af3ab571a5bfe/wcwidth-0.1.7-py2.py3-none-any.whl
+Building wheels for collected packages: simplegeneric, backcall
+  Running setup.py bdist_wheel for simplegeneric ... done
+  Stored in directory: C:\Users\usuario\AppData\Local\pip\Cache\wheels\a9\28\53\f24776b4c5bcbe91aaf1f1e247bd6fadd17191aa12fac63902
+  Running setup.py bdist_wheel for backcall ... done
+  Stored in directory: C:\Users\usuario\AppData\Local\pip\Cache\wheels\98\b0\dd\29e28ff615af3dda4c67cab719dd51357597eabff926976b45
+Successfully built simplegeneric backcall
+Installing collected packages: parso, jedi, pickleshare, pygments, decorator, ipython-genutils, six, traitlets, colorama, wcwidth, prompt-toolkit, simplegeneric, backcall, ipython
+  The script pygmentize.exe is installed in 'C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  The scripts iptest.exe, iptest3.exe, ipython.exe and ipython3.exe are installed in 'C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed backcall-0.1.0 colorama-0.3.9 decorator-4.3.0 ipython-6.5.0 ipython-genutils-0.2.0 jedi-0.12.1 parso-0.3.1 pickleshare-0.7.4 prompt-toolkit-1.0.15 pygments-2.2.0 simplegeneric-0.8.1 six-1.11.0 traitlets-4.3.2 wcwidth-0.1.7
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py shell
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.5.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from stock.models import *
+
+In [2]: Movimiento.objects.all()
+Out[2]: ---------------------------------------------------------------------------
+OperationalError                          Traceback (most recent call last)
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py in _execute(self, sql, params, *ignored_wrapper_args)
+     84             else:
+---> 85                 return self.cursor.execute(sql, params)
+     86
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py in execute(self, query, params)
+    295         query = self.convert_query(query)
+--> 296         return Database.Cursor.execute(self, query, params)
+    297
+
+OperationalError: no such column: stock_movimiento.fecha
+
+The above exception was the direct cause of the following exception:
+
+OperationalError                          Traceback (most recent call last)
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\IPython\core\formatters.py in __call__(self, obj)
+    700                 type_pprinters=self.type_printers,
+    701                 deferred_pprinters=self.deferred_printers)
+--> 702             printer.pretty(obj)
+    703             printer.flush()
+    704             return stream.getvalue()
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\IPython\lib\pretty.py in pretty(self, obj)
+    398                         if cls is not object \
+    399                                 and callable(cls.__dict__.get('__repr__')):
+--> 400                             return _repr_pprint(obj, self, cycle)
+    401
+    402             return _default_pprint(obj, self, cycle)
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\IPython\lib\pretty.py in _repr_pprint(obj, p, cycle)
+    693     """A pprint that just redirects to the normal repr function."""
+    694     # Find newlines and replace them with p.break_()
+--> 695     output = repr(obj)
+    696     for idx,output_line in enumerate(output.splitlines()):
+    697         if idx:
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py in __repr__(self)
+    242
+    243     def __repr__(self):
+--> 244         data = list(self[:REPR_OUTPUT_SIZE + 1])
+    245         if len(data) > REPR_OUTPUT_SIZE:
+    246             data[-1] = "...(remaining elements truncated)..."
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py in __iter__(self)
+    266                - Responsible for turning the rows into model objects.
+    267         """
+--> 268         self._fetch_all()
+    269         return iter(self._result_cache)
+    270
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py in _fetch_all(self)
+   1181     def _fetch_all(self):
+   1182         if self._result_cache is None:
+-> 1183             self._result_cache = list(self._iterable_class(self))
+   1184         if self._prefetch_related_lookups and not self._prefetch_done:
+   1185             self._prefetch_related_objects()
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\query.py in __iter__(self)
+     52         # Execute the query. This will also fill compiler.select, klass_info,
+     53         # and annotations.
+---> 54         results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+     55         select, klass_info, annotation_col_map = (compiler.select, compiler.klass_info,
+     56                                                   compiler.annotation_col_map)
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\models\sql\compiler.py in execute_sql(self, result_type, chunked_fetch, chunk_size)
+   1059             cursor = self.connection.cursor()
+   1060         try:
+-> 1061             cursor.execute(sql, params)
+   1062         except Exception:
+   1063             # Might fail for server-side cursors (e.g. connection closed)
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py in execute(self, sql, params)
+     98         start = time()
+     99         try:
+--> 100             return super().execute(sql, params)
+    101         finally:
+    102             stop = time()
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py in execute(self, sql, params)
+     66
+     67     def execute(self, sql, params=None):
+---> 68         return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+     69
+     70     def executemany(self, sql, param_list):
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py in _execute_with_wrappers(self, sql, params, many, executor)
+     75         for wrapper in reversed(self.db.execute_wrappers):
+     76             executor = functools.partial(wrapper, executor)
+---> 77         return executor(sql, params, many, context)
+     78
+     79     def _execute(self, sql, params, *ignored_wrapper_args):
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py in _execute(self, sql, params, *ignored_wrapper_args)
+     83                 return self.cursor.execute(sql)
+     84             else:
+---> 85                 return self.cursor.execute(sql, params)
+     86
+     87     def _executemany(self, sql, param_list, *ignored_wrapper_args):
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\utils.py in __exit__(self, exc_type, exc_value, traceback)
+     87                 if dj_exc_type not in (DataError, IntegrityError):
+     88                     self.wrapper.errors_occurred = True
+---> 89                 raise dj_exc_value.with_traceback(traceback) from exc_value
+     90
+     91     def __call__(self, func):
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py in _execute(self, sql, params, *ignored_wrapper_args)
+     83                 return self.cursor.execute(sql)
+     84             else:
+---> 85                 return self.cursor.execute(sql, params)
+     86
+     87     def _executemany(self, sql, param_list, *ignored_wrapper_args):
+
+~\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py in execute(self, query, params)
+    294             return Database.Cursor.execute(self, query)
+    295         query = self.convert_query(query)
+--> 296         return Database.Cursor.execute(self, query, params)
+    297
+    298     def executemany(self, query, param_list):
+
+OperationalError: no such column: stock_movimiento.fecha
+
+In [3]:
+Do you really want to exit ([y]/n)?
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations stock
+You are trying to add a non-nullable field 'fecha' to movimiento without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> timezone.now
+Migrations for 'stock':
+  stock\migrations\0006_auto_20180815_2035.py
+    - Change Meta options on movimiento
+    - Add field fecha to movimiento
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  Applying stock.0006_auto_20180815_2035... OK
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py shell
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.5.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from stock.models import *
+
+In [2]: Movimiento.objects.all()
+Out[2]: <QuerySet []>
+
+In [3]:
+Do you really want to exit ([y]/n)?
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 20:37:03
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Aug/2018 20:37:35] "GET /admin/stock/actividad/ HTTP/1.1" 200 6091
+[15/Aug/2018 20:37:35] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:37:37] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 34673
+[15/Aug/2018 20:37:37] "GET /static/admin/css/forms.css HTTP/1.1" 200 8505
+[15/Aug/2018 20:37:37] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:37:37] "GET /static/admin/js/inlines.js HTTP/1.1" 200 13813
+[15/Aug/2018 20:37:37] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[15/Aug/2018 20:37:37] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20281
+[15/Aug/2018 20:37:37] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[15/Aug/2018 20:37:37] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[15/Aug/2018 20:37:37] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[15/Aug/2018 20:37:37] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[15/Aug/2018 20:37:38] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[15/Aug/2018 20:37:38] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[15/Aug/2018 20:37:54] "GET /admin/stock/tipomovimiento/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3575
+[15/Aug/2018 20:37:54] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:38:07] "POST /admin/stock/tipomovimiento/add/?_to_field=id&_popup=1 HTTP/1.1" 200 382
+[15/Aug/2018 20:38:07] "GET /static/admin/js/popup_response.js HTTP/1.1" 200 569
+[15/Aug/2018 20:38:11] "GET /admin/stock/tipomovimiento/1/change/?_to_field=id&_popup=1 HTTP/1.1" 200 3540
+[15/Aug/2018 20:38:11] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:38:16] "POST /admin/stock/tipomovimiento/1/change/?_to_field=id&_popup=1 HTTP/1.1" 200 452
+[15/Aug/2018 20:39:08] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 200 35175
+[15/Aug/2018 20:39:08] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+Internal Server Error: /admin/stock/actividad/1/change/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1650, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1577, in _changeform_view
+    change_message = self.construct_change_message(request, form, formsets, add)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\options.py", line 1056, in construct_change_message
+    return construct_change_message(form, formsets, add)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\contrib\admin\utils.py", line 517, in construct_change_message
+    'object': str(added_object),
+  File "D:\gringo\stock\models.py", line 116, in __str__
+    return self.nombre
+AttributeError: 'Movimiento' object has no attribute 'nombre'
+[15/Aug/2018 20:39:29] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 500 125229
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x0637A3D8>
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\autoreload.py", line 248, in raise_last_exception
+    raise _exception[1]
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\apps\registry.py", line 112, in populate
+    app_config.import_models()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\apps\config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\gringo\stock\models.py", line 116
+    return f'{self.tipo}: {self.producto} ({self.cantidad} {self.producto.unidad_medida})
+                                                                                        ^
+SyntaxError: EOL while scanning string literal
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 20:42:21
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Aug/2018 20:42:25] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 34821
+[15/Aug/2018 20:42:25] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:43:05] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 302 0
+[15/Aug/2018 20:43:05] "GET /admin/stock/actividad/ HTTP/1.1" 200 6283
+[15/Aug/2018 20:43:05] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:43:05] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[15/Aug/2018 20:43:09] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 41546
+[15/Aug/2018 20:43:10] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:43:38] "GET /admin/stock/tipomovimiento/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3575
+[15/Aug/2018 20:43:38] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 20:43:45] "POST /admin/stock/tipomovimiento/add/?_to_field=id&_popup=1 HTTP/1.1" 200 375
+[15/Aug/2018 20:44:18] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 302 0
+[15/Aug/2018 20:44:18] "GET /admin/stock/actividad/ HTTP/1.1" 200 6283
+[15/Aug/2018 20:44:18] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py shell
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.5.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from stock.models import *
+
+In [2]: Movimiento.objects.all()
+Out[2]: <QuerySet [<Movimiento: compra: semilla de soja x kilos (100.000 kilos)>, <Movimiento: consumo: semilla de soja x kilos (40.000 kilos)>]>
+
+In [3]: Producto.objects.all()
+Out[3]: <QuerySet [<Producto: ROUNDUP x LITROS>, <Producto: semilla de soja x kilos>, <Producto: sembradora x horas>]>
+
+In [4]: soja = Producto.objects.all()[1]
+
+In [5]: soja
+Out[5]: <Producto: semilla de soja x kilos>
+
+In [6]: Movimiento.objects.filter(producto=soja)
+Out[6]: <QuerySet [<Movimiento: compra: semilla de soja x kilos (100.000 kilos)>, <Movimiento: consumo: semilla de soja x kilos (40.000 kilos)>]>
+
+In [7]: qs = _
+
+In [8]: qs.query
+Out[8]: <django.db.models.sql.query.Query at 0x721d2d0>
+
+In [9]: print(qs.query)
+SELECT "stock_movimiento"."id", "stock_movimiento"."created", "stock_movimiento"."modified", "stock_movimiento"."producto_id", "stock_movimiento"."tipo_id", "stock_movimiento"."cantidad", "stock_movimiento"."descripcion", "stock_movimiento"."fecha", "stock_movimiento"."es_inicial", "stock_movimiento"."actividad_id", "stock_movimiento"."precio_peso", "stock_movimiento"."precio_dolar" FROM "stock_movimiento" WHERE "stock_movimiento"."producto_id" = 2
+
+In [10]: soja.movimiento_set.all()
+Out[10]: <QuerySet [<Movimiento: compra: semilla de soja x kilos (100.000 kilos)>, <Movimiento: consumo: semilla de soja x kilos (40.000 kilos)>]>
+
+In [11]: print(_.query)
+SELECT "stock_movimiento"."id", "stock_movimiento"."created", "stock_movimiento"."modified", "stock_movimiento"."producto_id", "stock_movimiento"."tipo_id", "stock_movimiento"."cantidad", "stock_movimiento"."descripcion", "stock_movimiento"."fecha", "stock_movimiento"."es_inicial", "stock_movimiento"."actividad_id", "stock_movimiento"."precio_peso", "stock_movimiento"."precio_dolar" FROM "stock_movimiento" WHERE "stock_movimiento"."producto_id" = 2
+
+In [12]: Movimiento.objects.filter(producto=soja, es_inicial=True)
+Out[12]: <QuerySet [<Movimiento: compra: semilla de soja x kilos (100.000 kilos)>]>
+
+In [13]: Movimiento.objects.filter(producto=soja, es_inicial=True).order_by('-fecha').first()
+Out[13]: <Movimiento: compra: semilla de soja x kilos (100.000 kilos)>
+
+In [14]: print(_.query)
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-14-333131d125d4> in <module>()
+----> 1 print(_.query)
+
+AttributeError: 'Movimiento' object has no attribute 'query'
+
+In [15]: es_inicial = Movimiento.objects.filter(producto=soja, es_inicial=True).order_by('-fecha').first()
+
+In [16]: es
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-16-431d709e148a> in <module>()
+----> 1 es
+
+NameError: name 'es' is not defined
+
+In [17]: Movimiento.objects.filter(producto=soja, es_inicial=False, fecha__gt=es_inicial.fecha)
+Out[17]: <QuerySet [<Movimiento: consumo: semilla de soja x kilos (40.000 kilos)>]>
+
+In [18]: sum(m.cantidad for m Movimiento.objects.filter(producto=soja, es_inicial=False, fecha__gt=es_inicial.fecha))
+  File "<ipython-input-18-9b86d2808438>", line 1
+    sum(m.cantidad for m Movimiento.objects.filter(producto=soja, es_inicial=False, fecha__gt=es_inicial.fecha))
+                                  ^
+SyntaxError: invalid syntax
+
+
+In [19]: sum(m.cantidad for m in Movimiento.objects.filter(producto=soja, es_inicial=False, fecha__gt=es_inicial.fecha))
+Out[19]: Decimal('40.000')
+
+In [20]: from django.db.models import Sum
+
+In [21]: Movimiento.objects.filter(producto=soja, es_inicial=False, fecha__gt=es_inicial.fecha).aggregate(Sum('cantidad')
+    ...: )
+Out[21]: {'cantidad__sum': Decimal('40')}
+
+In [22]: Movimiento.objects.filter(producto=soja, es_inicial=False, fecha__gt=es_inicial.fecha).aggregate(total=Sum('cant
+    ...: idad'))
+Out[22]: {'total': Decimal('40')}
+
+In [23]:
+Do you really want to exit ([y]/n)?
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x0611FAE0>
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\autoreload.py", line 225, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 379, in check
+    include_deployment_checks=include_deployment_checks,
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 366, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\checks\registry.py", line 71, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\checks\urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\checks\urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\urls\resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\utils\functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\urls\resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "D:\gringo\gringo\urls.py", line 22
+    path('admin/', admin.site.urls),
+       ^
+SyntaxError: invalid syntax
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 21:34:03
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\gringo\stock\views.py", line 11, in stock
+    inicial = p.movimientos_set.filter(
+AttributeError: 'Producto' object has no attribute 'movimientos_set'
+[15/Aug/2018 21:34:16] "GET /stock/ HTTP/1.1" 500 63630
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 21:34:43
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Aug/2018 21:34:45] "GET /stock/ HTTP/1.1" 200 271
+Not Found: /favicon.ico
+[15/Aug/2018 21:34:45] "GET /favicon.ico HTTP/1.1" 404 2078
+[15/Aug/2018 21:35:29] "GET /admin/ HTTP/1.1" 200 9025
+[15/Aug/2018 21:35:33] "GET /admin/stock/actividad/ HTTP/1.1" 200 6091
+[15/Aug/2018 21:35:33] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:35:42] "GET /admin/stock/actividad/add/ HTTP/1.1" 200 34664
+[15/Aug/2018 21:35:42] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:35:54] "GET /admin/stock/tipoactividad/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3096
+[15/Aug/2018 21:35:54] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:36:02] "POST /admin/stock/tipoactividad/add/?_to_field=id&_popup=1 HTTP/1.1" 200 378
+[15/Aug/2018 21:36:08] "GET /admin/stock/tipoactividad/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3096
+[15/Aug/2018 21:36:08] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:36:31] "POST /admin/stock/tipoactividad/add/?_to_field=id&_popup=1 HTTP/1.1" 200 395
+[15/Aug/2018 21:37:14] "GET /admin/stock/tipomovimiento/2/change/?_to_field=id&_popup=1 HTTP/1.1" 200 3533
+[15/Aug/2018 21:37:14] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:37:29] "POST /admin/stock/tipomovimiento/2/change/?_to_field=id&_popup=1 HTTP/1.1" 200 461
+[15/Aug/2018 21:38:14] "POST /admin/stock/actividad/add/ HTTP/1.1" 302 0
+[15/Aug/2018 21:38:14] "GET /admin/stock/actividad/ HTTP/1.1" 200 6842
+[15/Aug/2018 21:38:14] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:38:25] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 48644
+[15/Aug/2018 21:38:25] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:39:23] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 302 0
+[15/Aug/2018 21:39:23] "GET /admin/stock/actividad/ HTTP/1.1" 200 6860
+[15/Aug/2018 21:39:23] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:39:29] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 55412
+[15/Aug/2018 21:39:29] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:40:15] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 302 0
+[15/Aug/2018 21:40:15] "GET /admin/stock/actividad/ HTTP/1.1" 200 6860
+[15/Aug/2018 21:40:15] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:40:18] "GET /admin/stock/actividad/2/change/ HTTP/1.1" 200 41838
+[15/Aug/2018 21:40:18] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:41:17] "POST /admin/stock/actividad/2/change/ HTTP/1.1" 302 0
+[15/Aug/2018 21:41:17] "GET /admin/stock/actividad/ HTTP/1.1" 200 6844
+[15/Aug/2018 21:41:17] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:41:20] "GET /admin/stock/actividad/1/change/ HTTP/1.1" 200 62182
+[15/Aug/2018 21:41:20] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+[15/Aug/2018 21:41:57] "POST /admin/stock/actividad/1/change/ HTTP/1.1" 302 0
+[15/Aug/2018 21:41:58] "GET /admin/stock/actividad/ HTTP/1.1" 200 6861
+[15/Aug/2018 21:41:58] "GET /admin/jsi18n/ HTTP/1.1" 200 7268
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\gringo\stock\views.py", line 24, in stock
+    total = inicial.cantidad + nuevos.aggregate(total=Sum('cantidad'))['total']
+TypeError: unsupported operand type(s) for +: 'decimal.Decimal' and 'NoneType'
+[15/Aug/2018 21:42:19] "GET /stock/ HTTP/1.1" 500 63596
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 21:43:40
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\gringo\stock\views.py", line 24, in stock
+    total = inicial.cantidad + nuevos.aggregate(total=Sum('cantidad'))['total'] or 0
+TypeError: unsupported operand type(s) for +: 'decimal.Decimal' and 'NoneType'
+[15/Aug/2018 21:43:48] "GET /stock/ HTTP/1.1" 500 63864
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 21:44:02
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe -m pip install ipdb
+Collecting ipdb
+  Downloading https://files.pythonhosted.org/packages/80/fe/4564de08f174f3846364b3add8426d14cebee228f741c27e702b2877e85b/ipdb-0.11.tar.gz
+Requirement already satisfied: setuptools in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipdb) (39.0.1)
+Requirement already satisfied: ipython>=5.0.0 in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipdb) (6.5.0)
+Requirement already satisfied: simplegeneric>0.8 in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython>=5.0.0->ipdb) (0.8.1)
+Requirement already satisfied: traitlets>=4.2 in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython>=5.0.0->ipdb) (4.3.2)
+Requirement already satisfied: decorator in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython>=5.0.0->ipdb) (4.3.0)
+Requirement already satisfied: colorama; sys_platform == "win32" in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython>=5.0.0->ipdb) (0.3.9)
+Requirement already satisfied: backcall in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython>=5.0.0->ipdb) (0.1.0)
+Requirement already satisfied: pygments in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython>=5.0.0->ipdb) (2.2.0)
+Requirement already satisfied: jedi>=0.10 in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython>=5.0.0->ipdb) (0.12.1)
+Requirement already satisfied: prompt-toolkit<2.0.0,>=1.0.15 in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython>=5.0.0->ipdb) (1.0.15)
+Requirement already satisfied: pickleshare in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from ipython>=5.0.0->ipdb) (0.7.4)
+Requirement already satisfied: six in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from traitlets>=4.2->ipython>=5.0.0->ipdb) (1.11.0)
+Requirement already satisfied: ipython-genutils in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from traitlets>=4.2->ipython>=5.0.0->ipdb) (0.2.0)
+Requirement already satisfied: parso>=0.3.0 in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from jedi>=0.10->ipython>=5.0.0->ipdb) (0.3.1)
+Requirement already satisfied: wcwidth in c:\users\usuario\appdata\local\programs\python\python36-32\lib\site-packages (from prompt-toolkit<2.0.0,>=1.0.15->ipython>=5.0.0->ipdb) (0.1.7)
+Building wheels for collected packages: ipdb
+  Running setup.py bdist_wheel for ipdb ... done
+  Stored in directory: C:\Users\usuario\AppData\Local\pip\Cache\wheels\a8\0e\e2\ffc7bedd430bfd12e9dba3c4dd88906bc42962face85bc4df7
+Successfully built ipdb
+Installing collected packages: ipdb
+  The script ipdb3.exe is installed in 'C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed ipdb-0.11
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 21:45:19
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+> d:\gringo\stock\views.py(25)stock()
+     24                 # sumamos cantidad inicial mas la sumatoria de cantidades de los nuevos movimientos
+---> 25                 total = inicial.cantidad + (nuevos.aggregate(total=Sum('cantidad'))['total'] or 0)
+     26                 tabla[p] = total
+
+ipdb> nuevos.all()
+<QuerySet []>
+ipdb> inicial
+<Movimiento: Consumo interno: ROUNDUP x LITROS (32.000 LITROS)>
+ipdb> nuevos.aggregate(Sum('cantidad'))
+{'cantidad__sum': None}
+ipdb> nuevos.aggregate(Sum('cantidad'))['total']
+*** KeyError: 'total'
+ipdb> nuevos.aggregate(total=Sum('cantidad'))['total']
+ipdb> nuevos.aggregate(total=Sum('cantidad'))['total'] or 0
+0
+ipdb> Error in atexit._run_exitfuncs:
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\IPython\core\history.py", line 780, in writeout_cache
+    self._writeout_input_cache(conn)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\IPython\core\history.py", line 764, in _writeout_input_cache
+    (self.session_number,)+line)
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread.The object was created in thread id 7040 and this is thread id 10668
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 21:48:04
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+> d:\gringo\stock\views.py(25)stock()
+     24                 # sumamos cantidad inicial mas la sumatoria de cantidades de los nuevos movimientos
+---> 25                 cantidad_nuevos = nuevos.aggregate(total=Sum('cantidad'))['total']
+     26                 if not cantidad_nuevos:
+
+ipdb> c
+> d:\gringo\stock\views.py(23)stock()
+     22                 import ipdb
+---> 23                 ipdb.set_trace()
+     24                 # sumamos cantidad inicial mas la sumatoria de cantidades de los nuevos movimientos
+
+ipdb> c
+> d:\gringo\stock\views.py(25)stock()
+     24                 # sumamos cantidad inicial mas la sumatoria de cantidades de los nuevos movimientos
+---> 25                 cantidad_nuevos = nuevos.aggregate(total=Sum('cantidad'))['total']
+     26                 if not cantidad_nuevos:
+
+ipdb> c
+[15/Aug/2018 21:48:14] "GET /stock/ HTTP/1.1" 200 281
+> d:\gringo\stock\views.py(25)stock()
+     24                 # sumamos cantidad inicial mas la sumatoria de cantidades de los nuevos movimientos
+---> 25                 cantidad_nuevos = nuevos.aggregate(total=Sum('cantidad'))['total']
+     26                 if not cantidad_nuevos:
+
+ipdb> c> d:\gringo\stock\views.py(25)stock()
+     24                 # sumamos cantidad inicial mas la sumatoria de cantidades de los nuevos movimientos
+---> 25                 cantidad_nuevos = nuevos.aggregate(total=Sum('cantidad'))['total']
+     26                 if not cantidad_nuevos:
+
+ipdb> c
+ipdb> > d:\gringo\stock\vistockyc(23)
+()
+     22                ipdb
+ipdb>---> 23  c                   ipdb    .   set_trace    (    )
+        24                       # sumamos cantidad inicial mas la sumatoria de cantidades de los nuevos movimientos      
+
+            i p d   >
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\gringo\stock\views.py", line 25, in stock
+    cantidad_nuevos = nuevos.aggregate(total=Sum('cantidad'))['total']
+  File "D:\gringo\stock\views.py", line 25, in stock
+    cantidad_nuevos = nuevos.aggregate(total=Sum('cantidad'))['total']
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\bdb.py", line 69, in dispatch_line
+    self.user_line(frame)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\pdb.py", line 261, in user_line
+    self.interaction(frame, None)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\IPython\core\debugger.py", line 297, in interaction
+    OldPdb.interaction(self, frame, traceback)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\pdb.py", line 352, in interaction
+    self._cmdloop()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\pdb.py", line 321, in _cmdloop
+    self.cmdloop()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\IPython\terminal\debugger.py", line 95, in cmdloop
+    line = self.pt_cli.run(reset_current_buffer=True).text
+AttributeError: 'NoneType' object has no attribute 'text'
+[15/Aug/2018 21:48:37] "GET /stock/ HTTP/1.1" 500 96041
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\socketserver.py", line 775, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] Se ha anulado una conexión establecida por el software en su equipo host
+[15/Aug/2018 21:48:37] "GET /stock/ HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 65155)
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 255, in send_preamble
+    ('Date: %s\r\n' % format_date_time(time.time())).encode('iso-8859-1')
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\socketserver.py", line 775, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] Se ha anulado una conexión establecida por el software en su equipo host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\servers\basehttp.py", line 86, in handle_error
+    super().handle_error()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 180, in finish_response
+    self.write(data)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 274, in write
+    self.send_headers()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\socketserver.py", line 639, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\socketserver.py", line 696, in __init__
+    self.handle()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\servers\basehttp.py", line 154, in handle
+    handler.run(self.server.get_app())
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\handlers.py", line 137, in run
+    self.result = application(self.environ, self.start_response)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\wsgiref\simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+ipdb>
+--KeyboardInterrupt--
+ipdb>
+ipdb>
+--KeyboardInterrupt--
+ipdb> q
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\gringo\stock\views.py", line 23, in stock
+    ipdb.set_trace()
+  File "D:\gringo\stock\views.py", line 23, in stock
+    ipdb.set_trace()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+[15/Aug/2018 21:48:40] "GET /stock/ HTTP/1.1" 500 77961
+Not Found: /favicon.ico
+[15/Aug/2018 21:48:40] "GET /favicon.ico HTTP/1.1" 404 2078
+

@@ -19,5 +19,6 @@ from stock import views
 
 urlpatterns = [
 	path('stock/', views.stock),
+	path('campaña/', views.campaña),
     path('admin/', admin.site.urls),
 ]
