@@ -43,15 +43,21 @@ def campaña(request):
 
 
 def mov_gral (request):
-	if request.method == 'POST':
-		formfilter = FilterForm(request.POST)
+	tabla  = Movimiento.objects.all()
+	if request.method == 'GET':
+		formfilter = FilterForm(request.GET)
 		if formfilter.is_valid():
-			return render(request, 'stock/mov_gral.html', {'form': formfilter})
+			for clave, valor in formfilter.cleaned_data.items():
+				if not valor:
+					continue
+				tabla  = tabla.filter(**{clave: valor})	
+			
 	else:
 		formfilter = FilterForm()
 		#query   = Movimiento.objects.all().filter()	
 		#querytp = CategoriaProducto.objects.all()
-		return render(request, 'stock/mov_gral.html', {'form': formfilter})
+		
+	return render(request, 'stock/mov_gral.html', {'form': formfilter, 'tabla': tabla})
 
 
 
