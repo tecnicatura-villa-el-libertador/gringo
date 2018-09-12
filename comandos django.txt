@@ -1,0 +1,525 @@
+﻿
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+
+D:\>git clone https://github.com/django/django.git
+D:\>cd django
+D:\django>git checkout 2.1
+D:\django>pip install .
+D:\django>easy_install
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts> pip3
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\Scripts>pip3 --help
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>python -m pip install django
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32>python -m pip install django-model-utils
+
+
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py createsuperuser
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+
+C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  Rendering model states... DONE
+  Unapplying stock.0004_auto_20180801_2055... OK
+
+
+D:\gringo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   stock/models.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        stock/migrations/0004_auto_20180801_2055.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+D:\gringo\stock\migrations>del 0004_auto_20180801_2055.py
+
+D:\gringo>git pull
+remote: Counting objects: 10, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 10 (delta 6), reused 9 (delta 5), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+From https://github.com/tecnicatura-villa-el-libertador/gringo
+   1518d5b..fead505  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+        stock/models.py
+
+D:\gringo>git commit -m 'fix de merge'
+fatal: cannot do a partial commit during a merge.
+
+-Parados en la branch correcta:
+git checkout -b  "nombre rama"   <<  creo la rama
+git checkout "nombre rama"   <<  me muevo a la rama esa
+git pull
+git rebase master  <<mueve el puntero al head de la rama,  resolver conflictos si los hubiere.
+git push -f
+git checkout master
+git merge "nombre rama" 
+git push
+
+
+ D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  No migrations to apply.
+  Your models have changes that are not yet reflected in a migration, and so won't be applied.
+  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.
+
+
+D:\gringo>git checkout dev
+error: pathspec 'dev' did not match any file(s) known to git.
+
+D:\gringo>git push
+To https://github.com/tecnicatura-villa-el-libertador/gringo.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/tecnicatura-villa-el-libertador/gringo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\gringo>git pull
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 9 (delta 6), reused 9 (delta 6), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/tecnicatura-villa-el-libertador/gringo
+   2637a18..a2f2634  master     -> origin/master
+Updating 2637a18..a2f2634
+Fast-forward
+ .gitignore      | 2 ++
+ stock/models.py | 5 +++--
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+D:\gringo>git checkout dev
+error: pathspec 'dev' did not match any file(s) known to git.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  No migrations to apply.
+  Your models have changes that are not yet reflected in a migration, and so won't be applied.
+  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+Migrations for 'stock':
+  stock\migrations\0004_auto_20180815_1848.py
+    - Create model Movimiento
+    - Create model TipoMovimiento
+    - Remove field actividad from transaccion
+    - Remove field producto from transaccion
+    - Add field hectareas to lote
+    - Alter field nombre on campaña
+    - Delete model Transaccion
+    - Add field tipo to movimiento
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): stock.
+Run 'python manage.py migrate' to apply them.
+August 15, 2018 - 18:49:32
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Aug/2018 18:50:20] "GET / HTTP/1.1" 200 16379
+[15/Aug/2018 18:50:20] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[15/Aug/2018 18:50:21] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[15/Aug/2018 18:50:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[15/Aug/2018 18:50:21] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+Not Found: /favicon.ico
+[15/Aug/2018 18:50:21] "GET /favicon.ico HTTP/1.1" 404 1972
+
+D:\gringo>
+D:\gringo>
+D:\gringo>
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 1 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): stock.
+Run 'python manage.py migrate' to apply them.
+August 15, 2018 - 18:51:32
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[15/Aug/2018 18:58:13] "GET / HTTP/1.1" 200 16379
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate 0003
+CommandError: App '0003' does not have migrations.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  No migrations to apply.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  No migrations to apply.
+
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  No migrations to apply.
+
+D:\gringo>git pull
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 9 (delta 5), reused 9 (delta 5), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+From https://github.com/tecnicatura-villa-el-libertador/gringo
+   a2f2634..a3814f0  master     -> origin/master
+Updating a2f2634..a3814f0
+Fast-forward
+ stock/migrations/0004_auto_20180704_2246.py | 23 +++++++++++
+ stock/migrations/0005_auto_20180704_2327.py | 59 +++++++++++++++++++++++++++++
+ 2 files changed, 82 insertions(+)
+ create mode 100644 stock/migrations/0004_auto_20180704_2246.py
+ create mode 100644 stock/migrations/0005_auto_20180704_2327.py
+
+D:\gringo>git pull
+Already up to date.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+CommandError: Conflicting migrations detected; multiple leaf nodes in the migration graph: (0004_auto_20180815_1848, 0005_auto_20180704_2327 in stock).
+To fix them run 'python manage.py makemigrations --merge'
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrations --merge
+Unknown command: 'migrations'. Did you mean showmigrations?
+Type 'manage.py help' for usage.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations --merge
+Merging stock
+  Branch 0004_auto_20180815_1848
+    - Create model Movimiento
+    - Create model TipoMovimiento
+    - Remove field actividad from transaccion
+    - Remove field producto from transaccion
+    - Add field hectareas to lote
+    - Alter field nombre on campaña
+    - Delete model Transaccion
+    - Add field tipo to movimiento
+  Branch 0005_auto_20180704_2327
+    - Add field hectareas to lote
+    - Alter field nombre on campaña
+    - Create model Movimiento
+    - Create model TipoMovimiento
+    - Remove field actividad from transaccion
+    - Remove field producto from transaccion
+    - Delete model Transaccion
+    - Add field tipo to movimiento
+
+Merging will only work if the operations printed above do not conflict
+with each other (working on different fields or models)
+Do you want to merge these migration branches? [y/N] y
+
+Created new merge migration D:\gringo\stock\migrations\0006_merge_20180815_1929.py
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+
+
+
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 15, in <module>
+    execute_from_command_line(sys.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 316, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 353, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\base.py", line 83, in wrapped
+    res = handle_func(*args, **kwargs)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\core\management\commands\makemigrations.py", line 143, in handle
+    loader.project_state(),
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\loader.py", line 319, in project_state
+    return self.graph.make_state(nodes=nodes, at_end=at_end, real_apps=list(self.unmigrated_apps))
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\graph.py", line 378, in make_state
+    project_state = self.nodes[node].mutate_state(project_state, preserve=False)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\migration.py", line 87, in mutate_state
+    operation.state_forwards(self.app_label, new_state)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\migrations\operations\fields.py", line 137, in state_forwards
+    for name, instance in state.models[app_label, self.model_name_lower].fields:
+KeyError: ('stock', 'transaccion')
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate --list
+usage: manage.py migrate [-h] [--noinput] [--database DATABASE] [--fake]
+                         [--fake-initial] [--run-syncdb] [--version]
+                         [-v {0,1,2,3}] [--settings SETTINGS]
+                         [--pythonpath PYTHONPATH] [--traceback] [--no-color]
+                         [app_label] [migration_name]
+manage.py migrate: error: unrecognized arguments: --list
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  Applying stock.0004_auto_20180815_1848...Traceback (most recent call last):
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\utils.py", line 83, in _execute
+    return self.cursor.execute(sql)
+  File "C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\lib\site-packages\django\db\backends\sqlite3\base.py", line 294, in execute
+    return Database.Cursor.execute(self, query)
+sqlite3.OperationalError: table "stock_movimiento" already exists
+
+The above exception was the direct cause of the following exception:
+
+
+
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py createsuperuser
+
+You have 2 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): stock.
+Run 'python manage.py migrate' to apply them.
+Nombre de usuario (leave blank to use 'usuario'): r
+Dirección de email:
+Password:
+Password (again):
+La contraseña tiene un valor demasiado común.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py showmigrations
+admin
+ [X] 0001_initial
+ [X] 0002_logentry_remove_auto_add
+ [X] 0003_logentry_add_action_flag_choices
+auth
+ [X] 0001_initial
+ [X] 0002_alter_permission_name_max_length
+ [X] 0003_alter_user_email_max_length
+ [X] 0004_alter_user_username_opts
+ [X] 0005_alter_user_last_login_null
+ [X] 0006_require_contenttypes_0002
+ [X] 0007_alter_validators_add_error_messages
+ [X] 0008_alter_user_username_max_length
+ [X] 0009_alter_user_last_name_max_length
+contenttypes
+ [X] 0001_initial
+ [X] 0002_remove_content_type_name
+sessions
+ [X] 0001_initial
+stock
+ [X] 0001_initial
+ [X] 0002_auto_20180614_0004
+ [X] 0003_auto_20180627_2237
+ [X] 0004_auto_20180704_2246
+ [X] 0005_auto_20180704_2327
+ [ ] 0004_auto_20180815_1848
+ [ ] 0006_merge_20180815_1929
+
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py dumpdata auth.User stock.Cultivo stock.Lote stock.Campaña stock.TipoActividad stock.Actividad stock.CategoriaProducto stock.UnidadMedida stock.Producto stock.TipoMovimiento stock.Movimiento > data.json
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate stock 0003
+Operations to perform:
+  Target specific migration: 0003_auto_20180627_2237, from stock
+Running migrations:
+  Rendering model states... DONE
+  Unapplying stock.0005_auto_20180704_2327... OK
+  Unapplying stock.0004_auto_20180704_2246... OK
+
+D:\gringo>git reset --hard origin/master
+HEAD is now at a3814f0 Merge branch 'master' of github.com:tecnicatura-villa-el-libertador/gringo
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py showmigrations
+admin
+ [X] 0001_initial
+ [X] 0002_logentry_remove_auto_add
+ [X] 0003_logentry_add_action_flag_choices
+auth
+ [X] 0001_initial
+ [X] 0002_alter_permission_name_max_length
+ [X] 0003_alter_user_email_max_length
+ [X] 0004_alter_user_username_opts
+ [X] 0005_alter_user_last_login_null
+ [X] 0006_require_contenttypes_0002
+ [X] 0007_alter_validators_add_error_messages
+ [X] 0008_alter_user_username_max_length
+ [X] 0009_alter_user_last_name_max_length
+contenttypes
+ [X] 0001_initial
+ [X] 0002_remove_content_type_name
+sessions
+ [X] 0001_initial
+stock
+ [X] 0001_initial
+ [X] 0002_auto_20180614_0004
+ [X] 0003_auto_20180627_2237
+ [ ] 0004_auto_20180704_2246
+ [ ] 0005_auto_20180704_2327
+ [ ] 0004_auto_20180815_1848
+ [ ] 0006_merge_20180815_1929
+
+D:\gringo>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        comandos django.txt
+        data.json
+        stock/migrations/0004_auto_20180815_1848.py
+        stock/migrations/0006_merge_20180815_1929.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\gringo>copy "comandos django.txt" ..
+        1 archivo(s) copiado(s).
+
+D:\gringo>git clean -f
+Removing comandos django.txt
+Removing data.json
+Removing stock/migrations/0004_auto_20180815_1848.py
+Removing stock/migrations/0006_merge_20180815_1929.py
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  Applying stock.0004_auto_20180704_2246... OK
+  Applying stock.0005_auto_20180704_2327... OK
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+August 15, 2018 - 20:30:43
+Django version 2.1, using settings 'gringo.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py shell
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> ^Z
+
+now exiting InteractiveConsole...
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe -m pip install ipython
+Collecting ipython
+  Downloading https://files.pythonhosted.org/packages/f7/62/2fef7db3a7b75e8099c3d9db2630ae5ba0b9eefefd91f7497862393d90e8/ipython-6.5.0-py3-none-any.whl (748kB)
+    100% |████████████████████████████████| 757kB 163kB/s
+Collecting jedi>=0.10 (from ipython)
+  Downloading https://files.pythonhosted.org/packages/3d/68/8bbf0ef969095a13ba0d4c77c1945bd86e9811960d052510551d29a2f23b/jedi-0.12.1-py2.py3-none-any.whl (174kB)
+    100% |████████████████████████████████| 184kB 568kB/s
+Collecting pickleshare (from ipython)
+ 
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py shell
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.5.0 -- An enhanced Interactive Python. Type '?' for help.
+
+ 
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, stock
+Running migrations:
+  Applying stock.0006_auto_20180815_2035... OK
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py shell
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.5.0 -- An enhanced Interactive Python. Type '?' for help.
+
+
+
+
+
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe manage.py shell
+Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.5.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from stock.models import *
+
+In [2]: Movimiento.objects.all()
+Out[2]: <QuerySet [<Movimiento: compra: semilla de soja x kilos (100.000 kilos)>, <Movimiento: consumo: semilla de soja x kilos (40.000 kilos)>]>
+
+In [3]: Producto.objects.all()
+Out[3]: <QuerySet [<Producto: ROUNDUP x LITROS>, <Producto: semilla de soja x kilos>, <Producto: sembradora x horas>]>
+
+In [4]: soja = Producto.objects.all()[1]
+
+In [5]: soja
+Out[5]: <Producto: semilla de soja x kilos>
+
+In [6]: Movimiento.objects.filter(producto=soja)
+Out[6]: <QuerySet [<Movimiento: compra: semilla de soja x kilos (100.000 kilos)>, <Movimiento: consumo: semilla de soja x kilos (40.000 kilos)>]>
+
+In [7]: qs = _
+
+In [8]: qs.query
+Out[8]: <django.db.models.sql.query.Query at 0x721d2d0>
+
+In [9]: print(qs.query)
+SELECT "stock_movimiento"."id", "stock_movimiento"."created", "stock_movimiento"."modified", "stock_movimiento"."producto_id", "stock_movimiento"."tipo_id", "stock_movimiento"."cantidad", "stock_movimiento"."descripcion", "stock_movimiento"."fecha", "stock_movimiento"."es_inicial", "stock_movimiento"."actividad_id", "stock_movimiento"."precio_peso", "stock_movimiento"."precio_dolar" FROM "stock_movimiento" WHERE "stock_movimiento"."producto_id" = 2
+
+In [10]: soja.movimiento_set.all()
+Out[10]: <QuerySet [<Movimiento: compra: semilla de soja x kilos (100.000 kilos)>, <Movimiento: consumo: semilla de soja x kilos (40.000 kilos)>]>
+
+In [11]: print(_.query)
+SELECT "stock_movimiento"."id", "stock_movimiento"."created", "stock_movimiento"."modified", "stock_movimiento"."producto_id", "stock_movimiento"."tipo_id", "stock_movimiento"."cantidad", "stock_movimiento"."descripcion", "stock_movimiento"."fecha", "stock_movimiento"."es_inicial", "stock_movimiento"."actividad_id", "stock_movimiento"."precio_peso", "stock_movimiento"."precio_dolar" FROM "stock_movimiento" WHERE "stock_movimiento"."producto_id" = 2
+
+In [12]: Movimiento.objects.filter(producto=soja, es_inicial=True)
+Out[12]: <QuerySet [<Movimiento: compra: semilla de soja x kilos (100.000 kilos)>]>
+
+In [13]: Movimiento.objects.filter(producto=soja, es_inicial=True).order_by('-fecha').first()
+Out[13]: <Movimiento: compra: semilla de soja x kilos (100.000 kilos)>
+
+In [14]: print(_.query)
+
+ 
+ 
+
+ 
+D:\gringo>C:\Users\usuario\AppData\Local\Programs\Python\Python36-32\python.exe -m pip install ipdb
+Collecting ipdb
+ 
+ 
+ 
+
+
+    
