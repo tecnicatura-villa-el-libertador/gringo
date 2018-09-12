@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
@@ -6,12 +6,10 @@
 <body>
 
 
-<form action="/mov_gral" method="post">
-	<select name="TipodeProducto">
-		{% for catprd in tipoprd %}
-				<option>{{catprd.nombre}}</option>
-		{% endfor %}
-	</select>
+<form action="/mov_gral/" method="post">
+	{% csrf_token %}
+	{{form}}	
+	<input type="submit" value="Filtrar">
 </form>
 
 

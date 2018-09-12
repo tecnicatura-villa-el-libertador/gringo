@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.db.models import Sum
 from .models import Movimiento, Producto, Campaña, CategoriaProducto
 
+from django.shortcuts import render, redirect
+from .forms import FilterForm
+
 
 # Create your views here.
 def stock(request):
@@ -40,10 +43,16 @@ def campaña(request):
 
 
 def mov_gral (request):
-	query   = Movimiento.objects.all().filter()	
-	querytp = CategoriaProducto.objects.all()
+	if request.method == 'POST':
+		formfilter = FilterForm(request.POST)
+		if formfilter.is_valid():
+			return render(request, 'stock/mov_gral.html', {'form': formfilter})
+	else:
+		formfilter = FilterForm()
+		#query   = Movimiento.objects.all().filter()	
+		#querytp = CategoriaProducto.objects.all()
+		return render(request, 'stock/mov_gral.html', {'form': formfilter})
 
-	return render(request, 'stock/mov_gral.html', {'tabla': query ,'tipoprd': querytp}   )
 
 
 
