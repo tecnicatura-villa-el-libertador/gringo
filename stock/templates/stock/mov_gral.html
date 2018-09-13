@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<form action="/mov_gral/" method="get">
+	
+	{{form}}	
+	<input type="submit" value="Filtrar">
+</form>
+
+
+<table style="width:90%">
+<tr>
+	<th>Tipo</th> 
+	<th>Producto</th> 
+	<th>Cantidad</th> 
+	<th>U.Med.</th>   
+</tr>	
+
+
+{% for movimiento in tabla %}
+<tr>
+	<td>{{movimiento.tipo}}</td>
+	<td>{{movimiento.producto}}</td>
+	<td>{{movimiento.cantidad}}</td>
+	<td>{{movimiento.producto.unidad_medida}}</td>		
+</tr>
+{% endfor %}
+
+
+
+</table>
+
+</body>
+</html>
