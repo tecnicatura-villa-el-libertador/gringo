@@ -1,0 +1,14 @@
+{% extends 'stock/plantilla_base.html' %}
+
+{% block content %}
+   <form action="/login" method="post">
+		<select name="RegistroDeUsuario">
+			{% for catprd in tipoprd %}
+					<option>{{catprd.nombre}}</option>
+			{% endfor %}
+		</select>
+	</form>
+	</select>
+	
+ {% endblock %}
+

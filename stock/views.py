@@ -2,8 +2,12 @@ from django.shortcuts import render
 from django.db.models import Sum
 from .models import Movimiento, Producto, Campaña, CategoriaProducto
 
+from .models import Movimiento, Producto, Campaña
+from django.contrib.auth.decorators import login_required
+
 
 # Create your views here.
+@login_required
 def stock(request):
 	tabla = {}
 	for p in Producto.objects.all():
@@ -11,7 +15,7 @@ def stock(request):
 		inicial = p.movimiento_set.filter(
 			es_inicial=True
 		).order_by('-fecha').first() or p.movimiento_set.order_by('fecha').first()
-		
+
 		if not inicial:
 			# si no hay movimientos, el stock para este producto es 0
 			tabla[p] = 0
@@ -24,6 +28,7 @@ def stock(request):
 		tabla[p] = total
 	return render(request, 'stock/stock.html', {'tabla': tabla})
 
+@login_required
 def campaña(request):
 	tabla = {}
 	for cmp in Campaña.objects.all():
@@ -31,7 +36,7 @@ def campaña(request):
 		# calcular cantidad*precio_peso, cantidad*precio_dolar
 		total = Movimiento.objects.filter(
 				actividad__campaña=cmp
-			).aggregate(total_pesos=Sum('precio_peso'), 
+			).aggregate(total_pesos=Sum('precio_peso'),
 						total_dolares=Sum('precio_dolar'))
 
 
@@ -45,6 +50,5 @@ def mov_gral (request):
 
 	return render(request, 'stock/mov_gral.html', {'tabla': query ,'tipoprd': querytp}   )
 
-
-
-
+def registration (request):
+	return render(request, "registration/login.html")

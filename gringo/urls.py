@@ -21,7 +21,8 @@ from django.conf.urls import include, url
 urlpatterns = [
 	path('stock/', views.stock),
 	path('campaña/', views.campaña),
-	path('mov_gral/', views.mov_gral),	
+	path('mov_gral/', views.mov_gral),
+    path('registro/', views.registration),	
         path('admin/', admin.site.urls),
     # Other URL patterns ...
         url(r'^accounts/', include('django_registration.backends.activation.urls')),
