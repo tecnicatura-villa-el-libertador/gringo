@@ -21,5 +21,6 @@ urlpatterns = [
 	path('stock/', views.stock),
 	path('campaña/', views.campaña),
 	path('mov_gral/', views.mov_gral),	
+    path('mov_gral_2/', views.MovListView.as_view()),
     path('admin/', admin.site.urls),
 ]

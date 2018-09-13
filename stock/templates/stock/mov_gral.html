@@ -7,9 +7,8 @@
 
 
 <form action="/mov_gral/" method="get">
-	
 	{{form}}	
-	<input type="submit" value="Filtrar">
+	<input name="boton" type="submit" value="Filtrar">
 </form>
 
 
@@ -21,8 +20,7 @@
 	<th>U.Med.</th>   
 </tr>	
 
-
-{% for movimiento in tabla %}
+{% for movimiento in object_list %}
 <tr>
 	<td>{{movimiento.tipo}}</td>
 	<td>{{movimiento.producto}}</td>
@@ -31,7 +29,22 @@
 </tr>
 {% endfor %}
 
-
+	{# .... **Now the pagination section** .... #}
+    {% if is_paginated %}
+        <div class="pagination">
+            <span class="page-links">
+                {% if page_obj.has_previous %}
+                    <a href=".?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+                <span class="page-current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+                {% if page_obj.has_next %}
+                    <a href=".?page={{ page_obj.next_page_number }}">next</a>
+                {% endif %}
+            </span>
+        </div>
+    {% endif %}
 
 </table>
 

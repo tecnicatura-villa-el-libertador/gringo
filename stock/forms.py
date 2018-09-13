@@ -5,9 +5,17 @@ from .models import Movimiento
 
 
 class FilterForm(forms.ModelForm):
+    orden = forms.ChoiceField(choices=[
+        ('producto', 'Producto (asc)'), 
+        ('-producto', 'Producto (desc)'),
+        ('tipo', 'Tipo (asc)'), 
+        ('-tipo', 'Tipo (desc)'),
+         ('actividad', 'Actividad (asc)'), 
+        ('-actividad', 'Actividad (desc)')       
+    ])
     class Meta:
         model =  Movimiento
-        fields=  ('producto', 'tipo',  'actividad')
+        fields= ('producto', 'tipo',  'actividad', 'orden')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
