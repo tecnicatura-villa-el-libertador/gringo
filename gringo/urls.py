@@ -16,10 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from stock import views
+from django.conf.urls import include, url
 
 urlpatterns = [
 	path('stock/', views.stock),
 	path('campaña/', views.campaña),
 	path('mov_gral/', views.mov_gral),	
-    path('admin/', admin.site.urls),
+        path('admin/', admin.site.urls),
+    # Other URL patterns ...
+        url(r'^accounts/', include('django_registration.backends.activation.urls')),
+        url(r'^accounts/', include('django.contrib.auth.urls')),
+    # More URL patterns ...
 ]
