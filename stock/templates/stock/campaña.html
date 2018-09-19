@@ -3,6 +3,12 @@
 
 {% block content %}
 
+<form action="/mov_gral/" method="get">
+
+	{{form}}
+	<input type="submit" value="Filtrar">
+
+</form>
 <table>
 
 {% for campaña, totales in tabla.items %}

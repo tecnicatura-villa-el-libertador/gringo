@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+{% extends 'stock/plantilla_base.html' %}
+
+{% block content %}
 
 
 <form action="/mov_gral/" method="get">
-	
-	{{form}}	
+
+	{{form}}
 	<input type="submit" value="Filtrar">
 </form>
 
 
 <table style="width:90%">
 <tr>
-	<th>Tipo</th> 
-	<th>Producto</th> 
-	<th>Cantidad</th> 
-	<th>U.Med.</th>   
-</tr>	
+	<th>Tipo</th>
+	<th>Producto</th>
+	<th>Cantidad</th>
+	<th>U.Med.</th>
+</tr>
 
 
 {% for movimiento in tabla %}
@@ -27,7 +24,7 @@
 	<td>{{movimiento.tipo}}</td>
 	<td>{{movimiento.producto}}</td>
 	<td>{{movimiento.cantidad}}</td>
-	<td>{{movimiento.producto.unidad_medida}}</td>		
+	<td>{{movimiento.producto.unidad_medida}}</td>
 </tr>
 {% endfor %}
 
@@ -35,5 +32,4 @@
 
 </table>
 
-</body>
-</html>
+{% endblock %}

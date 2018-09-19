@@ -41,7 +41,7 @@ def campaña(request):
         tabla[cmp] = total
     return render(request, 'stock/campaña.html', {'tabla': tabla})
 
-
+@login_required
 def mov_gral (request):
 	tabla  = Movimiento.objects.all()
 	if request.method == 'GET':
@@ -58,3 +58,14 @@ def mov_gral (request):
 		#querytp = CategoriaProducto.objects.all()
 
 	return render(request, 'stock/mov_gral.html', {'form': formfilter, 'tabla': tabla})
+
+
+@login_required
+def inicio(request):
+    pass
+    return render(request, 'stock/inicio.html')
+
+@login_required
+def actividades(request):
+    pass
+    return render(request, 'stock/actividades.html')
