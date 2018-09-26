@@ -1,5 +1,9 @@
+import os
 from django.shortcuts import render
 from django.db.models import Sum
+from wsgiref.util import FileWrapper
+from django.http import HttpResponse
+from django.conf import settings
 from .models import Movimiento, Producto, Campaña, CategoriaProducto
 from django.contrib.auth.decorators import login_required
 from .forms import FilterForm
@@ -69,3 +73,11 @@ def inicio(request):
 def actividades(request):
     pass
     return render(request, 'stock/actividades.html')
+
+@login_required
+def download_db(request):
+    filename = settings.DATABASES['default']['NAME']
+    response = HttpResponse(open(filename, 'rb').read(), content_type='application/x-sqlite3')
+    response['Content-Disposition'] = 'attachment; filename=%s' % os.path.basename(filename)
+    response['Content-Length'] = os.path.getsize(filename)
+    return response

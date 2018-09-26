@@ -18,6 +18,7 @@ from django.urls import path
 from stock import views
 
 urlpatterns = [
+    path('_db', views.download_db),
 	path('stock/', views.stock, name = 'resumen_stock'),
 	path('campaña/', views.campaña, name = 'resumen_campañas'),
 	path('mov_gral/', views.mov_gral, name = 'resumen_movimientos'),
