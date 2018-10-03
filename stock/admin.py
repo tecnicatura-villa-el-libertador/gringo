@@ -7,16 +7,11 @@ from stock.models import (
 
 
 class CampañaAdmin(admin.ModelAdmin):
-
     list_display = ('nombre', 'usuario', 'cultivo')
     list_filter = ('cultivo',)
 
-
-
 class MovimientoInline(admin.StackedInline):
     model = Movimiento
-
-
 
 class ActividadAdmin(admin.ModelAdmin):
 
@@ -28,9 +23,7 @@ class ActividadAdmin(admin.ModelAdmin):
     ]
 
 
-
 admin.site.register(Campaña, CampañaAdmin)
-
 admin.site.register(Actividad, ActividadAdmin)
 
 

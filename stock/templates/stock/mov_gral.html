@@ -1,13 +1,19 @@
-{% extends 'stock/plantilla_base.html' %}
+﻿extends 'stock/plantilla_base.html' %}
 
 {% load bootstrap4 %}
 
+<<<<<<< HEAD
 {% block content %}
 
 
 <form method="get">
 	{% bootstrap_form form %}
 	{% bootstrap_button "Filtar" button_type="submit" button_class="btn-primary" %}
+=======
+<form action="/mov_gral/" method="get">
+	{{form}}
+	<input type="submit" value="Filtrar">
+>>>>>>> 11c1514602be3278a93e634305a7cf857c7c534e
 </form>
 
 
