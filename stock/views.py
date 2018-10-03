@@ -51,9 +51,19 @@ def mov_gral (request):
 	if request.method == 'GET':
 		formfilter = FilterForm(request.GET)
 		if formfilter.is_valid():
+            # si el formulario de filtro es valido (por ahora cualquier configuracion lo es)
+            # entonces los "datos enviados y limpios" se iteran para aplicarlos iterativamente
+            # como filtros. 
+            # Para esto se usa el "desempacado de parametros" (**kwargs)
+            # que es una forma de pasar parametros nombrados a partir de un diccionario
 			for clave, valor in formfilter.cleaned_data.items():
 				if not valor:
 					continue
+                # Si el usuario elige producto con id = 1
+                # el diccionario formfilter.cleaned_data tendra
+                # {'producto': Producto(id=1)}
+                # por lo que el desempacado es equivalente a hacer
+                # tabla.filter(producto=)
 				tabla  = tabla.filter(**{clave: valor})
 
 	else:
