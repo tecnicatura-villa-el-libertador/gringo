@@ -1,33 +1,33 @@
-﻿extends 'stock/plantilla_base.html' %}
+{% extends 'stock/plantilla_base.html' %}
+{% load bootstrap4 %}
 
 {% block content %}
 
-<form action="/mov_gral/" method="get">
-	{{form}}
-	<input type="submit" value="Filtrar">
+
+<form method="get">
+	{% bootstrap_form form %}
+	{% bootstrap_button "Filtar" button_type="submit" button_class="btn-primary" %}
 </form>
 
-
-<table style="width:90%">
-<tr>
-	<th>Tipo</th>
-	<th>Producto</th>
-	<th>Cantidad</th>
-	<th>U.Med.</th>
-</tr>
-
-
-{% for movimiento in tabla %}
-<tr>
-	<td>{{movimiento.tipo}}</td>
-	<td>{{movimiento.producto}}</td>
-	<td>{{movimiento.cantidad}}</td>
-	<td>{{movimiento.producto.unidad_medida}}</td>
-</tr>
-{% endfor %}
-
-
-
-</table>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Tipo</th>
+      <th scope="col">Producto</th>
+			<th scope="col">Cantidad</th>
+      <th scope="col">Und. Medida</th>
+    </tr>
+  </thead>
+  <tbody>
+		{% for movimiento in tabla %}
+    <tr>
+      <th scope="row">{{movimiento.tipo}}</th>
+      <td>{{movimiento.producto}}</td>
+      <td>{{movimiento.cantidad}}</td>
+			<td>{{movimiento.producto.unidad_medida}}</td>
+    </tr>
+		{% endfor %}
+	</tboby>
+	</table>
 
 {% endblock %}
