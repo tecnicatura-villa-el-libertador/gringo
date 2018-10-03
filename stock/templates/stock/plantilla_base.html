@@ -32,12 +32,13 @@
             <a class="nav-link" href='{% url 'resumen_stock' %}'>STOCK</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CAMPAÑAS</a>
+            <a class="nav-link" href="{% url 'resumen_campañas'%}">CAMPAÑAS <span class="sr-only">(current)</span></a>
+            <!--a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CAMPAÑAS</a>
             <div class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item" href="{% url 'resumen_campañas'%}">Todas</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            </div -->
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

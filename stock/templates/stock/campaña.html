@@ -1,24 +1,49 @@
 
 {% extends 'stock/plantilla_base.html' %}
 
+{% load bootstrap4%}
+
+{% block title%}
+Campañas
+{% endblock %}
+
 {% block content %}
 
 <form action="/mov_gral/" method="get">
 
 	{{form}}
-	<input type="submit" value="Filtrar">
+	{% bootstrap_button "Busqueda" button_type="submit" button_class="btn-primary" %}
 
 </form>
-<table>
 
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Campaña</th>
+      <th scope="col">Total $</th>
+      <th scope="col">Total u$s</th>
+    </tr>
+  </thead>
+  <tbody>
+		{% for campaña, totales in tabla.items %}
+    <tr>
+      <th scope="row">{{campaña}}</th>
+      <td>{{totales.total_pesos}}</td>
+      <td>{{totales.total_dolares}}</td>
+    </tr>
+		{% endfor %}
+	</tboby>
+	</table>
+
+<!--table>
 {% for campaña, totales in tabla.items %}
-<tr>
+	<tr>
 	<td>{{campaña}}</td>
 	<td>$ {{totales.total_pesos}}</td>
 	<td>u$s {{totales.total_dolares}}</td>
 </tr>
 {% endfor %}
 
-</table>
+</table-->
 
 {% endblock %}

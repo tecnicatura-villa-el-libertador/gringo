@@ -18,11 +18,11 @@ from django.urls import path
 from stock import views
 
 urlpatterns = [
-	path('stock/', views.stock, name = 'resumen_stock'),
-	path('campaña/', views.campaña, name = 'resumen_campañas'),
-	path('mov_gral/', views.mov_gral, name = 'resumen_movimientos'),
+	path('stock/', views.stock, name='resumen_stock'),
+	path('campaña/', views.campaña, name='resumen_campañas'),
+	path('mov_gral/', views.mov_gral, name='resumen_movimientos'),
     path('admin/', admin.site.urls),
-	path('inicio/', views.inicio, name = 'inicio'),
-    path('actividades/', views.actividades, name = 'resumen_actividades')
+	path('inicio/', views.inicio, name='inicio'),
+    path('actividades/', views.actividades, name='resumen_actividades')
 
 ]
