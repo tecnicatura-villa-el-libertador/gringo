@@ -1,5 +1,10 @@
+import os
+
 from django.shortcuts import render, redirect
 from django.db.models import Sum
+from wsgiref.util import FileWrapper
+from django.http import HttpResponse
+from django.conf import settings
 from .models import Movimiento, Producto, Campaña, CategoriaProducto
 from .forms import FilterForm
 from django.contrib.auth.decorators import login_required
@@ -38,6 +43,7 @@ def stock(request):
         tabla[p] = total
     return render(request, 'stock/stock.html', {'tabla': tabla})
 
+@login_required
 def campaña(request):
     tabla = {}
     for cmp in Campaña.objects.all():
@@ -51,15 +57,44 @@ def campaña(request):
     return render(request, 'stock/campaña.html', {'tabla': tabla})
 
 
+@login_required
 def mov_gral (request):
-    tabla  = Movimiento.objects.all()
+    tabla = Movimiento.objects.all()
+    if request.method == 'GET':
+        formfilter = FilterForm(request.GET)
+
     formfilter = FilterForm(request.GET)
     if formfilter.is_valid():
         orden = formfilter.cleaned_data.pop('orden')
         for clave, valor in formfilter.cleaned_data.items(): #recorre las opciones de filtrado.
+            # si el formulario de filtro es valido (por ahora cualquier configuracion lo es)
+            # entonces los "datos enviados y limpios" se iteran para aplicarlos iterativamente
+            # como filtros.
+            # Para esto se usa el "desempacado de parametros" (**kwargs)
+            # que es una forma de pasar parametros nombrados a partir de un diccionario
+
             if not valor:   # filtra cada opcion seleccionada.
                 continue
-            tabla  = tabla.filter(**{clave: valor}) # Los ** convierten el dicc a un string con sus valores corresp.
+            tabla = tabla.filter(**{clave: valor}) # Los ** convierten el dicc a un string con sus valores corresp.
+    else:
+        formfilter = FilterForm()
     if orden:
         tabla = tabla.order_by(orden)
+
     return render(request, 'stock/mov_gral.html', {'form': formfilter, 'object_list': tabla})
+
+def inicio(request):
+    return render(request, 'stock/inicio.html')
+
+@login_required
+def actividades(request):
+    return render(request, 'stock/actividades.html')
+
+
+@login_required
+def download_db(request):
+    filename = settings.DATABASES['default']['NAME']
+    response = HttpResponse(open(filename, 'rb').read(), content_type='application/x-sqlite3')
+    response['Content-Disposition'] = 'attachment; filename=%s' % os.path.basename(filename)
+    response['Content-Length'] = os.path.getsize(filename)
+    return response

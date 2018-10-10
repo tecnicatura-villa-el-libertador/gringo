@@ -1,3 +1,4 @@
+.fuse*
 .directory
 
 *.sqlite3
@@ -47,4 +48,3 @@ coverage.xml
 
 # jupyter
 .ipynb_checkpoints/
-

@@ -31,4 +31,12 @@ urlpatterns = [
     # Other URL patterns ...
     url(r'^accounts/', include('django_registration.backends.activation.urls')),
     url(r'^accounts/', include('django.contrib.auth.urls')),
+    path('_db', views.download_db),
+	path('stock/', views.stock, name = 'resumen_stock'),
+	path('campaña/', views.campaña, name = 'resumen_campañas'),
+	path('mov_gral/', views.mov_gral, name = 'resumen_movimientos'),
+    path('admin/', admin.site.urls),
+	path('inicio/', views.inicio, name='inicio'),
+    path('actividades/', views.actividades, name='resumen_actividades')
+
 ]
