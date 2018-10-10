@@ -1,21 +1,48 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
 
-<table>
-	
+{% extends 'stock/plantilla_base.html' %}
+
+{% load bootstrap4%}
+
+{% block title%}
+Campañas
+{% endblock %}
+
+{% block content %}
+
+<form action="/mov_gral/" method="get">
+
+	{{form}}
+
+</form>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Campaña</th>
+      <th scope="col">Total $</th>
+      <th scope="col">Total u$s</th>
+    </tr>
+  </thead>
+  <tbody>
+		{% for campaña, totales in tabla.items %}
+    <tr>
+      <th scope="row">{{campaña}}</th>
+      <td>{{totales.total_pesos}}</td>
+      <td>{{totales.total_dolares}}</td>
+    </tr>
+		{% endfor %}
+	</tboby>
+	</table>
+
+<!--table>
 {% for campaña, totales in tabla.items %}
-<tr>
-	<td>{{campaña}}  </td>
-	<td>  $ {{totales.total_pesos}}  </td>
-	<td>  u$s {{totales.total_dolares}}  </td>
-</tr>	
+	<tr>
+	<td>{{campaña}}</td>
+	<td>$ {{totales.total_pesos}}</td>
+	<td>u$s {{totales.total_dolares}}</td>
+</tr>
 {% endfor %}
 
-</table>
+</table-->
 
-</body>
-</html>
+{% endblock %}

@@ -1,20 +1,24 @@
 
 {% extends 'stock/plantilla_base.html' %}
 
+{% load bootstrap4%}
+
 {% block content %}
 
-
-
-
-    <table>
-
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Producto</th>
+      <th scope="col">Stock</th>
+  </thead>
+  <tbody>
     {% for producto, stock in tabla.items %}
     <tr>
-    	<td>{{producto}}</td>
+      <th scope="row">{{producto}}</th>
     	<td>{{stock}}</td>
     </tr>
     {% endfor %}
-
-    </table>
+  </tbody>
+</table>
 
 {% endblock %}

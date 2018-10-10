@@ -1,0 +1,20 @@
+{% extends 'stock/plantilla_base.html' %}
+
+ {% block nav %}
+ {% endblock  %}
+
+
+    {% block content %}
+
+
+   <form method="POST" >
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">
+            {% block submit_text %}
+                Guardar
+            {% endblock %}</button>
+        </form>
+
+    {% endblock %}
+

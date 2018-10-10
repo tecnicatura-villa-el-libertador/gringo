@@ -1,52 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+{% extends 'stock/plantilla_base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
 
 
-<form action="/mov_gral/" method="get">
-	{{form}}	
-	<input name="boton" type="submit" value="Filtrar">
+<form method="get">
+	{% bootstrap_form form %}
+	{% bootstrap_button "Filtar" button_type="submit" button_class="btn-primary" %}
 </form>
 
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Tipo</th>
+      <th scope="col">Producto</th>
+			<th scope="col">Cantidad</th>
+      <th scope="col">Und. Medida</th>
+    </tr>
+  </thead>
+  <tbody>
+		{% for movimiento in tabla %}
+    <tr>
+      <th scope="row">{{movimiento.tipo}}</th>
+      <td>{{movimiento.producto}}</td>
+      <td>{{movimiento.cantidad}}</td>
+			<td>{{movimiento.producto.unidad_medida}}</td>
+    </tr>
+		{% endfor %}
+	</tboby>
+	</table>
 
-<table style="width:90%">
-<tr>
-	<th>Tipo</th> 
-	<th>Producto</th> 
-	<th>Cantidad</th> 
-	<th>U.Med.</th>   
-</tr>	
-
-{% for movimiento in object_list %}
-<tr>
-	<td>{{movimiento.tipo}}</td>
-	<td>{{movimiento.producto}}</td>
-	<td>{{movimiento.cantidad}}</td>
-	<td>{{movimiento.producto.unidad_medida}}</td>		
-</tr>
-{% endfor %}
-
-	{# .... **Now the pagination section** .... #}
-    {% if is_paginated %}
-        <div class="pagination">
-            <span class="page-links">
-                {% if page_obj.has_previous %}
-                    <a href=".?page={{ page_obj.previous_page_number }}">previous</a>
-                {% endif %}
-                <span class="page-current">
-                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-                </span>
-                {% if page_obj.has_next %}
-                    <a href=".?page={{ page_obj.next_page_number }}">next</a>
-                {% endif %}
-            </span>
-        </div>
-    {% endif %}
-
-</table>
-
-</body>
-</html>
+{% endblock %}
