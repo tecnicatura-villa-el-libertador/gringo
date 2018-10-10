@@ -16,11 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from stock import views
+from django.conf.urls import include, url
+from django.contrib.auth.decorators import login_required
+
 
 urlpatterns = [
 	path('stock/', views.stock),
 	path('campaña/', views.campaña),
-	path('mov_gral/', views.mov_gral),	
-    path('mov_gral_2/', views.MovListView.as_view()),
+
+    path('campaña/nueva', login_required(views.CampañaCreate.as_view())),
+	path('mov_gral/', views.mov_gral),
     path('admin/', admin.site.urls),
+
+    # Other URL patterns ...
+    url(r'^accounts/', include('django_registration.backends.activation.urls')),
+    url(r'^accounts/', include('django.contrib.auth.urls')),
 ]

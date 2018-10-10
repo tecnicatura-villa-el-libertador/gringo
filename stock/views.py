@@ -1,9 +1,20 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.db.models import Sum
 from .models import Movimiento, Producto, Campaña, CategoriaProducto
-
-from django.shortcuts import render, redirect
 from .forms import FilterForm
+from django.contrib.auth.decorators import login_required
+from django.views.generic.edit import CreateView
+
+
+class CampañaCreate(CreateView):
+    model = Campaña
+    fields = ['nombre', 'cultivo', 'lote']
+
+    def form_valid(self, form):
+        campaña = form.save(commit=False)
+        campaña.usuario = self.request.user
+        campaña.save()
+        return redirect('/')
 
 
 # Create your views here.
@@ -14,7 +25,7 @@ def stock(request):
         inicial = p.movimiento_set.filter(
             es_inicial=True
         ).order_by('-fecha').first() or p.movimiento_set.order_by('fecha').first()
-        
+
         if not inicial:
             # si no hay movimientos, el stock para este producto es 0
             tabla[p] = 0
@@ -33,11 +44,9 @@ def campaña(request):
         # Datos de la campaña...
         # calcular cantidad*precio_peso, cantidad*precio_dolar
         total = Movimiento.objects.filter(
-                actividad__campaña=cmp
-            ).aggregate(total_pesos=Sum('precio_peso'), 
-                        total_dolares=Sum('precio_dolar'))
-
-
+            actividad__campaña=cmp
+        ).aggregate(total_pesos=Sum('precio_peso'),
+                    total_dolares=Sum('precio_dolar'))
         tabla[cmp] = total
     return render(request, 'stock/campaña.html', {'tabla': tabla})
 
@@ -50,17 +59,7 @@ def mov_gral (request):
         for clave, valor in formfilter.cleaned_data.items(): #recorre las opciones de filtrado.
             if not valor:   # filtra cada opcion seleccionada.
                 continue
-            tabla  = tabla.filter(**{clave: valor}) # Los ** convierten el dicc a un string con sus valores corresp.        
+            tabla  = tabla.filter(**{clave: valor}) # Los ** convierten el dicc a un string con sus valores corresp.
     if orden:
         tabla = tabla.order_by(orden)
     return render(request, 'stock/mov_gral.html', {'form': formfilter, 'object_list': tabla})
-
-
-from django.views.generic.list import ListView
-
-
-class MovListView(ListView):
-
-    model = Movimiento
-    paginate_by = 5  # if pagination is desired
-    template_name = 'stock/mov_gral.html'
