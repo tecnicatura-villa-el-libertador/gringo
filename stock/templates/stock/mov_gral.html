@@ -4,15 +4,16 @@
 {% block content %}
 
 
-<form method="get">
-	{% bootstrap_form form %}
-	{% bootstrap_button "Filtar" button_type="submit" button_class="btn-primary" %}
-</form>
+		<form method="get">
+			{% bootstrap_form form %}
+			{% bootstrap_button "Filtar" button_type="submit" button_class="btn-primary mb-2" %}
+		</form>
+
 
 <table class="table">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">Tipo</th>
+      <th scope="col">Tipo Movimiento</th>
       <th scope="col">Producto</th>
 			<th scope="col">Cantidad</th>
       <th scope="col">Und. Medida</th>
