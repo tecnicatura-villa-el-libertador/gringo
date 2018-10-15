@@ -40,7 +40,14 @@ class FilterForm(forms.ModelForm):
 
         self.helper.add_input(Submit('submit-button', 'Filtrar'))
 
-        #self.tipo_comp(default)
+        #self.tipo_comp(default)  ## resetea valor para que no aplique filtro no deseado.
+        #self.letra(default)  ## resetea valor para que no aplique filtro no deseado.
+
 
         for key in self.fields:
             self.fields[key].required = False
+        self.fields['tipo_comp'].choices = [('', '---')] + Movimiento.OPC_TC
+        self.fields['tipo_comp'].required = False
+        self.fields['letra_comp'].choices = [('', '---')] + Movimiento.OPC_LETRA
+        self.fields['letra_comp'].required = False
+        

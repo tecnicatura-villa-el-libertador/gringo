@@ -106,9 +106,8 @@ class Movimiento(TimeStampedModel):
                      ('011', 'Factura C'), ('015', 'Recibos C'),
                      ('017', 'Liq.Serv.Publ.A'), ('018', 'Liq.Serv.Publ.B'),
                      ('033', 'Liq.Prim.de Granos'), ('089', 'Resumen de datos'),
-                     ('   ', '---')
                     )
-    OPC_LETRA = Choices('A', 'B', 'C', 'M', 'E', 'X',' ' )
+    OPC_LETRA = Choices('A', 'B', 'C', 'M', 'E', 'X')
 
     producto    = models.ForeignKey('Producto', on_delete=models.CASCADE)
     tipo        = models.ForeignKey('TipoMovimiento', on_delete=models.CASCADE)
