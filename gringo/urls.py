@@ -38,5 +38,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 	path('inicio/', views.inicio, name='inicio'),
     path('actividades/', views.actividades, name='resumen_actividades')
-
 ]
