@@ -1,16 +1,28 @@
 import os
-from django.shortcuts import render
+
+from django.shortcuts import render, redirect
 from django.db.models import Sum
 from wsgiref.util import FileWrapper
 from django.http import HttpResponse
 from django.conf import settings
 from .models import Movimiento, Producto, Campaña, CategoriaProducto
-from django.contrib.auth.decorators import login_required
 from .forms import FilterForm
-from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from django.views.generic.edit import CreateView
+
+
+class CampañaCreate(CreateView):
+    model = Campaña
+    fields = ['nombre', 'cultivo', 'lote']
+
+    def form_valid(self, form):
+        campaña = form.save(commit=False)
+        campaña.usuario = self.request.user
+        campaña.save()
+        return redirect('/')
+
 
 # Create your views here.
-@login_required
 def stock(request):
     tabla = {}
     for p in Producto.objects.all():
@@ -38,50 +50,46 @@ def campaña(request):
         # Datos de la campaña...
         # calcular cantidad*precio_peso, cantidad*precio_dolar
         total = Movimiento.objects.filter(
-                actividad__campaña=cmp
-            ).aggregate(total_pesos=Sum('precio_peso'),
-                        total_dolares=Sum('precio_dolar'))
-
+            actividad__campaña=cmp
+        ).aggregate(total_pesos=Sum('precio_peso'),
+                    total_dolares=Sum('precio_dolar'))
         tabla[cmp] = total
     return render(request, 'stock/campaña.html', {'tabla': tabla})
 
+
 @login_required
 def mov_gral (request):
-	tabla  = Movimiento.objects.all()
-	if request.method == 'GET':
-		formfilter = FilterForm(request.GET)
-		if formfilter.is_valid():
+    tabla = Movimiento.objects.all()
+    if request.method == 'GET':
+        formfilter = FilterForm(request.GET)
+
+    formfilter = FilterForm(request.GET)
+    if formfilter.is_valid():
+        orden = formfilter.cleaned_data.pop('orden')
+        for clave, valor in formfilter.cleaned_data.items(): #recorre las opciones de filtrado.
             # si el formulario de filtro es valido (por ahora cualquier configuracion lo es)
             # entonces los "datos enviados y limpios" se iteran para aplicarlos iterativamente
             # como filtros.
             # Para esto se usa el "desempacado de parametros" (**kwargs)
             # que es una forma de pasar parametros nombrados a partir de un diccionario
-			for clave, valor in formfilter.cleaned_data.items():
-				if not valor:
-					continue
-                # Si el usuario elige producto con id = 1
-                # el diccionario formfilter.cleaned_data tendra
-                # {'producto': Producto(id=1)}
-                # por lo que el desempacado es equivalente a hacer
-                # tabla.filter(producto=)
-				tabla  = tabla.filter(**{clave: valor})
 
-	else:
-		formfilter = FilterForm()
-		#query   = Movimiento.objects.all().filter()
-		#querytp = CategoriaProducto.objects.all()
+            if not valor:   # filtra cada opcion seleccionada.
+                continue
+            tabla = tabla.filter(**{clave: valor}) # Los ** convierten el dicc a un string con sus valores corresp.
+    else:
+        formfilter = FilterForm()
+    if orden:
+        tabla = tabla.order_by(orden)
 
-	return render(request, 'stock/mov_gral.html', {'form': formfilter, 'tabla': tabla})
-
+    return render(request, 'stock/mov_gral.html', {'form': formfilter, 'object_list': tabla})
 
 def inicio(request):
     return render(request, 'stock/landing.html')
 
-
 @login_required
 def actividades(request):
-    pass
     return render(request, 'stock/actividades.html')
+
 
 @login_required
 def download_db(request):
