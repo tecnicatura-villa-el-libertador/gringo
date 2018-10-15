@@ -101,16 +101,27 @@ class TipoMovimiento(models.Model):
 
 
 class Movimiento(TimeStampedModel):
+    OPC_TC = Choices(('001', 'Factura A'), ('004', 'Recibos A'),
+                     ('006', 'Factura B'), ('009', 'Recibos B'),
+                     ('011', 'Factura C'), ('015', 'Recibos C'),
+                     ('017', 'Liq.Serv.Publ.A'), ('018', 'Liq.Serv.Publ.B'),
+                     ('033', 'Liq.Prim.de Granos'), ('089', 'Resumen de datos')
+                    )
+    OPC_LETRA = Choices('A', 'B', 'C', 'M', 'E', 'X' )
 
-    producto = models.ForeignKey('Producto', on_delete=models.CASCADE)
-    tipo = models.ForeignKey('TipoMovimiento', on_delete=models.CASCADE)
-    cantidad = models.DecimalField(max_digits=6, decimal_places=3)
+    producto    = models.ForeignKey('Producto', on_delete=models.CASCADE)
+    tipo        = models.ForeignKey('TipoMovimiento', on_delete=models.CASCADE)
+    cantidad    = models.DecimalField(max_digits=6, decimal_places=3)
     descripcion = models.TextField(null=True, blank=True)
-    fecha = models.DateTimeField()
-    es_inicial = models.BooleanField(default=False, help_text='Calcular stock a partir de esta cantidad')
-    actividad = models.ForeignKey('Actividad', on_delete=models.CASCADE)
+    fecha       = models.DateTimeField()
+    es_inicial  = models.BooleanField(default=False, help_text='Calcular stock a partir de esta cantidad')
+    actividad   = models.ForeignKey('Actividad', on_delete=models.CASCADE)
     precio_peso = models.DecimalField(max_digits=12, decimal_places=3)
-    precio_dolar = models.DecimalField(max_digits=12, decimal_places=3)
+    precio_dolar= models.DecimalField(max_digits=12, decimal_places=3)
+    tipo_comp   = models.CharField(choices=OPC_TC, default='OPC_TC.001', max_length=3, help_text='Tipo de comprobante')
+    letra_comp  = models.CharField(choices=OPC_LETRA, default=OPC_LETRA.X, max_length=1, help_text='Letra del comprobante')
+    pto_venta   = models.IntegerField()
+    nro_comp    = models.IntegerField()
 
     def __str__(self):
         return f'{self.tipo}: {self.producto} ({self.cantidad} {self.producto.unidad_medida})'

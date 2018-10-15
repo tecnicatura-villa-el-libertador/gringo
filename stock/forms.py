@@ -21,7 +21,8 @@ class FilterForm(forms.ModelForm):
     class Meta:
         model =  Movimiento
         fields=  ('producto', 'tipo',  'actividad', 'actividad__campaña__lote',
-        'actividad__campaña', 'actividad__campaña__cultivo')
+        'actividad__campaña', 'actividad__campaña__cultivo',
+        'tipo_comp', 'letra_comp','pto_venta','nro_comp' )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
