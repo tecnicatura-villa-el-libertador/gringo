@@ -84,7 +84,7 @@ def mov_gral (request):
     return render(request, 'stock/mov_gral.html', {'form': formfilter, 'object_list': tabla})
 
 def inicio(request):
-    return render(request, 'stock/inicio.html')
+    return render(request, 'stock/landing.html')
 
 @login_required
 def actividades(request):

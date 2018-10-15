@@ -1,20 +1,32 @@
 {% extends 'stock/plantilla_base.html' %}
-
- {% block nav %}
- {% endblock  %}
-
+{% load  bootstrap4 %}
 
     {% block content %}
+
+<div class="row">
+    
+
+    <div class="col-md-6 offset-md-3">
+
+{% block titulo %}
+    
+{% endblock titulo %}
 
 
    <form method="POST" >
             {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="save btn btn-default">
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="save btn btn-default">
             {% block submit_text %}
                 Guardar
             {% endblock %}</button>
+        {% endbuttons %}
+            
         </form>
+     
 
+    </div></div>
+   
     {% endblock %}
 

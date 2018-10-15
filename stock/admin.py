@@ -32,29 +32,3 @@ for m in (
         CategoriaProducto, Producto, UnidadMedida,
         Lote, TipoMovimiento):
     admin.site.register(m)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

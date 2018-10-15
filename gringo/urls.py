@@ -36,7 +36,6 @@ urlpatterns = [
 	path('campaña/', views.campaña, name = 'resumen_campañas'),
 	path('mov_gral/', views.mov_gral, name = 'resumen_movimientos'),
     path('admin/', admin.site.urls),
-	path('inicio/', views.inicio, name='inicio'),
+	path('', views.inicio, name='inicio'),
     path('actividades/', views.actividades, name='resumen_actividades')
-
 ]
