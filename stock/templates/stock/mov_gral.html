@@ -6,30 +6,41 @@
 {% block content %}
 
 
-		<form method="get">
-			{% crispy form %}
-		</form>
 
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-10">
 
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Tipo Movimiento</th>
-      <th scope="col">Producto</th>
-			<th scope="col">Cantidad</th>
-      <th scope="col">Und. Medida</th>
-    </tr>
-  </thead>
-  <tbody>
-		{% for movimiento in tabla %}
-    <tr>
-      <th scope="row">{{movimiento.tipo}}</th>
-      <td>{{movimiento.producto}}</td>
-      <td>{{movimiento.cantidad}}</td>
-			<td>{{movimiento.producto.unidad_medida}}</td>
-    </tr>
-		{% endfor %}
-	</tboby>
-	</table>
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Tipo Movimiento</th>
+                  <th scope="col">Producto</th>
+            			<th scope="col">Cantidad</th>
+                  <th scope="col">Und. Medida</th>
+                </tr>
+              </thead>
+              <tbody>
+            		{% for movimiento in tabla %}
+                <tr>
+                  <th scope="row">{{movimiento.tipo}}</th>
+                  <td>{{movimiento.producto}}</td>
+                  <td>{{movimiento.cantidad}}</td>
+            			<td>{{movimiento.producto.unidad_medida}}</td>
+                </tr>
+            		{% endfor %}
+            	</tboby>
+            	</table>
+            </div>
+
+            <div class="col-sm-2">
+                <form method="get">
+                	{% crispy form %}
+                </form>
+            </div>
+
+        </div>
+
+    </div>
 
 {% endblock %}
