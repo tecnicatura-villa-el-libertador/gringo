@@ -105,7 +105,7 @@ class Movimiento(TimeStampedModel):
                      ('006', 'Factura B'), ('009', 'Recibos B'),
                      ('011', 'Factura C'), ('015', 'Recibos C'),
                      ('017', 'Liq.Serv.Publ.A'), ('018', 'Liq.Serv.Publ.B'),
-                     ('033', 'Liq.Prim.de Granos'), ('089', 'Resumen de datos'),
+                     ('033', 'Liq.Prim.de Granos'), ('089', 'Resumen de datos')
                     )
     OPC_LETRA = Choices('A', 'B', 'C', 'M', 'E', 'X')
 
@@ -140,7 +140,3 @@ class Movimiento(TimeStampedModel):
         else:
             self.cantidad = abs(self.cantidad)
         super().save(*args, **kwargs)
-
-
-
-
