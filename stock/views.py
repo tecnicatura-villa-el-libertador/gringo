@@ -63,7 +63,6 @@ def mov_gral (request):
     if request.method == 'GET':
         formfilter = FilterForm(request.GET)
 
-    formfilter = FilterForm(request.GET)
     if formfilter.is_valid():
         orden = formfilter.cleaned_data.pop('orden')
         for clave, valor in formfilter.cleaned_data.items(): #recorre las opciones de filtrado.
