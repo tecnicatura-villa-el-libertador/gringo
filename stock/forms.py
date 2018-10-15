@@ -20,13 +20,14 @@ class FilterForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper()
-        self.helper.form_id = 'id-exampleForm'
+        self.helper.form_id = 'form'
         self.helper.form_class = ''
         self.helper.form_method = 'get'
-        self.helper.form_action = 'submit_survey'
+        self.helper.form_action = ''
         self.helper.layout = Layout(
-            Field('{% for field in fields%}',
-            onchange = 'this.form.submit();')
+            Field(#'producto',
+            '{% for field in fields%}',
+            onchange = 'this.forms.submit();',)
         )
 
         self.helper.add_input(Submit('submit', 'Filtrar'))
