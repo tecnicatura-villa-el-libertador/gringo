@@ -33,8 +33,9 @@ class FilterForm(forms.ModelForm):
         self.helper = FormHelper()
         self.helper.form_id = 'id-form'
         self.helper.form_method = 'get'
+        self.helper.form_show_labels = False
         self.helper.layout = Layout(
-            Field(*self.fields, css_class = 'custom-select custom-select-sm', 
+            Field(*self.fields, css_class = 'custom-select custom-select-sm',
             onchange = 'document.forms["id-form"].submit();',)
         )
 
