@@ -11,6 +11,8 @@ class FilterForm(forms.ModelForm):
     actividad__campaña = forms.ModelChoiceField(label="Campaña", queryset=Campaña.objects.all())
     actividad__campaña__cultivo = forms.ModelChoiceField(label="Cultivo", queryset=Cultivo.objects.all())
     
+
+
     orden = forms.ChoiceField(choices=[
         ('producto', 'Producto (asc)'),
         ('-producto', 'Producto (desc)'),
@@ -32,9 +34,8 @@ class FilterForm(forms.ModelForm):
         self.helper.form_id = 'id-form'
         self.helper.form_method = 'get'
         self.helper.layout = Layout(
-            Field(#'producto',
-            '{% for field in fields%}',
-            onchange = 'document.form["id-form"].submit();',)
+            Field(*self.fields,
+            onchange = 'document.forms["id-form"].submit();',)
         )
 
         self.helper.add_input(Submit('submit-button', 'Filtrar'))
