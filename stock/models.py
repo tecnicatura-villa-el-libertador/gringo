@@ -111,17 +111,17 @@ class Movimiento(TimeStampedModel):
 
     producto    = models.ForeignKey('Producto', on_delete=models.CASCADE)
     tipo        = models.ForeignKey('TipoMovimiento', on_delete=models.CASCADE)
-    cantidad    = models.DecimalField(max_digits=6, decimal_places=3)
+    cantidad    = models.DecimalField(max_digits=12, decimal_places=3)
     descripcion = models.TextField(null=True, blank=True)
     fecha       = models.DateTimeField()
     es_inicial  = models.BooleanField(default=False, help_text='Calcular stock a partir de esta cantidad')
     actividad   = models.ForeignKey('Actividad', on_delete=models.CASCADE)
     precio_peso = models.DecimalField(max_digits=12, decimal_places=3)
     precio_dolar= models.DecimalField(max_digits=12, decimal_places=3)
-    tipo_comp   = models.CharField(choices=OPC_TC, default='OPC_TC.001', max_length=3, help_text='Tipo de comprobante')
-    letra_comp  = models.CharField(choices=OPC_LETRA, default=OPC_LETRA.X, max_length=1, help_text='Letra del comprobante')
-    pto_venta   = models.IntegerField()
-    nro_comp    = models.IntegerField()
+    tipo_comp   = models.CharField(choices=OPC_TC, default='OPC_TC.001', max_length=3, verbose_name='Tipo de comprobante')
+    letra_comp  = models.CharField(choices=OPC_LETRA, default=OPC_LETRA.X, max_length=1, verbose_name='Letra')
+    pto_venta   = models.IntegerField(verbose_name='Punto de venta')
+    nro_comp    = models.IntegerField(verbose_name='Número de comprobante')
 
     def __str__(self):
         return f'{self.tipo}: {self.producto} ({self.cantidad} {self.producto.unidad_medida})'
