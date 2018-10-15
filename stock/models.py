@@ -140,7 +140,3 @@ class Movimiento(TimeStampedModel):
         else:
             self.cantidad = abs(self.cantidad)
         super().save(*args, **kwargs)
-
-
-
-
