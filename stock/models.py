@@ -105,9 +105,10 @@ class Movimiento(TimeStampedModel):
                      ('006', 'Factura B'), ('009', 'Recibos B'),
                      ('011', 'Factura C'), ('015', 'Recibos C'),
                      ('017', 'Liq.Serv.Publ.A'), ('018', 'Liq.Serv.Publ.B'),
-                     ('033', 'Liq.Prim.de Granos'), ('089', 'Resumen de datos')
+                     ('033', 'Liq.Prim.de Granos'), ('089', 'Resumen de datos'),
+                     ('   ', '---')
                     )
-    OPC_LETRA = Choices('A', 'B', 'C', 'M', 'E', 'X' )
+    OPC_LETRA = Choices('A', 'B', 'C', 'M', 'E', 'X',' ' )
 
     producto    = models.ForeignKey('Producto', on_delete=models.CASCADE)
     tipo        = models.ForeignKey('TipoMovimiento', on_delete=models.CASCADE)
@@ -118,7 +119,7 @@ class Movimiento(TimeStampedModel):
     actividad   = models.ForeignKey('Actividad', on_delete=models.CASCADE)
     precio_peso = models.DecimalField(max_digits=12, decimal_places=3)
     precio_dolar= models.DecimalField(max_digits=12, decimal_places=3)
-    tipo_comp   = models.CharField(choices=OPC_TC, default='OPC_TC.001', max_length=3, verbose_name='Tipo de comprobante')
+    tipo_comp   = models.CharField(choices=OPC_TC, default='OPC_TC.089', max_length=3, verbose_name='Tipo de comprobante')
     letra_comp  = models.CharField(choices=OPC_LETRA, default=OPC_LETRA.X, max_length=1, verbose_name='Letra')
     pto_venta   = models.IntegerField(verbose_name='Punto de venta')
     nro_comp    = models.IntegerField(verbose_name='Número de comprobante')

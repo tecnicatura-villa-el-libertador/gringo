@@ -28,6 +28,7 @@ class FilterForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
         self.helper = FormHelper()
         self.helper.form_id = 'id-form'
         self.helper.form_method = 'get'
@@ -38,6 +39,8 @@ class FilterForm(forms.ModelForm):
         )
 
         self.helper.add_input(Submit('submit-button', 'Filtrar'))
+
+        #self.tipo_comp(default)
 
         for key in self.fields:
             self.fields[key].required = False
