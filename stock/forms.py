@@ -10,7 +10,7 @@ class FilterForm(forms.ModelForm):
     actividad__campaña__lote = forms.ModelChoiceField(label="Lote", queryset=Lote.objects.all())
     actividad__campaña = forms.ModelChoiceField(label="Campaña", queryset=Campaña.objects.all())
     actividad__campaña__cultivo = forms.ModelChoiceField(label="Cultivo", queryset=Cultivo.objects.all())
-    
+
 
 
     orden = forms.ChoiceField(choices=[
@@ -34,7 +34,7 @@ class FilterForm(forms.ModelForm):
         self.helper.form_id = 'id-form'
         self.helper.form_method = 'get'
         self.helper.layout = Layout(
-            Field(*self.fields,
+            Field(*self.fields, css_class = 'custom-select custom-select-sm', 
             onchange = 'document.forms["id-form"].submit();',)
         )
 
