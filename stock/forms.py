@@ -5,13 +5,16 @@ from .models import Movimiento, Lote, Campaña, Cultivo
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit, Layout, Field
 
-
 class FilterForm(forms.ModelForm):
-    actividad__campaña__lote = forms.ModelChoiceField(label="Lote", queryset=Lote.objects.all())
-    actividad__campaña = forms.ModelChoiceField(label="Campaña", queryset=Campaña.objects.all())
-    actividad__campaña__cultivo = forms.ModelChoiceField(label="Cultivo", queryset=Cultivo.objects.all())
-
-
+    actividad__campaña = forms.ModelChoiceField(label="Campaña",
+                                                empty_label="Elegir campaña",
+                                                queryset=Campaña.objects.all())
+    actividad__campaña__lote = forms.ModelChoiceField(label="Lote",
+                                                      empty_label="Elegir Lote",
+                                                      queryset=Lote.objects.all())
+    actividad__campaña__cultivo = forms.ModelChoiceField(label="Cultivo",
+                                                         empty_label="Elegir cultivo",
+                                                         queryset=Cultivo.objects.all())
 
     orden = forms.ChoiceField(choices=[
         ('producto', 'Producto (asc)'),
@@ -24,20 +27,30 @@ class FilterForm(forms.ModelForm):
 
     class Meta:
         model =  Movimiento
-        fields=  ('producto', 'tipo',  'actividad', 'actividad__campaña__lote',
+        fields = ('producto', 'tipo',  'actividad', 'actividad__campaña__lote',
         'actividad__campaña', 'actividad__campaña__cultivo',
-        'tipo_comp', 'letra_comp','pto_venta','nro_comp' )
+        'tipo_comp', 'letra_comp','pto_venta','nro_comp')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper()
         self.helper.form_id = 'id-form'
         self.helper.form_method = 'get'
-        self.helper.form_show_labels = False
+
+        self.helper.form_class = 'form-horizontal'
+        self.helper.label_class = 'col-form-label-sm'
+        self.helper.field_class = 'col'
+
         self.helper.layout = Layout(
-            Field(*self.fields, css_class = 'custom-select custom-select-sm',
-            onchange = 'document.forms["id-form"].submit();',)
+            Field(*self.fields, css_class='custom-select custom-select-sm',
+            onchange='document.forms["id-form"].submit();')
         )
+
+        self.fields['producto'].empty_label = "Elegir producto"
+        self.fields['tipo'].empty_label = "Elegir tipo"
+        self.fields['actividad'].empty_label = "Elegir actividad"
+        self.fields['tipo_comp'].empty_label = "Elegir Tipo de comprobante "
+        self.fields['letra_comp'].empty_label = "Elegir Letra"
 
         self.helper.add_input(Submit('submit-button', 'Filtrar'))
 
