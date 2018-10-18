@@ -33,11 +33,8 @@ urlpatterns = [
 	path('stock/', views.stock, name = 'resumen_stock'),
 	path('campaña/', views.campaña, name = 'resumen_campañas'),
 	path('mov_gral/', views.mov_gral, name = 'resumen_movimientos'),
-<<<<<<< HEAD
     path('admin/', admin.site.urls),
 	path('', views.inicio, name='inicio'),
-=======
     path('inicio/', views.inicio, name='inicio'),
->>>>>>> dev
     path('actividades/', views.actividades, name='resumen_actividades')
 ]
