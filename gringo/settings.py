@@ -124,4 +124,4 @@ STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/stock/'
 
-LOGIN_URL = '/admin/login'
+LOGIN_URL = '/accounts/login'

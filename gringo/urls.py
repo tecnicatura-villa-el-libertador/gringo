@@ -22,10 +22,9 @@ from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
 	path('stock/', views.stock),
-	path('campaña/', views.campaña),
-
-    path('campaña/nueva', login_required(views.CampañaCreate.as_view())),
-	path('mov_gral/', views.mov_gral),
+	path('campaña/nueva', login_required(views.CampañaCreate.as_view()), name="Campaña_Nueva"),
+  	path('lote/nuevo', login_required(views.LoteCreate.as_view()), name="Lote_Nuevo"),
+    path('mov_gral/', views.mov_gral),
     path('admin/', admin.site.urls),
 
     # Other URL patterns ...
@@ -34,8 +33,9 @@ urlpatterns = [
     path('_db', views.download_db),
 	path('stock/', views.stock, name = 'resumen_stock'),
 	path('campaña/', views.campaña, name = 'resumen_campañas'),
-	path('mov_gral/', views.mov_gral, name = 'resumen_movimientos'),
+    path('mov_gral/', views.mov_gral, name = 'resumen_movimientos'),
     path('admin/', admin.site.urls),
 	path('', views.inicio, name='inicio'),
     path('actividades/', views.actividades, name='resumen_actividades')
+
 ]

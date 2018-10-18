@@ -5,10 +5,11 @@ from django.db.models import Sum
 from wsgiref.util import FileWrapper
 from django.http import HttpResponse
 from django.conf import settings
-from .models import Movimiento, Producto, Campaña, CategoriaProducto
+from .models import Movimiento, Producto, Campaña, CategoriaProducto,Lote
 from .forms import FilterForm
 from django.contrib.auth.decorators import login_required
 from django.views.generic.edit import CreateView
+
 
 
 class CampañaCreate(CreateView):
@@ -21,8 +22,19 @@ class CampañaCreate(CreateView):
         campaña.save()
         return redirect('/')
 
+class LoteCreate(CreateView):
+    model = Lote
+    fields = ['nombre', 'descripcion', 'latitud', 'longitud', 'hectareas']
+
+    def form_valid(self, form):
+        lote = form.save(commit=False)
+        lote.usuario = self.request.user
+        lote.save()
+        return redirect('/')
+
 
 # Create your views here.
+@login_required
 def stock(request):
     tabla = {}
     for p in Producto.objects.all():
@@ -55,6 +67,21 @@ def campaña(request):
                     total_dolares=Sum('precio_dolar'))
         tabla[cmp] = total
     return render(request, 'stock/campaña.html', {'tabla': tabla})
+
+@login_required
+def lote(request):
+    tabla = {}
+    for cmp in Lote.objects.all():
+        # Datos de la campaña...
+        # calcular cantidad*precio_peso, cantidad*precio_dolar
+        total = Movimiento.objects.filter(
+            actividad__campaña=cmp
+        ).aggregate(total_pesos=Sum('precio_peso'),
+                    total_dolares=Sum('precio_dolar'))
+        tabla[cmp] = total
+    return render(request, 'stock/lote.html', {'tabla': tabla})
+
+
 
 
 @login_required
