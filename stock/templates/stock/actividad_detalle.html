@@ -38,7 +38,14 @@
             <dl>
               <dt>Tipo</dt>
               <dd>{{ movimiento.tipo }}</dd>
-              ...
+              <dt>Fecha</dt>
+              <dd>{{ movimiento.fecha|date }}</dd>
+              <dt>Monto en $</dt>
+              <dd>{{ movimiento.precio_peso }}</dd>
+              <dt>Monto en u$s</dt>
+              <dd>{{ movimiento.precio_dolar }}</dd>
+              <dt>Detalle</dt>
+              <dd>{{ movimiento.detalle }}</dd>
             </dl>
 
           </div>
