@@ -34,5 +34,6 @@ urlpatterns = [
     path('mov_gral/', views.mov_gral, name='resumen_movimientos'),
 
 	path('', views.inicio, name='inicio'),
+    path('inicio/', views.inicio, name='inicio'),
     path('actividades/', views.actividades, name='resumen_actividades')
 ]

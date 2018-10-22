@@ -1,3 +1,4 @@
+{% extends 'stock/base.html' %}
 {% load staticfiles %}
 <!DOCTYPE html>
 <html>
@@ -46,6 +47,25 @@
         </div>
       </nav>
     </header>
+
+{% block nav%}
+<ul class="navbar-nav ml-auto align-items-start align-items-lg-center">
+    <li class="nav-item"><a class="nav-link" href='#'> Sobre Gringo </a></li>
+    <li class="nav-item"><a class="nav-link" href='#'> Testimonios </a></li>
+</ul>
+{% endblock %}
+
+{% block boton %}
+    <!-- Boton iniciar secion -->
+    <div class="navbar-text">
+        <a href="http://localhost:8000/accounts/login/" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary navbar-btn btn-shadow btn-gradient">Iniciar Sesión</a>
+    </div>
+    <div class="navbar-text">
+        <a href="http://localhost:8000/accounts/register/" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary navbar-btn btn-outline-primary">Registrate</a>
+    </div>
+{%endblock%}
+
+  {% block content %}
     <!-- Modal-->
     <div id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade">
       <div role="document" class="modal-dialog">
@@ -254,71 +274,5 @@
     <div id="scrollTop">
       <div class="d-flex align-items-center justify-content-end"><i class="fa fa-long-arrow-up"></i>To Top</div>
     </div>
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="text-center col-lg-12 col-md-12 offset-lg-12 offset-md-12"><a href="#" class="brand">Contacto</a>
-            <ul class="contact-info list-unstyled">
-              <li><a href="atencionclientes@gringo.com.ar">atencionclientes@gringo.com.ar</a></li>
-              <li><a href="tel:3516564342">+54 9 351 6564342</a></li>
-            </ul>
-            <ul class="social-icons list-inline">
-              <li class="list-inline-item"><a href="#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-             </ul>
-          </div>
-          {% comment %} <div class="col-lg-3 col-md-6">
-            <h5>Selected Cases</h5>
-            <ul class="links list-unstyled">
-              <li> <a href="#">Guess Conntect</a></li>
-              <li> <a href="#">Postly</a></li>
-              <li> <a href="#">Iris Vor Arnim</a></li>
-              <li> <a href="#">Yapital</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5>Selected Cases</h5>
-            <ul class="links list-unstyled">
-              <li> <a href="#">Guess Conntect</a></li>
-              <li> <a href="#">Postly</a></li>
-              <li> <a href="#">Iris Vor Arnim</a></li>
-              <li> <a href="#">Yapital</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5>Selected Cases</h5>
-            <ul class="links list-unstyled">
-              <li> <a href="#">Guess Conntect</a></li>
-              <li> <a href="#">Postly</a></li>
-              <li> <a href="#">Iris Vor Arnim</a></li>
-              <li> <a href="#">Yapital</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="copyrights">
-        <div class="container">
-          <div class="row">
-            <div class="text-center col-lg-6 col-md-6 offset-lg-6 offset-md-6">
-             <p>&copy; 2018 gringo.com Todos los derechos reservados</p>
-            </div>
-            <div class="col-md-5 text-right">
-              <p>Template By <a href="https://bootstrapious.com/" class="external">Bootstrapious</a>  </p>
-              <!-- Please do not remove the backlink to Bootstrapious unless you support us at http://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :) -->
-            </div>
-          </div>
-        </div>{% endcomment %}
-      </div>
-    </footer>
-    <!-- Javascript files-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"> </script>
-    <script src="{% static "jquery.cookie/jquery.cookie.js" %}"> </script>
-    <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
-    <script src="{% static "js/front.js" %}"></script>
-    <script src="{% static "owl.carousel/owl.carousel.min.js" %}"></script>
 
-  </body>
-</html>
+{% endblock %}

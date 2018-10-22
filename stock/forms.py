@@ -55,9 +55,10 @@ class FilterForm(forms.ModelForm):
 
         # self.helper.add_input(Submit('submit-button', 'Filtrar'))
 
+        self.helper.add_input(Submit('submit-button', 'Filtrar', css_class='btn btn-primary btn-shadow btn-gradient'))
+
         #self.tipo_comp(default)  ## resetea valor para que no aplique filtro no deseado.
         #self.letra(default)  ## resetea valor para que no aplique filtro no deseado.
-
 
         for key in self.fields:
             self.fields[key].required = False

@@ -1,32 +1,26 @@
-{% extends 'stock/plantilla_base.html' %}
+{% extends 'stock/usuario_base.html' %}
 {% load  bootstrap4 %}
 
-    {% block content %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row d-flex">
+        <div class="col-md-6 mx-auto">
+            {% block titulo %}
 
-<div class="row">
-    
+            {% endblock titulo %}
 
-    <div class="col-md-6 offset-md-3">
+            <form method="POST" >
+                {% csrf_token %}
+                {% bootstrap_form form %}
 
-{% block titulo %}
-    
-{% endblock titulo %}
+                {% buttons %}
+                    <button type="submit" class="save btn btn-primary navbar-btn btn-shadow btn-gradient">
+                    {% block submit_text %}
+                    Guardar
+                    {% endblock %}</button>
+                {% endbuttons %}
+            </form>
+        </div></div>
 
-
-   <form method="POST" >
-            {% csrf_token %}
-    {% bootstrap_form form %}
-    {% buttons %}
-        <button type="submit" class="save btn btn-default">
-            {% block submit_text %}
-                Guardar
-            {% endblock %}</button>
-        {% endbuttons %}
-            
-        </form>
-     
-
-    </div></div>
-   
-    {% endblock %}
-
+</div>
+{% endblock %}
