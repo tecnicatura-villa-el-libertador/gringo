@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from stock import views
 from django.conf.urls import include, url
-from django.contrib.auth.decorators import login_required
-
 
 urlpatterns = [
+<<<<<<< HEAD
     path('campaña/nueva', login_required(views.CampañaCreate.as_view())),
+=======
+>>>>>>> origin/dev
 	path('mov_gral/', views.mov_gral),
     # Other URL patterns ...
     url(r'^accounts/', include('django_registration.backends.activation.urls')),
@@ -29,8 +30,19 @@ urlpatterns = [
     path('_db', views.download_db),
 	path('stock/', views.stock, name = 'resumen_stock'),
 	path('campaña/', views.campaña, name = 'resumen_campañas'),
+<<<<<<< HEAD
 	path('mov_gral/', views.mov_gral, name = 'resumen_movimientos'),
     path('admin/', admin.site.urls),
     path('', views.inicio, name='inicio'),
+=======
+	path('campaña/<int:id>', views.campaña_detalle, name='campaña_detalle'),
+    path('campaña/<int:id>/nueva_actividad', views.ActividadCreate.as_view(), name='nueva_actividad'),
+    path('campaña/<int:id_campaña>/actividad/<int:id_actividad>', views.actividad_detalle, name='actividad_detalle'),
+    path('campaña/nueva', views.CampañaCreate.as_view(),),
+    path('mov_gral/', views.mov_gral, name='resumen_movimientos'),
+
+	path('', views.inicio, name='inicio'),
+    path('inicio/', views.inicio, name='inicio'),
+>>>>>>> origin/dev
     path('actividades/', views.actividades, name='resumen_actividades')
 ]

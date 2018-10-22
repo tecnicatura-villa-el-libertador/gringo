@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from model_utils import Choices
 from model_utils.models import TimeStampedModel
 
@@ -18,6 +19,9 @@ class Campaña(models.Model):
     nombre = models.CharField(max_length=50, verbose_name='Nombre de la campaña', help_text='Ejemplo: Soja Primavera 2018')
     cultivo = models.ForeignKey('Cultivo', on_delete=models.SET_NULL, blank=True, null=True)
     lote = models.ForeignKey('Lote', on_delete=models.SET_NULL, blank=True, null=True)
+
+    def get_absolute_url(self):
+        return reverse('campaña_detalle', args=[self.id])
 
     def __str__(self):
         return self.nombre
@@ -53,6 +57,14 @@ class Actividad(TimeStampedModel):
     tipo = models.ForeignKey('TipoActividad', on_delete=models.SET_NULL, blank=True, null=True)
     descripcion = models.TextField(null=True, blank=True)
 
+    def get_absolute_url(self):
+        return reverse(
+            'actividad_detalle',
+            kwargs=dict(
+                id_campaña=self.campaña.id,
+                id_actividad=self.id
+            )
+        )
 
     def __str__(self):
         return self.descripcion
@@ -128,9 +140,9 @@ class Movimiento(TimeStampedModel):
 
 
     def save(self, *args, **kwargs):
-        """Sobrecarga del metodo que se encarga de guardar el estado 
-        actual de la instancia Movimiento (a nivel python) a la 
-        base de datos. 
+        """Sobrecarga del metodo que se encarga de guardar el estado
+        actual de la instancia Movimiento (a nivel python) a la
+        base de datos.
 
         Antes de efectivamente guardar, calculamos si el valor cantidad debe
         ser positivo o negativo en funcion del tipo de movimiento

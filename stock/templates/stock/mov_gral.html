@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 {% extends 'stock/base.html' %}
+=======
+{% extends 'stock/usuario_base.html' %}
+>>>>>>> origin/dev
 {% load bootstrap4 %}
 {% load crispy_forms_tags %}
 
@@ -19,7 +23,7 @@
                 </tr>
               </thead>
               <tbody>
-            		{% for movimiento in tabla %}
+            		{% for movimiento in object_list %}
                 <tr>
                   <th scope="row">{{movimiento.tipo}}</th>
                   <td>{{movimiento.producto}}</td>

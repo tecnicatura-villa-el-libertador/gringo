@@ -1,17 +1,19 @@
 import os
 
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.db.models import Sum
+from django.http import HttpResponseForbidden
 from wsgiref.util import FileWrapper
 from django.http import HttpResponse
 from django.conf import settings
-from .models import Movimiento, Producto, Campaña, CategoriaProducto
-from .forms import FilterForm
+from .models import Movimiento, Producto, Actividad, Movimiento, Campaña, CategoriaProducto
+from .forms import FilterForm, MovimientoModelForm
 from django.contrib.auth.decorators import login_required
 from django.views.generic.edit import CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
-class CampañaCreate(CreateView):
+class CampañaCreate(LoginRequiredMixin, CreateView):
     model = Campaña
     fields = ['nombre', 'cultivo', 'lote']
 
@@ -22,7 +24,56 @@ class CampañaCreate(CreateView):
         return redirect('/')
 
 
+@login_required
+def campaña_detalle(request, id):
+    campaña = get_object_or_404(Campaña, id=id)
+    if campaña.usuario != request.user:
+        return HttpResponseForbidden()
+    return render(request, 'stock/campaña_detalle.html', {'campaña': campaña})
+
+
+
+class ActividadCreate(LoginRequiredMixin, CreateView):
+    model = Actividad
+    fields = ['fecha_inicio', 'fecha_fin', 'tipo', 'descripcion']
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['campaña'] = get_object_or_404(Campaña, id=self.kwargs['id'])
+        return context
+
+    def form_valid(self, form):
+        actividad = form.save(commit=False)
+        actividad.campaña = get_object_or_404(Campaña, id=self.kwargs['id'])
+        actividad.save()
+        return redirect(actividad)
+
+
+@login_required
+def actividad_detalle(request, id_campaña, id_actividad):
+    campaña = get_object_or_404(Campaña, id=id_campaña)
+    if campaña.usuario != request.user:
+        return HttpResponseForbidden()
+    actividad = get_object_or_404(Actividad, campaña=campaña, id=id_actividad)
+    form = MovimientoModelForm(request.POST if request.method == 'POST' else None)
+    if form.is_valid():
+        mov = form.save(commit=False)
+        mov.actividad = actividad
+        mov.save()
+        return redirect(actividad)
+
+    return render(request, 'stock/actividad_detalle.html', {
+        'campaña': campaña,
+        'actividad': actividad,
+        'form': form,
+    })
+
+
+
+
 # Create your views here.
+
+@login_required
 def stock(request):
     tabla = {}
     for p in Producto.objects.all():
@@ -63,7 +114,6 @@ def mov_gral (request):
     if request.method == 'GET':
         formfilter = FilterForm(request.GET)
 
-    formfilter = FilterForm(request.GET)
     if formfilter.is_valid():
         orden = formfilter.cleaned_data.pop('orden')
         for clave, valor in formfilter.cleaned_data.items(): #recorre las opciones de filtrado.

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 {% extends 'stock/base.html' %}
+=======
+{% extends 'stock/usuario_base.html' %}
+>>>>>>> origin/dev
 {% load  bootstrap4 %}
 
 {% block content %}
@@ -12,16 +16,25 @@
             <form method="POST" >
                 {% csrf_token %}
                 {% bootstrap_form form %}
+<<<<<<< HEAD
                 <a href='#' class="btn btn-primary navbar-btn btn-shadow btn-gradient">Guardar</a>
 
                 {% comment %}
                 {% buttons %}
                     <button type="submit" class="save btn btn-default">
+=======
+
+                {% buttons %}
+                    <button type="submit" class="save btn btn-primary navbar-btn btn-shadow btn-gradient">
+>>>>>>> origin/dev
                     {% block submit_text %}
                     Guardar
                     {% endblock %}</button>
                 {% endbuttons %}
+<<<<<<< HEAD
                 {% endcomment %}
+=======
+>>>>>>> origin/dev
             </form>
         </div></div>
 
