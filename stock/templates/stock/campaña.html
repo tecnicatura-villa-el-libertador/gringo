@@ -15,7 +15,19 @@ Campañas
 
 </form>
 
-<table class="table">
+    <div class="container-fluid">
+        <div class="row d-flex">
+            {% for campaña, totales in tabla.items %}
+            <div class="text-center col-lg-3 text order-2 order-lg-1">
+              <a href="#" class="btn btn-primary btn-shadow btn-gradient link-scroll">{{campaña}}</a>
+              <p class="hero-text">Total $ {{totales.total_pesos}}</p>
+              <p class="hero-text">Total u$s {{totales.total_dolares}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% comment %}<table class="table">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Campaña</th>
@@ -32,7 +44,7 @@ Campañas
     </tr>
 		{% endfor %}
 	</tboby>
-	</table>
+</table>{% endcomment %}
 
 <!--table>
 {% for campaña, totales in tabla.items %}
