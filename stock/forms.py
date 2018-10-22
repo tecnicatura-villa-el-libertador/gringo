@@ -53,7 +53,7 @@ class FilterForm(forms.ModelForm):
         self.fields['tipo_comp'].empty_label = "Elegir Tipo de comprobante "
         self.fields['letra_comp'].empty_label = "Elegir Letra"
 
-        self.helper.add_input(Submit('submit-button', 'Filtrar'))
+        # self.helper.add_input(Submit('submit-button', 'Filtrar'))
 
         #self.tipo_comp(default)  ## resetea valor para que no aplique filtro no deseado.
         #self.letra(default)  ## resetea valor para que no aplique filtro no deseado.
@@ -65,4 +65,14 @@ class FilterForm(forms.ModelForm):
         self.fields['tipo_comp'].required = False
         self.fields['letra_comp'].choices = [('', '---')] + Movimiento.OPC_LETRA
         self.fields['letra_comp'].required = False
-        
+
+
+class MovimientoModelForm(forms.ModelForm):
+    class Meta:
+        model = Movimiento
+        fields = [
+            'producto', 'tipo', 'cantidad', 'descripcion',
+            'fecha', 'es_inicial', 'precio_peso',
+            'precio_dolar', 'tipo_comp', 'letra_comp', 'pto_venta',
+            'nro_comp'
+        ]
