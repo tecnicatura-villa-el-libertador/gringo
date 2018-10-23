@@ -39,14 +39,11 @@ class ActividadCreate(LoginRequiredMixin, CreateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-
-        import ipdb; ipdb.set_trace()
         context['campaña'] = get_object_or_404(Campaña, id=self.kwargs['id'])
         return context
 
     def form_valid(self, form):
         actividad = form.save(commit=False)
-        import ipdb; ipdb.set_trace()
         actividad.campaña = get_object_or_404(Campaña, id=self.kwargs['id'])
         actividad.save()
         return redirect(actividad)
