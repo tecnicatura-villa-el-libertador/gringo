@@ -56,7 +56,7 @@ def stock(request):
     return render(request, 'stock/stock.html', {'tabla': tabla})
 
 @login_required
-def campaña(request):
+def campañas_listado(request):
     tabla = {}
     for cmp in Campaña.objects.all():
         # Datos de la campaña...
