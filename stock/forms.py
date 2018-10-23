@@ -43,13 +43,6 @@ class FilterForm(forms.ModelForm):
         self.helper.field_class = 'col'
 
         self.helper.layout = Layout(
-<<<<<<< HEAD
-            Field(*self.fields, css_class = 'custom-select custom-select-sm',
-            onchange = 'document.forms["id-form"].submit();',)
-        )
-
-        self.helper.add_input(Submit('submit-button', 'Filtrar', css_class = 'css_class = btn btn-primary btn-shadow btn-gradient'))
-=======
             Field(*self.fields, css_class='custom-select custom-select-sm',
             onchange='document.forms["id-form"].submit();')
         )
@@ -63,7 +56,6 @@ class FilterForm(forms.ModelForm):
         # self.helper.add_input(Submit('submit-button', 'Filtrar'))
 
         self.helper.add_input(Submit('submit-button', 'Filtrar', css_class='btn btn-primary btn-shadow btn-gradient'))
->>>>>>> origin/dev
 
         #self.tipo_comp(default)  ## resetea valor para que no aplique filtro no deseado.
         #self.letra(default)  ## resetea valor para que no aplique filtro no deseado.
@@ -74,8 +66,6 @@ class FilterForm(forms.ModelForm):
         self.fields['tipo_comp'].required = False
         self.fields['letra_comp'].choices = [('', '---')] + Movimiento.OPC_LETRA
         self.fields['letra_comp'].required = False
-<<<<<<< HEAD
-=======
 
 
 class MovimientoModelForm(forms.ModelForm):
@@ -87,4 +77,3 @@ class MovimientoModelForm(forms.ModelForm):
             'precio_dolar', 'tipo_comp', 'letra_comp', 'pto_venta',
             'nro_comp'
         ]
->>>>>>> origin/dev
