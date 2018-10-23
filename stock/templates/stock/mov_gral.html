@@ -1,14 +1,12 @@
-{% extends 'stock/plantilla_base.html' %}
+
+{% extends 'stock/usuario_base.html' %}
 {% load bootstrap4 %}
 {% load crispy_forms_tags %}
 
-
 {% block content %}
 
-
-
 <div class="container-fluid">
-    <div class="row">
+    <div class="row d-flex justify-content-center">
         <div class="col-10">
 
             <table class="table">
@@ -21,7 +19,7 @@
                 </tr>
               </thead>
               <tbody>
-            		{% for movimiento in tabla %}
+            		{% for movimiento in object_list %}
                 <tr>
                   <th scope="row">{{movimiento.tipo}}</th>
                   <td>{{movimiento.producto}}</td>

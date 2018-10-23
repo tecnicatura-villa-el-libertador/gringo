@@ -1,5 +1,5 @@
 
-{% extends 'stock/plantilla_base.html' %}
+{% extends 'stock/usuario_base.html' %}
 
 {% load bootstrap4%}
 
@@ -15,10 +15,24 @@ Campañas
 
 </form>
 
-<a href="{% url "campaña_nueva" %}" class="btn btn-outline-success btn-sm">Iniciar nueva campaña </a>
-<a href="{% url "Lote_Nuevo" %}" class="btn btn-outline-success btn-sm">Iniciar nuevo lote </a>
+<a href="{% url "campaña_nueva" %}" class="btn btn-outline-success btn-sm">Crear nueva campaña </a>
+<a href="{% url "Lote_Nuevo" %}" class="btn btn-outline-success btn-sm">Crear nuevo lote </a>
 
 <table class="table">
+    <div class="container-fluid">
+        <div class="row d-flex">
+            {% for campaña, totales in tabla.items %}
+            <div class="text-center col-lg-3 text order-2 order-lg-1">
+              <a href="{% url "campaña_detalle" campaña.id %}" class="btn btn-primary btn-shadow btn-gradient link-scroll">{{campaña}}</a>
+              <p class="hero-text">Total $ {{totales.total_pesos}}</p>
+              <p class="hero-text">Total u$s {{totales.total_dolares}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% comment %}<table class="table">
+>>>>>>> dev
   <thead class="thead-dark">
     <tr>
       <th scope="col">Campaña</th>
@@ -35,7 +49,7 @@ Campañas
     </tr>
 		{% endfor %}
 	</tboby>
-	</table>
+</table>{% endcomment %}
 
 <!--table>
 {% for campaña, totales in tabla.items %}

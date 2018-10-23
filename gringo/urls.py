@@ -17,14 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from stock import views
 from django.conf.urls import include, url
-from django.contrib.auth.decorators import login_required
-
 
 urlpatterns = [
 	path('stock/', views.stock),
-  	path('lote/nuevo', login_required(views.LoteCreate.as_view()), name="Lote_Nuevo"),
+  	path('lote/nuevo', views.LoteCreate.as_view(), name="Lote_Nuevo"),
 	path('campaña/nueva', views.CampañaCreate.as_view(), name='campaña_nueva'),
-	path('mov_gral/', views.mov_gral),
 
     path('admin/', admin.site.urls),
     # Other URL patterns ...
@@ -32,8 +29,15 @@ urlpatterns = [
     url(r'^accounts/', include('django.contrib.auth.urls')),
     path('_db', views.download_db),
 	path('stock/', views.stock, name = 'resumen_stock'),
+
 	path('campañas/', views.campañas_listado, name = 'resumen_campañas'),
-	path('mov_gral/', views.mov_gral, name = 'resumen_movimientos'),
+	path('', views.inicio, name='inicio'),
+	path('campaña/<int:id>', views.campaña_detalle, name='campaña_detalle'),
+    path('campaña/<int:id>/nueva_actividad', views.ActividadCreate.as_view(), name='nueva_actividad'),
+    path('campaña/<int:id_campaña>/actividad/<int:id_actividad>', views.actividad_detalle, name='actividad_detalle'),
+    path('campaña/nueva', views.CampañaCreate.as_view(),),
+    path('mov_gral/', views.mov_gral, name='resumen_movimientos'),
+    path('lotes/', views.mov_gral, name='resumen_lotes'),
 	path('', views.inicio, name='inicio'),
     path('actividades/', views.actividades, name='resumen_actividades')
 ]
