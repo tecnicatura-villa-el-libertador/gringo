@@ -37,34 +37,27 @@
             {% block nav %}
             {% endblock %}
             </div>
-            {% block boton %}
 
-                {% if request.user.is_authenticated %}
+            {% if request.user.is_authenticated %}
+
+            <div class="navbar-text justify-content-left">
                 <ul class="navbar-nav align-items-start align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link" href='{% url 'inicio'%}'> INICIO </a></li>
                     <li class="nav-item"><a class="nav-link" href='{% url 'resumen_stock' %}'>STOCK</a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'resumen_campañas'%}">CAMPAÑAS</a></li>
                     <li class="nav-item"><a class="nav-link disable" href="{% url 'resumen_movimientos'%}">REPORTES</a></li>
                 </ul>
-
-                <div class="navbar-text">
-                  <!-- Button trigger modal--><a href="/accounts/logout/" class="btn btn-primary navbar-btn btn-shadow btn-gradient">Cerrar Sesión</a>
-                </div>
-
-
-                {% else %}
-                <div class="navbar-text mr-2">
-                  <!-- Button trigger modal--><a href="/accounts/login/" class="btn btn-primary navbar-btn btn-shadow btn-gradient">Iniciar Sesión</a>
-                </div>
-                <div class="navbar-text">
-                  <!-- Button trigger modal--><a href="/accounts/register/" class="btn btn-outline-primary">Registrate</a>
-                </div>
-
-                {% endif %}
-
-
-
-            {%endblock%}
+            </div>
+                    <div class="navbar-text">
+                      <!-- Button trigger modal--><a href="/accounts/logout/" class="btn btn-primary navbar-btn btn-shadow btn-gradient">Cerrar Sesión</a>
+                    </div>
+            {% else %}
+                    <div class="navbar-text mr-2">
+                      <a href="/accounts/login/" class="btn btn-primary navbar-btn btn-shadow btn-gradient">Iniciar Sesión</a>
+                    </div>
+                    <div class="navbar-text">
+                      <a href="/accounts/register/" class="btn btn-outline-primary">Registrate</a>
+                    </div>
+            {% endif %}
         </nav>
     </header>
     <section id="hero" class="hero hero-home bg-gray">

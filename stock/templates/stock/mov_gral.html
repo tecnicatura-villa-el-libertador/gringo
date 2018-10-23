@@ -9,19 +9,19 @@
     <div class="row">
         <div class="col-8 justify-content-center mr-5 ml-5">
 
-            <table class="table">
+            <table class="table table-sm">
               <thead class="thead-dark">
                 <tr>
-                  <th scope="col-2">Tipo Movimiento</th>
-                  <th scope="col-2">Producto</th>
-            	  <th scope="col-2">Cantidad</th>
-                  <th scope="col-2">Importe</th>
+                  <th>Tipo Movimiento</th>
+                  <th>Producto</th>
+            	  <th>Cantidad</th>
+                  <th>Importe</th>
                 </tr>
               </thead>
               <tbody>
             		{% for movimiento in object_list %}
                 <tr>
-                  <th>{{movimiento.tipo}}</th>
+                  <td>{{movimiento.tipo}}</th>
                   <td>{{movimiento.producto}}</td>
                   <td>{{movimiento.cantidad}}</td>
             	  <td>{{movimiento.precio_peso}}</td>
