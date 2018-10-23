@@ -133,8 +133,13 @@ def mov_gral (request):
 
     return render(request, 'stock/mov_gral.html', {'form': formfilter, 'object_list': tabla})
 
+
 def inicio(request):
+    if request.user.is_authenticated:
+        # si el usuario ya está logueado, no le mostramos el landing page
+        return redirect('resumen_campañas')
     return render(request, 'stock/landing.html')
+
 
 @login_required
 def actividades(request):

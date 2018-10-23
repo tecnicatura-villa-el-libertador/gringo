@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^accounts/', include('django.contrib.auth.urls')),
     path('_db', views.download_db),
 	path('stock/', views.stock, name = 'resumen_stock'),
-	path('campaña/', views.campaña, name = 'resumen_campañas'),
+	path('campañas/', views.campaña, name = 'resumen_campañas'),
 	path('campaña/<int:id>', views.campaña_detalle, name='campaña_detalle'),
     path('campaña/<int:id>/nueva_actividad', views.ActividadCreate.as_view(), name='nueva_actividad'),
     path('campaña/<int:id_campaña>/actividad/<int:id_actividad>', views.actividad_detalle, name='actividad_detalle'),
