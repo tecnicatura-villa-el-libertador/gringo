@@ -1,5 +1,5 @@
 
-{% extends 'stock/usuario_base.html' %}
+{% extends 'stock/base.html' %}
 
 {% load bootstrap4%}
 
@@ -9,17 +9,9 @@ Campañas
 
 {% block content %}
 
-<form action="/mov_gral/" method="get">
 
-	{{form}}
-
-</form>
-
-<a href="{% url "campaña_nueva" %}" class="btn btn-outline-success btn-sm">Crear nueva campaña </a>
-<a href="{% url "Lote_Nuevo" %}" class="btn btn-outline-success btn-sm">Crear nuevo lote </a>
-
-<table class="table">
     <div class="container-fluid">
+
         <div class="row d-flex">
             {% for campaña, totales in tabla.items %}
             <div class="text-center col-lg-3 text order-2 order-lg-1">
@@ -30,6 +22,14 @@ Campañas
             {% endfor %}
         </div>
     </div>
+
+    <div class="row d-flex">
+              <div class="col-md-6 mx-auto">
+
+              <a href="{% url "campaña_nueva" %}" class="btn btn-sizesm btn-outline-success btn-sm">Crear nueva campaña </a>
+              <a href="{% url "Lote_Nuevo" %}" class="btn btn-outline-success btn-sm">Crear nuevo lote </a>
+              </div>
+            </div>
 
 {% comment %}<table class="table">
 >>>>>>> dev

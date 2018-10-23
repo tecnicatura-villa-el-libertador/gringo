@@ -113,7 +113,7 @@ def campañas_listado(request):
         ).aggregate(total_pesos=Sum('precio_peso'),
                     total_dolares=Sum('precio_dolar'))
         tabla[cmp] = total
-    return render(request, 'stock/campaña.html', {'tabla': tabla})
+    return render(request, 'stock/campañas_listado.html', {'tabla': tabla})
 
 
 @login_required
