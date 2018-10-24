@@ -23,43 +23,4 @@ Campañas
         </div>
     </div>
 
-    <div class="row d-flex">
-              <div class="col-md-6 mx-auto">
-
-              <a href="{% url "campaña_nueva" %}" class="btn btn-sizesm btn-outline-success btn-sm">Crear nueva campaña </a>
-              <a href="{% url "Lote_Nuevo" %}" class="btn btn-outline-success btn-sm">Crear nuevo lote </a>
-              </div>
-            </div>
-
-{% comment %}<table class="table">
->>>>>>> dev
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Campaña</th>
-      <th scope="col">Total $</th>
-      <th scope="col">Total u$s</th>
-    </tr>
-  </thead>
-  <tbody>
-		{% for campaña, totales in tabla.items %}
-    <tr>
-      <th scope="row">{{campaña}}</th>
-      <td>{{totales.total_pesos}}</td>
-      <td>{{totales.total_dolares}}</td>
-    </tr>
-		{% endfor %}
-	</tboby>
-</table>{% endcomment %}
-
-<!--table>
-{% for campaña, totales in tabla.items %}
-	<tr>
-	<td>{{campaña}}</td>
-	<td>$ {{totales.total_pesos}}</td>
-	<td>u$s {{totales.total_dolares}}</td>
-</tr>
-{% endfor %}
-
-</table-->
-
 {% endblock %}
