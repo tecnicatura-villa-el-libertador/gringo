@@ -1,24 +1,31 @@
-
-{% extends 'stock/plantilla_base.html' %}
+{% extends 'stock/base.html' %}
 
 {% load bootstrap4%}
 
 {% block content %}
 
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Producto</th>
-      <th scope="col">Stock</th>
-  </thead>
-  <tbody>
-    {% for producto, stock in tabla.items %}
-    <tr>
-      <th scope="row">{{producto}}</th>
-    	<td>{{stock}}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+
+<div class="container mx-center">
+    <div class="row">
+        <div class="col-6">
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Stock</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for producto, stock in tabla.items %}
+                <tr>
+                    <td>{{producto}}</td>
+                    <td>{{stock}}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

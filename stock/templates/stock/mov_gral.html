@@ -1,37 +1,37 @@
 
-{% extends 'stock/usuario_base.html' %}
+{% extends 'stock/base.html' %}
 {% load bootstrap4 %}
 {% load crispy_forms_tags %}
 
 {% block content %}
 
 <div class="container-fluid">
-    <div class="row d-flex justify-content-center">
-        <div class="col-10">
+    <div class="row">
+        <div class="col-8 justify-content-center mr-5 ml-5">
 
-            <table class="table">
+            <table class="table table-sm">
               <thead class="thead-dark">
                 <tr>
-                  <th scope="col">Tipo Movimiento</th>
-                  <th scope="col">Producto</th>
-            			<th scope="col">Cantidad</th>
-                  <th scope="col">Und. Medida</th>
+                  <th>Tipo Movimiento</th>
+                  <th>Producto</th>
+            	  <th>Cantidad</th>
+                  <th>Importe</th>
                 </tr>
               </thead>
               <tbody>
             		{% for movimiento in object_list %}
                 <tr>
-                  <th scope="row">{{movimiento.tipo}}</th>
+                  <td>{{movimiento.tipo}}</th>
                   <td>{{movimiento.producto}}</td>
                   <td>{{movimiento.cantidad}}</td>
-            			<td>{{movimiento.producto.unidad_medida}}</td>
+            	  <td>{{movimiento.precio_peso}}</td>
                 </tr>
             		{% endfor %}
             	</tboby>
             	</table>
             </div>
 
-            <div class="col-2">
+            <div class="col-2 mr-5 ml-5">
                 {% crispy form %}
             </div>
 
