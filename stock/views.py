@@ -27,8 +27,8 @@ class CampañaCreate(LoginRequiredMixin, CreateView):
 @login_required
 def campaña_detalle(request, id):
     campaña = get_object_or_404(Campaña, id=id)
-    if campaña.usuario != request.user:
-        return HttpResponseForbidden()
+    #if campaña.usuario != request.user:
+    #    return HttpResponseForbidden()
     return render(request, 'stock/campaña_detalle.html', {'campaña': campaña})
 
 
