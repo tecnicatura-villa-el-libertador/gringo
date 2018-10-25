@@ -91,13 +91,14 @@ class UnidadMedida(models.Model):
 
 class Producto(TimeStampedModel):
     """
-    Este es la tabla que describe insumo o producidho o servicios con su precio actual
+    Este es la tabla que describe insumo o producido o servicios con su precio actual
     """
-    nombre = models.CharField(max_length=50)
-    categoria = models.ForeignKey('CategoriaProducto', null=True, on_delete=models.SET_NULL)
-    unidad_medida = models.ForeignKey('UnidadMedida', null=True, on_delete=models.SET_NULL)
-    precio_peso = models.DecimalField(max_digits=12, decimal_places=3)
-    precio_dolar = models.DecimalField(max_digits=12, decimal_places=3)
+    nombre        = models.CharField(max_length=50)
+    categoria     = models.ForeignKey('CategoriaProducto', null=True, on_delete=models.SET_NULL)
+    unidad_medida = models.ForeignKey('UnidadMedida', null=True, on_delete=models.SET_NULL, help_text='Ingresar nombre abreviado.')
+    precio_peso   = models.DecimalField(max_digits=12, decimal_places=3, help_text='Precio neto unitario según unidad de medida.')
+    precio_dolar  = models.DecimalField(max_digits=12, decimal_places=3, help_text='Precio en dólares según la cotización del día.')
+    es_cosechable = models.BooleanField(default=False, help_text='Es resultado del producido de una campaña ?')
 
     def __str__(self):
         return f'{self.nombre} x {self.unidad_medida}'
