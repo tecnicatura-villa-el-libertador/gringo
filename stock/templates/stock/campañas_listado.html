@@ -1,0 +1,33 @@
+
+{% extends 'stock/base.html' %}
+
+{% load bootstrap4%}
+
+{% block title%}
+Campañas
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="container-fluid">
+
+        <div class="row d-flex">
+            {% for campaña, totales in tabla.items %}
+            <div class="text-center col-lg-3 text order-2 order-lg-1">
+              <a href="{% url "campaña_detalle" campaña.id %}" class="btn btn-primary btn-shadow btn-gradient link-scroll">{{campaña}}</a>
+              <p class="hero-text">Total $ {{totales.total_pesos}}</p>
+              <p class="hero-text">Total u$s {{totales.total_dolares}}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="row d-flex">
+        <div class="col-md-6 mx-auto">
+            <a href="{% url "campaña_nueva" %}" class="btn btn-sizesm btn-outline-success btn-sm">Crear nueva campaña </a>
+            <a href="{% url "Lote_Nuevo" %}" class="btn btn-outline-success btn-sm">Crear nuevo lote </a>
+        </div>
+    </div>
+
+{% endblock %}

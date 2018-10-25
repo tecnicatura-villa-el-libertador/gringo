@@ -6,6 +6,7 @@ from django.http import HttpResponseForbidden
 from wsgiref.util import FileWrapper
 from django.http import HttpResponse
 from django.conf import settings
+from .models import Movimiento, Producto, Campaña, CategoriaProducto,Lote
 from .models import Movimiento, Producto, Actividad, Movimiento, Campaña, CategoriaProducto
 from .forms import FilterForm, MovimientoModelForm
 from django.contrib.auth.decorators import login_required
@@ -24,13 +25,23 @@ class CampañaCreate(LoginRequiredMixin, CreateView):
         return redirect('/')
 
 
+class LoteCreate(LoginRequiredMixin, CreateView):
+    model = Lote
+    fields = ['nombre', 'descripcion', 'latitud', 'longitud', 'hectareas']
+
+    def form_valid(self, form):
+        lote = form.save(commit=False)
+        lote.usuario = self.request.user
+        lote.save()
+        return redirect('/')
+
+
 @login_required
 def campaña_detalle(request, id):
     campaña = get_object_or_404(Campaña, id=id)
-    if campaña.usuario != request.user:
-        return HttpResponseForbidden()
+    #if campaña.usuario != request.user:
+    #    return HttpResponseForbidden()
     return render(request, 'stock/campaña_detalle.html', {'campaña': campaña})
-
 
 
 class ActividadCreate(LoginRequiredMixin, CreateView):
@@ -69,10 +80,6 @@ def actividad_detalle(request, id_campaña, id_actividad):
     })
 
 
-
-
-# Create your views here.
-
 @login_required
 def stock(request):
     tabla = {}
@@ -94,8 +101,9 @@ def stock(request):
         tabla[p] = total
     return render(request, 'stock/stock.html', {'tabla': tabla})
 
+
 @login_required
-def campaña(request):
+def campañas_listado(request):
     tabla = {}
     for cmp in Campaña.objects.all():
         # Datos de la campaña...
@@ -105,7 +113,22 @@ def campaña(request):
         ).aggregate(total_pesos=Sum('precio_peso'),
                     total_dolares=Sum('precio_dolar'))
         tabla[cmp] = total
-    return render(request, 'stock/campaña.html', {'tabla': tabla})
+    return render(request, 'stock/campañas_listado.html', {'tabla': tabla})
+
+
+@login_required
+def lote(request):
+    tabla = {}
+    for cmp in Lote.objects.all():
+        # Datos de la campaña...
+        # calcular cantidad*precio_peso, cantidad*precio_dolar
+        total = Movimiento.objects.filter(
+            actividad__campaña=cmp
+        ).aggregate(total_pesos=Sum('precio_peso'),
+                    total_dolares=Sum('precio_dolar'))
+        tabla[cmp] = total
+    return render(request, 'stock/campañas.html', {'tabla': tabla})
+
 
 
 @login_required
@@ -133,8 +156,13 @@ def mov_gral (request):
 
     return render(request, 'stock/mov_gral.html', {'form': formfilter, 'object_list': tabla})
 
+
 def inicio(request):
+    if request.user.is_authenticated:
+        # si el usuario ya está logueado, no le mostramos el landing page
+        return redirect('resumen_campañas')
     return render(request, 'stock/landing.html')
+
 
 @login_required
 def actividades(request):
