@@ -24,6 +24,15 @@ class CampañaCreate(LoginRequiredMixin, CreateView):
         campaña.save()
         return redirect('/')
 
+    def get_form(self, *args, **kwargs):
+        form = super().get_form(*args, **kwargs)
+        opciones_lote = form.fields['lote'].queryset
+        # limitamos las opciones de lote a los lotes que pertenezcan al usuario 
+        # logueado. Por defecto, asume que son todas, y lo filtramos 
+        # con self.request.user
+        form.fields['lote'].queryset = opciones_lote.filter(usuario=self.request.user)
+        return form
+
 
 class LoteCreate(LoginRequiredMixin, CreateView):
     model = Lote

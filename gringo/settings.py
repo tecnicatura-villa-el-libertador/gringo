@@ -129,3 +129,12 @@ LOGIN_REDIRECT_URL = '/stock/'
 LOGOUT_REDIRECT_URL = '/'
 
 LOGIN_URL = '/accounts/login'
+
+ACCOUNT_ACTIVATION_DAYS = 2
+EMAIL_BACKEND = "anymail.backends.sendgrid.EmailBackend"
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
+

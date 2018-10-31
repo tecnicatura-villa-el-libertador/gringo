@@ -28,6 +28,7 @@ class Campaña(models.Model):
 
 
 class Lote(models.Model):
+    usuario = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     nombre = models.CharField(max_length=50)
     descripcion = models.TextField(null=True, blank=True)
     latitud = models.FloatField(null=True, blank=True)

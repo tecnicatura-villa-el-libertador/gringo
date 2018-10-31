@@ -3,3 +3,4 @@ Django-model-utils==3.1.2
 django-registration==3.0
 django-bootstrap4==0.0.7
 django-crispy-forms==1.7.2
+django-anymail==4.3
