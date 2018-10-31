@@ -38,9 +38,7 @@ class LoteCreate(LoginRequiredMixin, CreateView):
 
 @login_required
 def campaña_detalle(request, id):
-    campaña = get_object_or_404(Campaña, id=id)
-    #if campaña.usuario != request.user:
-    #    return HttpResponseForbidden()
+    campaña = get_object_or_404(Campaña, id=id, usuario=request.user)
     return render(request, 'stock/campaña_detalle.html', {'campaña': campaña})
 
 
@@ -105,7 +103,8 @@ def stock(request):
 @login_required
 def campañas_listado(request):
     tabla = {}
-    for cmp in Campaña.objects.all():
+    # sólo listar campañas propias
+    for cmp in Campaña.objects.filter(usuario=request.user):
         # Datos de la campaña...
         # calcular cantidad*precio_peso, cantidad*precio_dolar
         total = Movimiento.objects.filter(
