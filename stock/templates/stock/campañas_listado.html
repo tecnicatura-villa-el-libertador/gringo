@@ -10,8 +10,16 @@ Campañas
 {% block content %}
 
 
-    <div class="container-fluid">
+    <div class="container mb-5">
+        <div class="row justify-content-sm-center">
+            <div class="col-lg-6">
+                <a href="{% url "campaña_nueva" %}" class="btn btn-sizesm btn-outline-success btn-sm">NUEVA CAMPAÑA</a>
+                <a href="{% url "Lote_Nuevo" %}" class="btn btn-outline-success btn-sm">NUEVO LOTE</a>
+            </div>
+        </div>
+    </div>
 
+    <div class="container-fluid">
         <div class="row d-flex">
             {% for campaña, totales in tabla.items %}
             <div class="text-center col-lg-3 text order-2 order-lg-1">
@@ -23,11 +31,5 @@ Campañas
         </div>
     </div>
 
-    <div class="row d-flex">
-        <div class="col-md-6 mx-auto">
-            <a href="{% url "campaña_nueva" %}" class="btn btn-sizesm btn-outline-success btn-sm">Crear nueva campaña </a>
-            <a href="{% url "Lote_Nuevo" %}" class="btn btn-outline-success btn-sm">Crear nuevo lote </a>
-        </div>
-    </div>
 
 {% endblock %}

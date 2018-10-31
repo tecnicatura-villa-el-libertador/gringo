@@ -158,9 +158,9 @@ def mov_gral (request):
 
 
 def inicio(request):
-    if request.user.is_authenticated:
+    '''if request.user.is_authenticated:
         # si el usuario ya está logueado, no le mostramos el landing page
-        return redirect('resumen_campañas')
+        return redirect('resumen_campañas')'''
     return render(request, 'stock/landing.html')
 
 
