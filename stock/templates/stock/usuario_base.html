@@ -1,0 +1,12 @@
+{% extends 'stock/base.html' %}
+
+{% block nav %}
+
+<ul class="navbar-nav align-items-start align-items-lg-center">
+    <li class="nav-item"><a class="nav-link" href='{% url 'inicio'%}'> INICIO </a></li>
+    <li class="nav-item"><a class="nav-link" href='{% url 'resumen_stock' %}'>STOCK</a></li>
+    <li class="nav-item"><a class="nav-link" href="{% url 'resumen_campañas'%}">CAMPAÑAS</a></li>
+    <li class="nav-item"><a class="nav-link disable" href="{% url 'resumen_movimientos'%}">REPORTES</a></li>
+</ul>
+
+ {% endblock %}

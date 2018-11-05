@@ -1,0 +1,79 @@
+{% extends 'stock/campaña_detalle.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+           <h1>
+             Actividad en «<a href="{%url 'campaña_detalle' campaña.id %}" >{{ campaña }}</a>»
+           </h1>
+
+           <dl>
+              <dt>Tipo</dt>
+              <dd>{{ actividad.tipo }}</dd>
+              <dt>Fecha de inicio: </dt>
+              <dd> {{ actividad.fecha_inicio|date }}</dd>
+              <dt>Fecha de finalización: </dt>
+              <dd> {{ actividad.fecha_fin|date }}</dd>
+
+           </dl>
+
+
+  <div class="row">
+    <div class="col-md-6">
+        <h3>Movimientos</h3>
+
+
+        <ul class="list-unstyled">
+        {% for movimiento in actividad.movimiento_set.all %}
+
+        <li class="media g-mb-30 media-comment">
+          {% comment %}
+             <img class="mr-3" src="..." alt="Generic placeholder image">
+           {% endcomment %} <div class="media-body shadow p-3 mb-5 bg-white rounded">
+            <h5 class="mt-0 mb-1">{{ actividad.nombre }}</h5>
+            <dl>
+              <dt>Tipo</dt>
+              <dd>{{ movimiento.tipo }}</dd>
+              <dt>Fecha</dt>
+              <dd>{{ movimiento.fecha|date }}</dd>
+              <dt>Monto en $</dt>
+              <dd>{{ movimiento.precio_peso }}</dd>
+              <dt>Monto en u$s</dt>
+              <dd>{{ movimiento.precio_dolar }}</dd>
+              <dt>Detalle</dt>
+              <dd>{{ movimiento.detalle }}</dd>
+            </dl>
+
+          </div>
+        </li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    <div class="col-md-6">
+      <h3>Nuevo</h3>
+       <form method="POST" >
+            {% csrf_token %}
+    {% bootstrap_form form %}
+      {% buttons %}
+        <button type="submit" class="save btn btn-default">
+            {% block submit_text %}
+                Guardar
+            {% endblock %}</button>
+        {% endbuttons %}
+
+        </form>
+    </div>
+
+
+  </div>
+
+
+        </div>
+    </div>
+
+{% endblock %}

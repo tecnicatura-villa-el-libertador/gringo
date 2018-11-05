@@ -1,20 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+{% extends 'stock/base.html' %}
 
-<table>
-	
-{% for producto, stock in tabla.items %}
-<tr>
-	<td>{{producto}}</td>
-	<td>{{stock}}</td>
-</tr>	
-{% endfor %}
+{% load bootstrap4%}
 
-</table>
+{% block content %}
 
-</body>
-</html>
+
+<div class="container mx-center">
+    <div class="row">
+        <div class="col-6">
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Producto</th>
+                  <th>Stock</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for producto, stock in tabla.items %}
+                <tr>
+                    <td>{{producto}}</td>
+                    <td>{{stock}}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
