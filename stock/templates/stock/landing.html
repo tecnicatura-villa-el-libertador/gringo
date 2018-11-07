@@ -28,7 +28,11 @@
             <h1>"El campo en tu bolsillo"</h1>
             <p class="hero-text">Un software pensado para la administración de tu campo. Fácil,
             rápido y eficiente.</p>
+
+            {% if not request.user.is_authenticated %}
             <div class="CTA"><a href="/accounts/login/" class="btn btn-primary btn-shadow btn-gradient link-scroll">Iniciar Sesión</a><a href="/accounts/register/" class="btn btn-outline-primary">Registrate ahora </a></div>
+            {% endif %}
+
           </div>
           <div class="col-lg-6 order-1 order-lg-2"><img src="{% static "img/Macbook.png" %}" alt="..." class="img-fluid"></div>
         </div>
