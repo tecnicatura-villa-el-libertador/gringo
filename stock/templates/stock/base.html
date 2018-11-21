@@ -62,7 +62,8 @@
             {% endif %}
         </nav>
     </header>
-    <section id="hero" class="hero hero-home bg-gray">
+
+    <section {% block content_class%}id="hero" class="hero hero-home bg-gray{% endblock %}">
         {% block content%}
         {% endblock %}
     </section>

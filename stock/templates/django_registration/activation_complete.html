@@ -1,6 +1,6 @@
-{% extends "base.html" %}
+{% extends "django_registration/registration_complete.html" %}
 {% load i18n %}
 
-{% block content %}
-<p>{% trans "Your account is now activated." %}</p>
-{% endblock %}
+{% block msg %}
+    Tu cuenta ha sido activada. <a href="/accounts/login/" class="btn btn-primary navbar-btn btn-shadow btn-gradient">Inicia sesión</a>
+{% endblock msg %}
