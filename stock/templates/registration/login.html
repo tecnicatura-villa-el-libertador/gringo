@@ -1,3 +1,8 @@
 {% extends 'stock/form.html' %}
 
+{% block msg %}
+<p>¿Ha olvidado su contraseña? Ingrese <a href="{%url 'password_reset' %}">aquí</a>.</p>
+
+{% endblock msg %}
+
 {% block submit_text %}Ingresar{% endblock %}

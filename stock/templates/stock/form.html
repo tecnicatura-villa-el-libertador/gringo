@@ -13,6 +13,8 @@
                 {% csrf_token %}
                 {% bootstrap_form form %}
 
+                {% block msg %}{% endblock msg %}
+
                 {% buttons %}
                     <button type="submit" class="save btn btn-primary navbar-btn btn-shadow btn-gradient">
                     {% block submit_text %}
